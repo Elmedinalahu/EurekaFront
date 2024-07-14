@@ -1,0 +1,2125 @@
+.dashboard .rectangle-5 {
+  opacity: 0.7;
+  filter: blur(30px);
+  border-radius: 24px;
+  background: var(--black, #000000);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 81px;
+  height: 804px;
+}
+.dashboard .e {
+  margin-bottom: 91.3px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 64px;
+  color: #FFFFFF;
+}
+.dashboard .vector-64 {
+  margin: 0 0.9px 63.5px 0;
+  width: 26px;
+  height: 26px;
+}
+.dashboard .vector-70 {
+  margin: 0 0.9px 64.3px 0;
+  width: 28px;
+  height: 22.3px;
+}
+.dashboard .vector-68 {
+  width: 13.7px;
+  height: 13.7px;
+}
+.dashboard .group-16 {
+  margin: 0 4.6px 1.5px 4.6px;
+  display: flex;
+  width: 13.7px;
+  height: 13.7px;
+  box-sizing: border-box;
+}
+.dashboard .vector-69 {
+  width: 22.9px;
+  height: 10.8px;
+}
+.dashboard .group-17 {
+  display: flex;
+  width: 22.9px;
+  height: 10.8px;
+  box-sizing: border-box;
+}
+.dashboard .group-6 {
+  margin: 0 0.9px 63.8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22.9px;
+  box-sizing: border-box;
+}
+.dashboard .vector-67 {
+  width: 25.9px;
+  height: 22.8px;
+}
+.dashboard .group-3 {
+  margin: 0 1.3px 64.2px 0;
+  display: flex;
+  width: 25.9px;
+  height: 22.8px;
+  box-sizing: border-box;
+}
+.dashboard .group-2 {
+  margin: 0 1.3px 224.6px 0;
+  width: 26px;
+  height: 26px;
+}
+.dashboard .vector-71 {
+  width: 26.1px;
+  height: 26.1px;
+}
+.dashboard .group-7 {
+  margin-right: 0.9px;
+  display: flex;
+  width: 26.1px;
+  height: 26.1px;
+  box-sizing: border-box;
+}
+.dashboard .container-41 {
+  border-radius: 24px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15.6px 0 40.4px 0;
+  width: 132px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .menu {
+  position: relative;
+  margin: 0 71.7px 22.9px 0;
+  display: flex;
+  padding-bottom: 1.1px;
+  width: 132px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .hello-elmedina {
+  margin-bottom: 7.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--h-1-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-1-font-weight, 400);
+  font-size: var(--h-1-font-size, 36px);
+  color: var(--black, #000000);
+}
+.dashboard .its-good-to-see-you-again {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--b-1-font-family, 'Roboto');
+  font-weight: var(--b-1-font-weight, 400);
+  font-size: var(--b-1-font-size, 16px);
+  line-height: var(--b-1-line-height, 1.5);
+  color: var(--black, #000000);
+}
+.dashboard .container-37 {
+  border-radius: 14px;
+  background: #F5F5F7;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding: 46.4px 0 40.1px 31.5px;
+  box-sizing: border-box;
+}
+.dashboard .rectangle {
+  background: url('assets/images/Rectangle.png') 50% / cover no-repeat;
+  position: absolute;
+  top: 0px;
+  right: 136.3px;
+  width: 106px;
+  height: 183px;
+}
+.dashboard .header {
+  position: relative;
+  margin: 0 0 24.1px 0.3px;
+  padding-top: 27.3px;
+  box-sizing: border-box;
+}
+.dashboard .rectangle-21 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 500.3px;
+  height: 80px;
+}
+.dashboard .group-23 {
+  width: 32px;
+  height: 32px;
+}
+.dashboard .container-43 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.dashboard .spanish-b-2 {
+  margin-bottom: 8px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--black, #000000);
+}
+.dashboard .by-alejandro-velazquez {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--black, #000000);
+}
+.dashboard .container-19 {
+  margin: 10.9px 53.3px 11.1px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .container-14 {
+  margin: 26.3px 48.3px 22.7px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 13px;
+  color: var(--black, #000000);
+}
+.dashboard .continue {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-34 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  margin: 11.9px 47.5px 12.1px 0;
+  display: flex;
+  padding: 12.6px 0 12.4px 0.8px;
+  width: 120px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .vector-63 {
+  width: 15.6px;
+  height: 10.8px;
+}
+.dashboard .group-202 {
+  display: flex;
+  width: 15.6px;
+  height: 10.8px;
+  box-sizing: border-box;
+}
+.dashboard .group-39 {
+  border-radius: 100px;
+  border: 2px solid #000000;
+  position: relative;
+  margin: 0px 16.1px 0 0;
+  display: flex;
+  padding: 14.6px 12.2px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.dashboard .vector-62 {
+  width: 15.6px;
+  height: 10.8px;
+}
+.dashboard .group-201 {
+  display: flex;
+  width: 15.6px;
+  height: 10.8px;
+  box-sizing: border-box;
+}
+.dashboard .group-31 {
+  border-radius: 100px;
+  border: 2px solid #000000;
+  position: relative;
+  margin-bottom: 0px;
+  display: flex;
+  padding: 14.6px 12.2px;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.dashboard .arrows {
+  margin: 13.8px 0 10.2px 0;
+  display: flex;
+  flex-direction: row;
+  width: 96.1px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-21 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.dashboard .ellipse-1 {
+  position: absolute;
+  left: 276.5px;
+  bottom: 18.2px;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .my-course {
+  position: relative;
+  margin: 0 0.3px 39.8px 0;
+  display: flex;
+  padding: 8px 0 8px 8.5px;
+  box-sizing: border-box;
+}
+.dashboard .courses {
+  margin-bottom: 26.2px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-2-font-weight, 400);
+  font-size: var(--h-2-font-size, 24px);
+  color: var(--black, #000000);
+}
+.dashboard .all-courses {
+  margin-right: 9.5px;
+  width: 102.2px;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .the-newest {
+  opacity: 0.3;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .top-rated {
+  opacity: 0.3;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .most-popular {
+  opacity: 0.3;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .container-6 {
+  margin-bottom: 17.2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 418.6px;
+  box-sizing: border-box;
+}
+.dashboard .rectangle-7 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+.dashboard .group-12 {
+  width: 21.3px;
+  height: 32px;
+}
+.dashboard .frame {
+  display: flex;
+  width: 21.3px;
+  height: 32px;
+  box-sizing: border-box;
+}
+.dashboard .container-10 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 16px 0;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.dashboard .learn-figma-1 {
+  margin-bottom: 8px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .by-christopher-morgan {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .container-8 {
+  position: relative;
+  margin: 10.9px 57.9px 11.1px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .vector-51 {
+  width: 16px;
+  height: 16px;
+}
+.dashboard .group-14 {
+  position: relative;
+  margin: 25px 8px 23px 0;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .h-30-min-1 {
+  position: relative;
+  margin: 26.4px 41.7px 22.6px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .vector-49 {
+  width: 10.8px;
+  height: 16px;
+}
+.dashboard .group-10 {
+  margin-bottom: 0px;
+  display: flex;
+  width: 10.8px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .vector-50 {
+  width: 1.6px;
+  height: 0px;
+}
+.dashboard .group-11 {
+  margin: 0 4.3px 0 4.9px;
+  display: flex;
+  width: 1.6px;
+  height: 0px;
+  box-sizing: border-box;
+}
+.dashboard .flame-1 {
+  position: relative;
+  margin: 24px 10px 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10.8px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-13 {
+  position: relative;
+  margin: 26.4px 32.4px 22.6px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .view-course-4 {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-25 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  margin: 11.9px 0 12.1px 0;
+  display: flex;
+  padding: 12.6px 0.3px 12.4px 0;
+  width: 120px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .learn-figma {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 23.8px 8px 8.5px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .rectangle-8 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+.dashboard .group-9 {
+  width: 32px;
+  height: 32px;
+}
+.dashboard .group-21 {
+  display: flex;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+}
+.dashboard .container-28 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.dashboard .analog-photography-1 {
+  margin-bottom: 8px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .by-gordon-norman {
+  margin-right: 17.5px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .container-42 {
+  position: relative;
+  margin: 11px 62.2px 11px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.dashboard .vector-42 {
+  width: 16px;
+  height: 16px;
+}
+.dashboard .group-15 {
+  position: relative;
+  margin: 25.3px 8px 22.7px 0;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .h-15-min {
+  position: relative;
+  margin: 26.7px 41.7px 22.3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .vector-40 {
+  width: 10.8px;
+  height: 16px;
+}
+.dashboard .group-7 {
+  margin-bottom: 0px;
+  display: flex;
+  width: 10.8px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .vector-41 {
+  width: 1.6px;
+  height: 0px;
+}
+.dashboard .group-8 {
+  margin: 0 4.3px 0 4.9px;
+  display: flex;
+  width: 1.6px;
+  height: 0px;
+  box-sizing: border-box;
+}
+.dashboard .flame-5 {
+  position: relative;
+  margin: 24.3px 10px 23.7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10.8px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-12 {
+  position: relative;
+  margin: 26.7px 33.2px 22.3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .view-course-3 {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-26 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  margin: 12px 0;
+  display: flex;
+  padding: 12.6px 0.3px 12.4px 0;
+  width: 120px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .analog-photography {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 23.8px 8px 8.5px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .rectangle-9 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+.dashboard .image-15 {
+  background: url('assets/images/Image15.png') 50% / cover no-repeat;
+  width: 32px;
+  height: 32px;
+}
+.dashboard .container-29 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.dashboard .master-instagram-1 {
+  margin-bottom: 8px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .by-sophie-gill {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .container-16 {
+  margin: 11px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .container-12 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.dashboard .vector-39 {
+  width: 16px;
+  height: 16px;
+}
+.dashboard .group-16 {
+  margin: 12.6px 8px 11.4px 0;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .h-40-min {
+  margin: 13.9px 0 11.1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .vector-37 {
+  width: 10.8px;
+  height: 16px;
+}
+.dashboard .group-5 {
+  margin-bottom: 0px;
+  display: flex;
+  width: 10.8px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .vector-38 {
+  width: 1.6px;
+  height: 0px;
+}
+.dashboard .group-6 {
+  margin: 0 4.3px 0 4.9px;
+  display: flex;
+  width: 1.6px;
+  height: 0px;
+  box-sizing: border-box;
+}
+.dashboard .flame-6 {
+  margin: 11.6px 10px 12.4px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10.8px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-11 {
+  margin: 13.9px 33.2px 11.1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .view-course-2 {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-22 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  padding: 12.6px 0.3px 12.4px 0;
+  width: 120px;
+  box-sizing: border-box;
+}
+.dashboard .container-27 {
+  position: relative;
+  margin: 11.6px 0 12.4px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 311px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .master-instagram {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8.4px 23.8px 7.6px 8.5px;
+  width: 620px;
+  box-sizing: border-box;
+}
+.dashboard .rectangle-10 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+.dashboard .group-18 {
+  width: 32px;
+  height: 32px;
+}
+.dashboard .container-15 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 16px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.dashboard .basics-of-drawing-1 {
+  margin-bottom: 8px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .by-jean-tate {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .container-38 {
+  margin: 11px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .container-3 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.dashboard .vector-26 {
+  width: 16px;
+  height: 16px;
+}
+.dashboard .group-17 {
+  margin: 13.3px 8px 10.7px 0;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .h-30-min {
+  margin: 14.7px 34.4px 10.3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .vector-24 {
+  width: 10.8px;
+  height: 16px;
+}
+.dashboard .group-2 {
+  margin-bottom: 0px;
+  display: flex;
+  width: 10.8px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .vector-25 {
+  width: 1.6px;
+  height: 0px;
+}
+.dashboard .group-3 {
+  margin: 0 4.3px 0 4.9px;
+  display: flex;
+  width: 1.6px;
+  height: 0px;
+  box-sizing: border-box;
+}
+.dashboard .flame-7 {
+  margin: 12.3px 10px 11.7px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10.8px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-10 {
+  margin: 14.7px 34.1px 10.3px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .view-course-1 {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-7 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  padding: 12.6px 0.3px 12.4px 0;
+  width: 120px;
+  box-sizing: border-box;
+}
+.dashboard .container-2 {
+  position: relative;
+  margin: 11.6px 0 12.4px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.dashboard .basics-of-drawing {
+  position: relative;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8.4px 23.8px 7.6px 8.5px;
+  width: 620px;
+  box-sizing: border-box;
+}
+.dashboard .rectangle-11 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+.dashboard .group-40 {
+  width: 32.8px;
+  height: 32px;
+}
+.dashboard .container {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 16px 15.6px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+.dashboard .photoshop-essence-1 {
+  margin-bottom: 8px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .by-david-green {
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .container-11 {
+  position: relative;
+  margin: 11.7px 55.7px 10.3px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .vector-20 {
+  width: 16px;
+  height: 16px;
+}
+.dashboard .group-36 {
+  position: relative;
+  margin: 25.6px 8px 22.4px 0;
+  display: flex;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .h-35-min {
+  position: relative;
+  margin: 27px 41.7px 22px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .vector-18 {
+  width: 10.8px;
+  height: 16px;
+}
+.dashboard .group {
+  margin-bottom: 0px;
+  display: flex;
+  width: 10.8px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .vector-19 {
+  width: 1.6px;
+  height: 0px;
+}
+.dashboard .group-1 {
+  margin: 0 4.3px 0 4.9px;
+  display: flex;
+  width: 1.6px;
+  height: 0px;
+  box-sizing: border-box;
+}
+.dashboard .flame-8 {
+  position: relative;
+  margin: 24.6px 10px 23.4px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 10.8px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-9 {
+  position: relative;
+  margin: 27px 34.1px 22px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .view-course {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-18 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  margin: 12px 0;
+  display: flex;
+  padding: 12.6px 0.3px 12.4px 0;
+  width: 120px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .photoshop-essence {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 8px 23.8px 8px 8.5px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .courses-section {
+  margin-right: 0.3px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-40 {
+  margin: 4px 63.7px 0 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .vector-17 {
+  width: 20.5px;
+  height: 20.5px;
+}
+.dashboard .group-35 {
+  position: relative;
+  display: flex;
+  width: 20.5px;
+  height: 20.5px;
+  box-sizing: border-box;
+}
+.dashboard .vector-78 {
+  width: 20.5px;
+  height: 20.5px;
+}
+.dashboard .group-351 {
+  display: flex;
+  width: 20.5px;
+  height: 20.5px;
+  box-sizing: border-box;
+}
+.dashboard .search-bar-1 {
+  border-radius: 8px;
+  background: #F5F5F7;
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  padding: 10.7px 15.8px 8.7px 15.8px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.dashboard .search-bar {
+  border-radius: 8px;
+  background: #F5F5F7;
+  position: relative;
+  margin: 3px 35.4px 0 0;
+  padding: 10.7px 15.8px 8.7px 15.8px;
+  width: 300px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.dashboard .group-34 {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 23.8px;
+  height: 26px;
+}
+.dashboard .ellipse-4 {
+  border-radius: 7px;
+  background: #F45B5B;
+  width: 14px;
+  height: 14px;
+}
+.dashboard .container-32 {
+  border-radius: 8px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 2.5px;
+  right: 0px;
+  display: flex;
+  padding: 1px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .container-8 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 2.2;
+  color: #FFFFFF;
+}
+.dashboard .group-341 {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 23.8px;
+  height: 26px;
+}
+.dashboard .ellipse-41 {
+  border-radius: 7px;
+  background: #F45B5B;
+  width: 14px;
+  height: 14px;
+}
+.dashboard .container-4 {
+  border-radius: 8px;
+  background: #FFFFFF;
+  position: absolute;
+  top: 2.5px;
+  right: 0px;
+  display: flex;
+  padding: 1px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+.dashboard .container-15 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 2.2;
+  color: #FFFFFF;
+}
+.dashboard .notification-1 {
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  bottom: 0px;
+  translate: -50% 0;
+  display: flex;
+  padding: 0 5.4px 14px 19.6px;
+  height: 100%;
+  box-sizing: border-box;
+}
+.dashboard .notification {
+  position: relative;
+  margin: 0 17.7px 7px 0;
+  display: flex;
+  padding: 0 5.4px 14px 19.6px;
+  box-sizing: border-box;
+}
+.dashboard .image-16 {
+  border-radius: 5px;
+  background: url('assets/images/Image16.png') 50% / cover no-repeat;
+  width: 40.8px;
+  height: 43.8px;
+}
+.dashboard .mask-group-2 {
+  border-radius: 5px;
+  position: absolute;
+  right: -0.7px;
+  bottom: -2.4px;
+  display: flex;
+  width: 40.8px;
+  height: 43.8px;
+  box-sizing: border-box;
+}
+.dashboard .mask-group-1 {
+  border-radius: 5px;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.dashboard .mask-group {
+  border-radius: 8px;
+  background: url('assets/images/Image13.png') 50% / cover no-repeat;
+  position: relative;
+  margin-right: 8.3px;
+  display: flex;
+  width: 40px;
+  height: 40px;
+  box-sizing: border-box;
+}
+.dashboard .vector-11 {
+  width: 6.9px;
+  height: 3.9px;
+}
+.dashboard .group-38 {
+  margin: 19px 0 17px 0;
+  display: flex;
+  width: 6.9px;
+  height: 3.9px;
+  box-sizing: border-box;
+}
+.dashboard .container-33 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 55.2px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .vector-72 {
+  border-radius: 5px;
+  width: 6.9px;
+  height: 3.9px;
+}
+.dashboard .group-381 {
+  border-radius: 5px;
+  position: absolute;
+  right: 0px;
+  bottom: 17px;
+  display: flex;
+  width: 6.9px;
+  height: 3.9px;
+  box-sizing: border-box;
+}
+.dashboard .profile-picture {
+  position: relative;
+  margin-top: 3px;
+  display: flex;
+  width: 55.2px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .navigation {
+  margin: 0 15.9px 23.7px 0.7px;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .coursescompleted {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--b-1-font-family, 'Roboto');
+  font-weight: var(--b-1-font-weight, 400);
+  font-size: var(--b-1-font-size, 16px);
+  line-height: var(--b-1-line-height, 1.5);
+  color: var(--black, #000000);
+}
+.dashboard .container-7 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  overflow-wrap: break-word;
+  font-family: var(--big-numbers-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--big-numbers-font-weight, 400);
+  font-size: var(--big-numbers-font-size, 64px);
+  color: var(--black, #000000);
+}
+.dashboard .group-44 {
+  position: relative;
+  display: flex;
+  padding: 26px 0 1px 0;
+  box-sizing: border-box;
+}
+.dashboard .stats-box-1 {
+  border-radius: 14px;
+  background: #F5F5F7;
+  position: relative;
+  margin-right: 23.8px;
+  display: flex;
+  padding: 4px 0 17.3px 0.3px;
+  width: 208px;
+  box-sizing: border-box;
+}
+.dashboard .container-6 {
+  margin-right: 22.1px;
+  overflow-wrap: break-word;
+  font-family: var(--big-numbers-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--big-numbers-font-weight, 400);
+  font-size: var(--big-numbers-font-size, 64px);
+  color: var(--black, #000000);
+}
+.dashboard .coursesin-progress {
+  margin: 26px 0 1px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--b-1-font-family, 'Roboto');
+  font-weight: var(--b-1-font-weight, 400);
+  font-size: var(--b-1-font-size, 16px);
+  line-height: var(--b-1-line-height, 1.5);
+  color: var(--black, #000000);
+}
+.dashboard .stats-box-2 {
+  border-radius: 14px;
+  background: #F5F5F7;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 4px 0 17.3px 0;
+  width: 208px;
+  box-sizing: border-box;
+}
+.dashboard .stats-boxes {
+  border-radius: 14px;
+  margin: 0 15.6px 40px 0.2px;
+  display: flex;
+  flex-direction: row;
+  width: 439.8px;
+  box-sizing: border-box;
+}
+.dashboard .your-statistics {
+  margin: 0 1px 22.2px 1px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-2-font-weight, 400);
+  font-size: var(--h-2-font-size, 24px);
+  color: var(--black, #000000);
+}
+.dashboard .learning-hours {
+  margin: 4px 9.5px 9px 0;
+  display: inline-block;
+  width: 126.5px;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .my-courses {
+  opacity: 0.3;
+  margin: 4px 0 9px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--h-3-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-3-font-weight, 400);
+  font-size: var(--h-3-font-size, 16px);
+  color: var(--black, #000000);
+}
+.dashboard .weekly {
+  margin-right: 6.5px;
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .vector-10 {
+  width: 6.9px;
+  height: 3.9px;
+}
+.dashboard .group-20 {
+  margin: 6.7px 0 4.4px 0;
+  display: flex;
+  width: 6.9px;
+  height: 3.9px;
+  box-sizing: border-box;
+}
+.dashboard .container-24 {
+  border-radius: 8px;
+  background: #F5F5F7;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  padding: 9px 16.3px 8px 16.3px;
+  box-sizing: border-box;
+}
+.dashboard .container-36 {
+  margin: 0 15.9px 30.1px 1px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 436px;
+  box-sizing: border-box;
+}
+.dashboard .divider {
+  background: #F5F5F7;
+  width: 391px;
+  height: 1px;
+}
+.dashboard .divider-graph-horizontal {
+  position: absolute;
+  right: 28.4px;
+  bottom: 34.9px;
+  display: flex;
+  width: 391px;
+  height: 1px;
+  box-sizing: border-box;
+}
+.dashboard .divider-2 {
+  background: #F5F5F7;
+  width: 391px;
+  height: 1px;
+}
+.dashboard .divider-graph-horizontal-2 {
+  position: absolute;
+  right: 28.4px;
+  bottom: 124.9px;
+  display: flex;
+  width: 391px;
+  height: 1px;
+  box-sizing: border-box;
+}
+.dashboard .divider-3 {
+  background: #F5F5F7;
+  width: 391px;
+  height: 1px;
+}
+.dashboard .divider-graph-horizontal-3 {
+  position: absolute;
+  top: 98.4px;
+  right: 28.4px;
+  display: flex;
+  width: 391px;
+  height: 1px;
+  box-sizing: border-box;
+}
+.dashboard .today-graph {
+  position: absolute;
+  left: 50%;
+  bottom: 35.8px;
+  translate: -50% 0;
+  width: 390.6px;
+  height: 181.8px;
+}
+.dashboard .container-5 {
+  margin-right: 7.5px;
+  width: 26px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .divider-5 {
+  background: #F5F5F7;
+  width: 391px;
+  height: 1px;
+}
+.dashboard .divider-graph-horizontal-5 {
+  margin: 8.4px 0 5.6px 0;
+  display: flex;
+  width: 391px;
+  height: 1px;
+  box-sizing: border-box;
+}
+.dashboard .container-30 {
+  margin: 0 8.3px 0.5px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 424.5px;
+  box-sizing: border-box;
+}
+.dashboard .sheet-4 {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-5 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value-2 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .pointer-2 {
+  position: relative;
+  margin: 0 0 1.6px 167.5px;
+  align-self: center;
+  padding: 1px 18.1px 6.9px 18.1px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .container-4 {
+  margin-right: 7.5px;
+  width: 26px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .divider-4 {
+  background: #F5F5F7;
+  width: 391px;
+  height: 1px;
+}
+.dashboard .divider-graph-horizontal-4 {
+  margin: 8.4px 0 5.6px 0;
+  display: flex;
+  width: 391px;
+  height: 1px;
+  box-sizing: border-box;
+}
+.dashboard .container-13 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 424.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-42 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  position: absolute;
+  top: 1.9px;
+  right: 120.2px;
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .container-14 {
+  position: relative;
+  margin: 0 8.3px 25.3px 0;
+  display: flex;
+  width: 424.5px;
+  box-sizing: border-box;
+}
+.dashboard .container-3 {
+  margin: 4.7px 7.5px 8.2px 0;
+  display: inline-block;
+  width: 138.2px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .sheet-2 {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value-1 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .value-1 {
+  position: relative;
+  display: flex;
+  padding: 1px 16.5px 6.9px 13px;
+  box-sizing: border-box;
+}
+.dashboard .container-23 {
+  margin-bottom: 3.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 199.1px;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-41 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .pointer-1 {
+  margin: 0 90.8px 1px 0;
+  display: flex;
+  align-self: center;
+  width: 11.1px;
+  height: 11.1px;
+  box-sizing: border-box;
+}
+.dashboard .container-2 {
+  margin: 6.1px 7.5px 6.7px 0;
+  display: inline-block;
+  width: 70.8px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .sheet {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-1 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .value {
+  position: relative;
+  display: flex;
+  padding: 1px 16.5px 6.9px 13px;
+  box-sizing: border-box;
+}
+.dashboard .container-1 {
+  margin-bottom: 3.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-self: flex-start;
+  width: 131.7px;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-4 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .pointer {
+  margin: 0 225.6px 8.6px 0;
+  display: flex;
+  align-self: center;
+  width: 11.1px;
+  height: 11.1px;
+  box-sizing: border-box;
+}
+.dashboard .container-1 {
+  margin-right: 7.5px;
+  width: 26px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .divider-1 {
+  background: #F5F5F7;
+  width: 391px;
+  height: 1px;
+}
+.dashboard .divider-graph-horizontal-1 {
+  position: relative;
+  margin: 8.6px 0 5.4px 0;
+  display: flex;
+  width: 391px;
+  height: 1px;
+  box-sizing: border-box;
+}
+.dashboard .container-5 {
+  margin-right: 8.3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 424.5px;
+  box-sizing: border-box;
+}
+.dashboard .container {
+  margin: 30px 1px 0 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .sheet-6 {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-7 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value-3 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .value-2 {
+  position: relative;
+  margin-bottom: 3.5px;
+  padding: 1px 18.1px 6.9px 18.1px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-43 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  margin: 0 19.8px;
+  align-self: flex-start;
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .pointer-3 {
+  position: relative;
+  margin-bottom: 2.5px;
+  display: flex;
+  flex-direction: column;
+  width: 53.4px;
+  box-sizing: border-box;
+}
+.dashboard .container-35 {
+  margin-bottom: 14.7px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .mon {
+  margin-right: 7.5px;
+  width: 64.5px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .tue {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .wed {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .thu {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .fri {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .sat {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .sun {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+.dashboard .container-39 {
+  margin-left: 20.3px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 412.5px;
+  box-sizing: border-box;
+}
+.dashboard .container-20 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .sheet-8 {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-9 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value-4 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .value-3 {
+  position: relative;
+  margin-bottom: 3.5px;
+  padding: 1px 18.1px 6.9px 18.1px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-44 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  margin: 0 19.8px;
+  align-self: flex-start;
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .pointer-4 {
+  position: absolute;
+  right: 186.4px;
+  bottom: 74.9px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .sheet-10 {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-11 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value-5 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .value-4 {
+  position: relative;
+  margin-bottom: 3.5px;
+  padding: 1px 18.1px 6.9px 18.1px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-45 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  margin: 0 19.8px;
+  align-self: flex-start;
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .pointer-5 {
+  position: absolute;
+  top: 60.5px;
+  right: 65.6px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .sheet-12 {
+  opacity: 0.3;
+  filter: blur(10px);
+  position: absolute;
+  top: 9.4px;
+  right: 0px;
+  width: 43.3px;
+  height: 18.5px;
+}
+.dashboard .sheet-13 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 50px;
+  height: 27.9px;
+}
+.dashboard .pointer-value-6 {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: var(--caption-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--caption-2-font-weight, 400);
+  font-size: var(--caption-2-font-size, 14px);
+  letter-spacing: var(--caption-2-letter-spacing, 0.2px);
+  line-height: var(--caption-2-line-height, 1.429);
+  color: var(--black, #000000);
+}
+.dashboard .value-5 {
+  position: relative;
+  margin-bottom: 3.5px;
+  padding: 1px 18.1px 6.9px 18.1px;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .circle-pointer-46 {
+  box-shadow: 0px 1px 2px 0px rgba(55, 81, 255, 0.2);
+  border-radius: 5.5px;
+  background: var(--black, #000000);
+  margin: 0 19.8px;
+  align-self: flex-start;
+  width: 11.1px;
+  height: 11.1px;
+}
+.dashboard .pointer-6 {
+  position: absolute;
+  top: 106.7px;
+  right: 0px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .group-61 {
+  position: relative;
+  display: flex;
+  padding-right: 20.1px;
+  box-sizing: border-box;
+}
+.dashboard .your-statistics-section {
+  margin: 0 0 46.1px 2.6px;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  box-sizing: border-box;
+}
+.dashboard .lern-even-more {
+  margin-bottom: 12.9px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-2-font-weight, 400);
+  font-size: var(--h-2-font-size, 24px);
+  color: var(--black, #000000);
+}
+.dashboard .unlock-premium-features-only-for-999-per-month {
+  margin-bottom: 24.2px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: var(--b-1-font-family, 'Roboto');
+  font-weight: var(--b-1-font-weight, 400);
+  font-size: var(--b-1-font-size, 16px);
+  line-height: var(--b-1-line-height, 1.5);
+  color: var(--black, #000000);
+}
+.dashboard .go-premium {
+  overflow-wrap: break-word;
+  font-family: var(--button-font-family, 'Roboto');
+  font-weight: var(--button-font-weight, 700);
+  font-size: var(--button-font-size, 13px);
+  color: #FFFFFF;
+}
+.dashboard .container-9 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  align-self: flex-start;
+  padding: 12.6px 0 12.4px 0.9px;
+  width: 120px;
+  box-sizing: border-box;
+}
+.dashboard .container-17 {
+  margin-right: 54.9px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.dashboard .x-3026-idea-1 {
+  width: 125px;
+  height: 125px;
+}
+.dashboard .group-48 {
+  margin: 13.1px 0 15px 0;
+  display: flex;
+  width: 125px;
+  height: 125px;
+  box-sizing: border-box;
+}
+.dashboard .go-premium-banner {
+  border-radius: 14px;
+  background: #F5F5F7;
+  position: relative;
+  margin-right: 15.5px;
+  display: flex;
+  flex-direction: row;
+  padding: 24.1px 0 15.8px 23.7px;
+  width: 440px;
+  box-sizing: border-box;
+}
+.dashboard .container-31 {
+  margin: 28.2px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+.dashboard {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  padding: 24px 64.4px 0 32.3px;
+  width: 1440px;
+  box-sizing: border-box;
+}

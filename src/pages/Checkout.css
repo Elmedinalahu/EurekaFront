@@ -1,441 +1,193 @@
-.checkout .rectangle-34 {
-  border-radius: 8px;
-  position: absolute;
-  left: 555px;
-  top: 479px;
-  width: 139px;
-  height: 61px;
-}
-.checkout .rectangle-35 {
-  border-radius: 8px;
-  position: absolute;
-  top: 479px;
-  right: 586px;
-  width: 139px;
-  height: 61px;
-}
-.checkout .rectangle-5 {
-  opacity: 0.7;
-  filter: blur(30px);
-  border-radius: 24px;
-  background: var(--black, #000000);
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 81px;
-  height: 804px;
-}
-.checkout .e {
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 64px;
-  color: #FFFFFF;
-}
-.checkout .container-7 {
-  border-radius: 24px;
-  background: #000000;
-  position: relative;
-  display: flex;
-  padding: 15.6px 0 0 0.9px;
-  width: 132px;
-  height: 852px;
-  box-sizing: border-box;
-}
-.checkout .menu {
-  border-radius: 24px;
-  position: relative;
-  margin-right: 71.7px;
-  display: flex;
-  padding-bottom: 1.1px;
-  width: 132px;
-  height: 853.1px;
-  box-sizing: border-box;
-}
-.checkout .checkout-1 {
-  overflow-wrap: break-word;
-  font-family: var(--h-1-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-1-font-weight, 400);
-  font-size: var(--h-1-font-size, 36px);
-  color: var(--black, #000000);
-}
-.checkout .header {
-  margin-bottom: 15px;
-  display: flex;
-  align-self: flex-start;
-  box-sizing: border-box;
-}
-.checkout .fill-in-the-information-below-to-complete-the-checkout-process {
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: var(--b-1-font-family, 'Roboto');
-  font-weight: var(--b-1-font-weight, 400);
-  font-size: var(--b-1-font-size, 16px);
-  line-height: var(--b-1-line-height, 1.5);
-  color: #6E6161;
-}
-.checkout .line-145 {
-  background: #979797;
-  margin-bottom: 53px;
-  width: 685px;
-  height: 1px;
-}
-.checkout .billing-address {
-  margin-bottom: 24px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-2-font-weight, 400);
-  font-size: var(--h-2-font-size, 24px);
-  color: var(--black, #000000);
-}
-.checkout .billing-country {
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #6E6161;
-}
-.checkout .container-3 {
-  border-radius: 8px;
-  border: 2px solid #D9D9D9;
-  background: #FFFFFF;
-  position: relative;
-  margin-right: 20px;
-  padding: 19px 24px 18px 24px;
-  width: 299px;
-  box-sizing: border-box;
-}
-.checkout .billing-address-1 {
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #6E6161;
-}
-.checkout .container-4 {
-  border-radius: 8px;
-  background: #FFFFFF;
-  position: relative;
-  padding: 19px 19px 18px 19px;
-  width: 299px;
-  box-sizing: border-box;
-}
-.checkout .container-2 {
-  margin: 0 67px 38px 0;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.checkout .payment {
-  overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-2-font-weight, 400);
-  font-size: var(--h-2-font-size, 24px);
-  color: var(--black, #000000);
-}
-.checkout .courses-section-1 {
-  margin-bottom: 28px;
-  display: flex;
-  align-self: flex-start;
-  box-sizing: border-box;
-}
-.checkout .name-on-card {
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #6E6161;
-}
-.checkout .container {
-  border-radius: 8px;
-  border: 2px solid #D9D9D9;
-  background: #FFFFFF;
-  position: relative;
-  margin: 0 67px 24px 0;
-  padding: 19px 24px 18px 24px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.checkout .container-3 {
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #6E6161;
-}
-.checkout .container-13 {
-  border-radius: 8px;
-  border: 2px solid #D9D9D9;
-  background: #FFFFFF;
-  position: relative;
-  margin-right: 39px;
-  padding: 19px 24px 18px 24px;
-  width: 299px;
-  box-sizing: border-box;
-}
-.checkout .mm-yy {
-  margin: 19px 0 18px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #6E6161;
-}
-.checkout .container-6 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.checkout .cvc {
-  margin: 19px 0 18px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #6E6161;
-}
-.checkout .container-8 {
-  margin-bottom: 41px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-start;
-  width: 531.8px;
-  box-sizing: border-box;
-}
-.checkout .order-details {
-  position: relative;
-  overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-2-font-weight, 400);
-  font-size: var(--h-2-font-size, 24px);
-  color: var(--black, #000000);
-}
-.checkout .order-details-1 {
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  translate: -50% 0;
-  overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-2-font-weight, 400);
-  font-size: var(--h-2-font-size, 24px);
-  color: var(--black, #000000);
-}
-.checkout .courses-section {
-  position: relative;
-  margin-bottom: 25px;
-  display: flex;
-  align-self: flex-start;
-  box-sizing: border-box;
-}
-.checkout .container-4 {
-  background: url('assets/images/Image1.jpeg') 50% / cover no-repeat;
-  width: 86px;
-  height: 53px;
-}
-.checkout .imgacademy-15 {
-  border-radius: 10px;
-  margin-right: 15px;
-  display: flex;
-  width: 86px;
-  height: 53px;
-  box-sizing: border-box;
-}
-.checkout .ionic-react-mobile-development-with-ionic-5 {
-  margin-bottom: 7px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.checkout .by-aleandro-vela {
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 13px;
-  color: var(--black, #000000);
-}
-.checkout .container-11 {
-  margin: 1px 0 11px 0;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.checkout .my-course {
-  border-radius: 10px;
-  margin-top: 1px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.checkout .container {
-  margin-bottom: 35px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.checkout .container-1 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-start;
-  width: 615.7px;
-  box-sizing: border-box;
-}
-.checkout .container-10 {
-  position: relative;
-  margin: 28px 31px 189.1px 0;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.checkout .label-text {
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 1.111;
-  text-transform: capitalize;
-  color: var(--white, #FFFFFF);
-}
-.checkout .group-67 {
-  border-radius: 8px;
-  background: #000000;
-  position: relative;
-  margin-bottom: 61px;
-  display: flex;
-  padding: 13.3px 1px 11.8px 0;
-  width: 114px;
-  box-sizing: border-box;
-}
-.checkout .summary {
-  margin-bottom: 26px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-2-font-weight, 400);
-  font-size: var(--h-2-font-size, 24px);
-  color: var(--black, #000000);
-}
-.checkout .original-price {
-  margin: 0 12px 5px 0;
-  display: inline-block;
-  width: 272px;
-  overflow-wrap: break-word;
-  font-family: var(--b-1-font-family, 'Roboto');
-  font-weight: var(--b-1-font-weight, 400);
-  font-size: var(--b-1-font-size, 16px);
-  line-height: var(--b-1-line-height, 1.5);
-  color: var(--black, #000000);
-}
-.checkout .container-1 {
-  margin-top: 5px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: var(--b-1-font-family, 'Roboto');
-  font-weight: var(--b-1-font-weight, 400);
-  font-size: var(--b-1-font-size, 16px);
-  line-height: var(--b-1-line-height, 1.5);
-  color: var(--black, #000000);
-}
-.checkout .container-9 {
-  margin-bottom: 6px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-start;
-  width: 333.2px;
-  box-sizing: border-box;
-}
-.checkout .line-146 {
-  background: #979797;
-  margin-bottom: 8px;
-  width: 371px;
-  height: 1px;
-}
-.checkout .total {
-  margin-right: 10.5px;
-  width: 273.5px;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 18px;
-  color: #000000;
-}
-.checkout .container-2 {
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 18px;
-  color: var(--black, #000000);
-}
-.checkout .container-5 {
-  margin-bottom: 39.5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-start;
-  width: 333.2px;
-  box-sizing: border-box;
-}
-.checkout .complete-checkout {
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 20px;
-  color: #FFFFFF;
-}
-.checkout .container-14 {
-  border-radius: 8px;
-  background: #000000;
-  position: relative;
-  display: flex;
-  padding: 14.5px 38.6px 23.5px 0;
-  width: 371px;
-  box-sizing: border-box;
-}
-.checkout .navigation {
-  border-radius: 8px;
-  background: #F5F5F7;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  padding: 31px 17px 346.5px 32px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.checkout .container-12 {
-  position: relative;
-  margin: 26px 0 124.1px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  box-sizing: border-box;
-}
+/* Checkout.css */
 .checkout {
-  background: #FFFFFF;
   display: flex;
-  flex-direction: row;
-  padding: 24px 68px 22.9px 32.3px;
-  width: 1440px;
-  box-sizing: border-box;
+  padding: 20px;
+  background-color: #fff;
+  height: 100vh;
+  align-items: flex-start;
+}
+
+.menu-checkout {
+  width: 80px;
+  background-color: #000;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start; /* Align items at the top */
+  color: #fff;
+  border-radius: 12px; /* Added border-radius for more rounded corners */
+  padding-top: 20px; /* Add padding to give space from the top */
+}
+
+.e-checkout {
+  font-size: 30px; /* Reduced font size */
+  font-weight: bold;
+}
+
+.container-checkout-10 {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.header-checkout {
+  font-size: 20px; /* Reduced font size */
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.fill-in-the-information-below-to-complete-the-process-checkout {
+  color: #888;
+  font-size: 12px; /* Reduced font size */
+  margin-bottom: 10px;
+}
+
+.line-checkout-145 {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.billing-address-checkout, .payment-checkout, .order-details-checkout {
+  font-size: 16px; /* Reduced font size */
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.container-checkout-2 {
+  display: flex;
+  flex-direction: row; /* Display elements in a row */
+  margin: 10px 0;
+}
+
+.container-checkout-3, .container-checkout-4 {
+  flex: 1; /* Ensure elements take up equal space */
+  margin: 0 5px; /* Add margin to separate elements */
+  margin-bottom: 20px;
+}
+
+.billing-country-checkout, .billing-address-checkout-1, .name-on-card-checkout, .container-checkout-3, .mm-yy-checkout, .cvc-checkout, .original-price-checkout, .total-checkout, .label-text-checkout {
+  font-size: 12px; /* Reduced font size */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+}
+
+/* Updated styles for the input fields */
+.billing-country-checkout, .billing-address-checkout-1, .name-on-card-checkout, .container-checkout-3 {
+  width: 95%;
+  display: block;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  color: #888;
+}
+
+.card-number-container-checkout {
+  display: flex;
+  justify-content: space-between; /* Ensure elements are spaced out evenly */
+  margin-top: 20px; /* Add space between Name on card and card number */
+}
+
+.card-number-container-checkout .container-checkout-3 {
+  width: 32%; /* Adjust width to fit within container */
+  text-align: center;
+}
+
+.my-course-checkout {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.imgacademy-checkout-15 .container-checkout-4 {
+  width: 80px;
+  height: 80px;
+  background-color: #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.ionic-react-mobile-development-with-ionic-checkout-5 {
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+}
+
+.by-aleandro-vela-checkout {
+  font-size: 12px; /* Reduced font size */
+  color: #888;
+}
+
+.container-checkout-12 {
+  width: 300px;
+  margin-left: 20px;
+}
+
+.group-checkout-67 {
+  background-color: #000; /* Black background for Cancel button */
+  color: #fff; /* White text color for Cancel button */
+  padding: 10px 20px; /* Padding for better button appearance */
+  text-align: center; /* Center text inside the button */
+  border-radius: 12px; /* Rounded corners */
+  cursor: pointer; /* Cursor pointer for hover effect */
+  margin-bottom: 20px; /* Space below Cancel button */
+  align-self: flex-end; /* Move to the right */
+  width: auto; /* Adjust width to fit button size */
+  border: none; /* Ensure no border is applied */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+  display: inline-block; /* Ensure it displays as a block element */
+  line-height: normal; /* Reset line-height */
+}
+
+.navigation-checkout {
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 12px; /* Increased border-radius for more rounded corners */
+}
+
+.line-checkout-146 {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0;
+}
+
+.container-checkout-5, .container-checkout-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container-checkout-14 {
+  background-color: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 12px; /* Increased border-radius for more rounded corners */
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.complete-checkout {
+  font-weight: bold;
+}
+
+.label-text-checkout {
+  font-weight: bold;
+}
+
+.container-checkout-7 {
+  margin-top: 20px; /* Move the E element to the top */
+}
+
+.card-number-container-checkout {
+  display: flex;
+  justify-content: space-between; /* Ensure elements are spaced out evenly */
+  margin-top: 20px; /* Add space between Name on card and card number */
+}
+
+.name-on-card-checkout {
+  margin-top: 20px; /* Add space between Payment and Name on Card */
 }

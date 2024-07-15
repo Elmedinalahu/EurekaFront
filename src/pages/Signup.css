@@ -14,6 +14,16 @@
   width: 620px;
   height: 785px;
   padding: 20px; /* Adjust padding to fit content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup .container-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
 }
 
 .signup .rectangle-41 {
@@ -69,6 +79,8 @@
   margin: 4.5px 12px 14.5px 0;
   width: 25px;
   height: 25px;
+  margin-left: 50px;
+  margin-top: 16px;
 }
 
 .signup .by-registering-an-account-you-agree-to-our-terms-conditions-and-privacy {
@@ -77,8 +89,8 @@
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
+  text-align: left; /* Center text within the element */
 }
-
 .signup .container {
   margin: 0 9px 48.5px 9px;
   display: flex;
@@ -106,4 +118,20 @@
   padding: 12px 0 11px 0;
   width: 456px;
   box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
+}
+
+.signup .already-have-an-account {
+  margin-top: 20px; /* Adjust margin as needed */
+  font-family: 'Inter';
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.signup .already-have-an-account a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  font-weight: 400;
 }

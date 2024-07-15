@@ -41,6 +41,9 @@ export default function Signup() {
               Register
             </span>
           </div>
+          <div className="already-have-an-account">
+            Already have an account? <a href="/signin">Sign In</a>
+          </div>
         </div>
       </div>
     </div>

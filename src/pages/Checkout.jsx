@@ -1,133 +1,82 @@
-import './Checkout.css'
+import './Checkout.css';
 
 export default function Checkout() {
   return (
     <div className="checkout">
-      <img className="rectangle-34" src="assets/vectors/Unknown" />
-      <img className="rectangle-35" src="assets/vectors/Unknown" />
-      <div className="menu">
-        <div className="rectangle-5">
-        </div>
-        <div className="container-7">
-          <span className="e">
-          E.
-          </span>
+      <div className="menu-checkout">
+        <div className="rectangle-checkout-5"></div>
+        <div className="container-checkout-7">
+          <span className="e-checkout">E.</span>
         </div>
       </div>
-      <div className="container-10">
-        <div className="header">
-          <span className="checkout-1">
-          Checkout
-          </span>
+      <div className="container-checkout-10">
+        <div className="header-checkout">
+          <span className="checkout-checkout-1">Checkout</span>
         </div>
         <span className="fill-in-the-information-below-to-complete-the-checkout-process">
-        Fill in the information below to complete the checkout process.
+          Fill in the information below to complete the checkout process.
         </span>
-        <div className="line-145">
-        </div>
-        <div className="billing-address">
-        Billing address
-        </div>
-        <div className="container-2">
-          <div className="container-3">
-            <span className="billing-country">
+        <div className="line-checkout-145"></div>
+        <div className="billing-address-checkout">Billing address</div>
+        <div className="container-checkout-2">
+          <div className="billing-country-checkout">
             Billing Country...
-            </span>
           </div>
-          <div className="container-4">
-            <span className="billing-address-1">
+          <div className="billing-address-checkout-1">
             Billing Address...
-            </span>
           </div>
         </div>
-        <div className="courses-section-1">
-          <span className="payment">
-          Payment 
-          </span>
-        </div>
-        <div className="container">
-          <span className="name-on-card">
-          Name on card
-          </span>
-        </div>
-        <div className="container-8">
-          <div className="container-6">
-            <div className="container-13">
-              <span className="container-3">
-              1234 1234 1234 1234
-              </span>
-            </div>
-            <div className="mm-yy">
-            MM/YY
-            </div>
-          </div>
-          <div className="cvc">
-          CVC
+        <div className="payment-checkout">Payment</div>
+        <div className="container-checkout-2">
+          <div className="name-on-card-checkout">
+            Name on card
           </div>
         </div>
-        <div className="courses-section">
-          <span className="order-details">
-          Order details
-          </span>
-          <span className="order-details-1">
-          Order details
-          </span>
-        </div>
-        <div className="container-1">
-          <div className="my-course">
-            <div className="imgacademy-15">
-              <div className="container-4">
+          <div className="container-8 card-number-container">
+          <div className="container-checkout-6">
+              <div className="container-checkout-13">
+            <span className="container-checkout-3">1234 1234 1234 1234</span>
+            <span className="container-checkout-3">MM/YY</span>
+            <span className="container-checkout-3">CVC</span>
               </div>
+          </div>
+        </div>
+        <div className="order-details-checkout">Order details</div>
+        <div className="container-checkout-1">
+          <div className="my-course-checkout">
+            <div className="imgacademy-checkout-15">
+              <div className="container-checkout-4"></div>
             </div>
-            <div className="container-11">
-              <div className="ionic-react-mobile-development-with-ionic-5">
-              Ionic React: Mobile Development with Ionic 5...
+            <div className="container-checkout-11">
+              <div className="ionic-react-mobile-development-with-ionic-checkout-5">
+                Ionic React: Mobile Development with Ionic 5...
               </div>
-              <span className="by-aleandro-vela">
-              By Aleandro Vela
-              </span>
+              <span className="by-aleandro-vela-checkout">By Aleandro Vela</span>
             </div>
           </div>
-          <div className="container">
-          €19.99
-          </div>
+          <div className="container-checkout">€19.99</div>
         </div>
       </div>
-      <div className="container-12">
-        <div className="group-67">
-          <span className="label-text">
-          Cancel
-          </span>
+      <div className="container-checkout-12">
+        <div className="group-checkout-67">
+          <span>Cancel</span>
         </div>
-        <div className="navigation">
-          <div className="summary">
-          Summary
+        <div className="navigation-checkout">
+          <div className="summary-checkout">Summary</div>
+          <div className="container-checkout-5">
+            <span>Original Price:</span>
+            <span className="container-checkout-2">€19.99</span>
           </div>
-          <div className="container-9">
-            <div className="original-price">
-            Original Price:                                                     
-            </div>
-            <div className="container-1">
-            €19.99
-            </div>
+          <div className="line-checkout-146"></div>
+          <div className="container-checkout-5">
+            <span>Total:</span>
+            <span className="container-checkout-2">€19.99</span>
           </div>
-          <div className="line-146">
-          </div>
-          <div className="container-5">
-            <span className="total">
-            Total:
-            </span>
-            <span className="container-2">
-            €19.99
-            </span>
-          </div>
-          <div className="container-14">
-            <span className="complete-checkout">
-            Complete Checkout
-            </span>
+          <div className="container-checkout-14">
+            <span className="complete-checkout">Complete Checkout</span>
           </div>
         </div>
       </div>
     </div>
-  )
+  );
 }

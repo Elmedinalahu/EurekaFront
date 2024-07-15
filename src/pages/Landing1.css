@@ -1,3 +1,10 @@
+.body {
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 1200px;
+}
+
 .landing-1 .e {
   margin: 0 35px 10px 0;
   display: inline-block;
@@ -25,90 +32,37 @@
   width: 28px;
   height: 25px;
 }
-.landing-1 .login-1 {
+.landing-1 .icon {
   border-radius: 12px;
   background: rgba(31, 87, 170, 0.07);
   position: relative;
-  margin-right: 18px;
+  margin-left: 18px;
   display: flex;
   padding: 19px 18px 20px 18px;
   width: 64px;
   height: 64px;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
-.landing-1 .basket {
-  width: 32px;
-  height: 32px;
-}
-.landing-1 .login {
-  border-radius: 12px;
-  background: rgba(31, 87, 170, 0.07);
-  position: relative;
-  margin-right: 18px;
-  display: flex;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-}
-.landing-1 .primary {
-  width: 21px;
-  height: 24px;
-}
-.landing-1 .bell {
-  display: flex;
-  width: 21px;
-  height: 24px;
-  box-sizing: border-box;
-}
-.landing-1 .notification {
-  border-radius: 12px;
-  background: rgba(31, 87, 170, 0.07);
-  position: relative;
-  margin-right: 18px;
-  display: flex;
-  padding: 20px 0 20px 1px;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-}
-.landing-1 .primary-1 {
-  width: 24px;
-  height: 21px;
-}
-.landing-1 .arrow-right-to-bracket {
-  display: flex;
-  width: 24px;
-  height: 21px;
-  box-sizing: border-box;
-}
-.landing-1 .login-2 {
-  border-radius: 12px;
-  background: rgba(31, 87, 170, 0.07);
-  position: relative;
-  display: flex;
-  padding: 21.5px 20px;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-}
+
 .landing-1 .nav-right {
   margin-top: 16px;
   display: flex;
   flex-direction: row;
+  justify-content: left;
+
   box-sizing: border-box;
 }
 .landing-1 .navbar {
-  margin: 0 0 16px 2px;
+  margin: 0 0 30px 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1520px;
   box-sizing: border-box;
 }
 .landing-1 .line-145 {
   margin: 0 0 25px 4px;
-  width: 1522px;
   height: 0px;
 }
 .landing-1 .python-1 {
@@ -124,10 +78,11 @@
   background: #F6F6F6;
   margin: 1px 23px 0 0;
   display: flex;
-  padding: 23px 0;
+  padding: 23px 23px;
   width: 159px;
-  height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-2 {
   overflow-wrap: break-word;
@@ -146,6 +101,8 @@
   width: 130px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python {
   overflow-wrap: break-word;
@@ -163,6 +120,8 @@
   width: 221px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .categories {
   margin: 0 23px 1px 0;
@@ -170,6 +129,7 @@
   width: 221px;
   height: fit-content;
   box-sizing: border-box;
+
 }
 .landing-1 .python-3 {
   overflow-wrap: break-word;
@@ -188,6 +148,8 @@
   width: 114px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-4 {
   overflow-wrap: break-word;
@@ -206,6 +168,8 @@
   width: 137px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-5 {
   overflow-wrap: break-word;
@@ -224,6 +188,8 @@
   width: 125px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-6 {
   overflow-wrap: break-word;
@@ -242,6 +208,8 @@
   width: 215px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-7 {
   overflow-wrap: break-word;
@@ -257,9 +225,11 @@
   margin: 1px 37.5px 0 0;
   display: flex;
   padding: 23px 0;
-  width: 182px;
+  width: 183px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .icon-10 {
   overflow-wrap: break-word;
@@ -275,18 +245,16 @@
   box-sizing: border-box;
 }
 .landing-1 .top-categories {
-  margin: 0 22.5px 127px 0;
+  margin: 0 0 50px 0;
   display: flex;
   flex-direction: row;
-  width: fit-content;
   box-sizing: border-box;
 }
 .landing-1 .rectangle-46 {
   border-radius: 10px;
   background: url('assets/images/Rectangle461.png') 50% / cover no-repeat;
-  margin: 0 0 208px 4px;
-  width: 1522px;
-  height: 606px;
+  height: 550px;
+  width: 1200px;
 }
 .landing-1 .arrows {
   transform: rotate(18.492deg);
@@ -2191,6 +2159,14 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 5px 62px 1px;
-  width: 1920px;
   box-sizing: border-box;
 }
+html,body {
+	margin: 0px;
+	height: 100%;
+	width: 50%;
+	left: 0px;
+	top: 0px;
+    }
+
+

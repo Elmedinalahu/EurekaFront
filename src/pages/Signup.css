@@ -1,3 +1,11 @@
+.signup {
+  background: #FFFFFF;
+  display: flex;
+  padding: 142px 143.8px 195px 143.8px;
+  width: 1440px;
+  box-sizing: border-box;
+}
+
 .signup .rectangle-40 {
   background: #000000;
   position: absolute;
@@ -5,7 +13,19 @@
   right: 100px;
   width: 620px;
   height: 785px;
+  padding: 20px; /* Adjust padding to fit content */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.signup .container-5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Adjust width as needed */
+}
+
 .signup .rectangle-41 {
   background: #000000;
   position: absolute;
@@ -13,10 +33,11 @@
   right: 100px;
   width: 620px;
   height: 785px;
+  padding: 20px; /* Adjust padding to fit content */
 }
+
 .signup .unlock-your-potential-join-now {
   backdrop-filter: blur(2px);
-  border: 1px solid rgba(255, 255, 255, 0.28);
   margin: 0 0 46px 2px;
   display: inline-block;
   overflow-wrap: break-word;
@@ -25,57 +46,10 @@
   font-size: 50px;
   color: #FFFFFF;
 }
-.signup .first-name {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 25px;
-  color: rgba(80, 104, 161, 0.8);
-}
-.signup .container-6 {
-  box-shadow: 0px 0px 4px 2px rgba(80, 104, 161, 0.5);
-  border-radius: 10px;
-  background: #FFFFFF;
-  position: relative;
-  margin: 0 40.2px 20px 0;
-  padding: 12px 34px 11px 34px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.signup .last-name {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 25px;
-  color: rgba(80, 104, 161, 0.8);
-}
-.signup .container-4 {
-  box-shadow: 0px 0px 4px 2px rgba(80, 104, 161, 0.5);
-  border-radius: 10px;
-  background: #FFFFFF;
-  position: relative;
-  margin: 0 40.2px 17px 0;
-  padding: 12px 34px 11px 34px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.signup .email {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 25px;
-  color: rgba(80, 104, 161, 0.8);
-}
-.signup .container-1 {
-  box-shadow: 0px 0px 4px 2px rgba(80, 104, 161, 0.5);
-  border-radius: 10px;
-  background: #FFFFFF;
-  position: relative;
-  margin: 0 40.2px 17px 0;
-  padding: 12px 34px 11px 34px;
-  width: fit-content;
-  box-sizing: border-box;
-}
+
+.signup .first-name,
+.signup .last-name,
+.signup .email,
 .signup .password {
   overflow-wrap: break-word;
   font-family: 'Inter';
@@ -83,16 +57,21 @@
   font-size: 25px;
   color: rgba(80, 104, 161, 0.8);
 }
+
+.signup .container-6,
+.signup .container-4,
+.signup .container-1,
 .signup .container-2 {
   box-shadow: 0px 0px 4px 2px rgba(80, 104, 161, 0.5);
   border-radius: 10px;
   background: #FFFFFF;
   position: relative;
-  margin: 0 40.2px 9.5px 0;
+  margin-bottom: 20px; /* Adjust margin as needed */
   padding: 12px 34px 11px 34px;
-  width: fit-content;
+  width: 500px; /* Set a fixed width */
   box-sizing: border-box;
 }
+
 .signup .rectangle-38 {
   border-radius: 5px;
   border: 1px solid #2E4989;
@@ -100,34 +79,17 @@
   margin: 4.5px 12px 14.5px 0;
   width: 25px;
   height: 25px;
+  margin-left: 50px;
+  margin-top: 16px;
 }
-.by-registering-an-account-you-agree-to-our-terms-conditions-and-privacy {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #FFFFFF;
-}
+
 .signup .by-registering-an-account-you-agree-to-our-terms-conditions-and-privacy {
   overflow-wrap: break-word;
   font-family: 'Inter';
   font-weight: 400;
   font-size: 18px;
   color: #FFFFFF;
-}
-.by-registering-an-account-you-agree-to-our-terms-conditions-and-privacy-sub6 {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #FFFFFF;
-}
-.by-registering-an-account-you-agree-to-our-terms-conditions-and-privacy-sub5 {
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.333;
-  color: #FFFFFF;
+  text-align: left; /* Center text within the element */
 }
 .signup .container {
   margin: 0 9px 48.5px 9px;
@@ -137,6 +99,7 @@
   width: fit-content;
   box-sizing: border-box;
 }
+
 .signup .register {
   overflow-wrap: break-word;
   font-family: 'Inter';
@@ -144,6 +107,7 @@
   font-size: 25px;
   color: #FFFFFF;
 }
+
 .signup .container-3 {
   box-shadow: 0px 0px 4px 2px rgba(80, 104, 161, 0.5);
   border-radius: 10px;
@@ -154,49 +118,20 @@
   padding: 12px 0 11px 0;
   width: 456px;
   box-sizing: border-box;
-}
-.signup .container-5 {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.already-have-an-account-sign-in {
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.333;
-  color: #FFFFFF;
-}
-.signup .already-have-an-account-sign-in {
-  position: absolute;
-  right: 258.5px;
-  bottom: 153px;
   text-align: center;
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 20px;
-  color: #FFFFFF;
+  justify-content: center;
 }
-.already-have-an-account-sign-in-sub14 {
+
+.signup .already-have-an-account {
+  margin-top: 20px; /* Adjust margin as needed */
   font-family: 'Inter';
+  font-size: 18px;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.signup .already-have-an-account a {
+  color: #FFFFFF;
+  text-decoration: underline;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 1.333;
-  color: #FFFFFF;
-}
-.already-have-an-account-sign-in-sub13 {
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.333;
-  color: #FFFFFF;
-}
-.signup {
-  background: #FFFFFF;
-  display: flex;
-  padding: 142px 143.8px 195px 143.8px;
-  width: 1440px;
-  box-sizing: border-box;
 }

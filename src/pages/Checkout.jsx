@@ -1,133 +1,68 @@
-import './Checkout.css'
+import './Checkout.css';
 
 export default function Checkout() {
   return (
-    <div className="checkout">
-      <img className="rectangle-34" src="assets/vectors/Unknown" />
-      <img className="rectangle-35" src="assets/vectors/Unknown" />
-      <div className="menu">
-        <div className="rectangle-5">
-        </div>
-        <div className="container-7">
-          <span className="e">
-          E.
-          </span>
+    <div className="checkout-container">
+      {/* Sidebar section */}
+      <div className="sidebar">
+        <div className="logo-container">
+          <span className="logo-text">E.</span>
         </div>
       </div>
-      <div className="container-10">
-        <div className="header">
-          <span className="checkout-1">
-          Checkout
-          </span>
+
+      {/* Main form section */}
+      <div className="form-section">
+        <h1 className="checkout-title">Checkout</h1>
+        <p className="description">Fill in the information below to complete the checkout process.</p>
+        <hr className="divider" />
+
+        {/* Billing Address */}
+        <h2 className="section-title">Billing address</h2>
+        <div className="billing-address-fields">
+          <input type="text" placeholder="Billing Country..." className="input-field" />
+          <input type="text" placeholder="Billing Address..." className="input-field" />
         </div>
-        <span className="fill-in-the-information-below-to-complete-the-checkout-process">
-        Fill in the information below to complete the checkout process.
-        </span>
-        <div className="line-145">
-        </div>
-        <div className="billing-address">
-        Billing address
-        </div>
-        <div className="container-2">
-          <div className="container-3">
-            <span className="billing-country">
-            Billing Country...
-            </span>
-          </div>
-          <div className="container-4">
-            <span className="billing-address-1">
-            Billing Address...
-            </span>
+
+        {/* Payment Section */}
+        <h2 className="section-title">Payment</h2>
+        <div className="payment-fields">
+          <input type="text" placeholder="Name on card" className="input-field" />
+          <div className="card-details">
+            <input type="text" placeholder="1234 1234 1234 1234" className="input-field" />
+            <input type="text" placeholder="MM/YY" className="input-field small" />
+            <input type="text" placeholder="CVC" className="input-field small" />
           </div>
         </div>
-        <div className="courses-section-1">
-          <span className="payment">
-          Payment 
-          </span>
-        </div>
-        <div className="container">
-          <span className="name-on-card">
-          Name on card
-          </span>
-        </div>
-        <div className="container-8">
-          <div className="container-6">
-            <div className="container-13">
-              <span className="container-3">
-              1234 1234 1234 1234
-              </span>
+
+        {/* Order Details */}
+        <h2 className="section-title">Order details</h2>
+        <div className="order-summary">
+          <div className="order-item">
+            <img src="assets/course-thumbnail.jpg" alt="Course" className="course-image" />
+            <div className="course-info">
+              <p className="course-title">Ionic React: Mobile Development with Ionic 5...</p>
+              <p className="course-author">By Aleandro Vela</p>
             </div>
-            <div className="mm-yy">
-            MM/YY
-            </div>
-          </div>
-          <div className="cvc">
-          CVC
-          </div>
-        </div>
-        <div className="courses-section">
-          <span className="order-details">
-          Order details
-          </span>
-          <span className="order-details-1">
-          Order details
-          </span>
-        </div>
-        <div className="container-1">
-          <div className="my-course">
-            <div className="imgacademy-15">
-              <div className="container-4">
-              </div>
-            </div>
-            <div className="container-11">
-              <div className="ionic-react-mobile-development-with-ionic-5">
-              Ionic React: Mobile Development with Ionic 5...
-              </div>
-              <span className="by-aleandro-vela">
-              By Aleandro Vela
-              </span>
-            </div>
-          </div>
-          <div className="container">
-          €19.99
+            <div className="course-price">€19.99</div>
           </div>
         </div>
       </div>
-      <div className="container-12">
-        <div className="group-67">
-          <span className="label-text">
-          Cancel
-          </span>
+
+      {/* Summary section */}
+      <div className="summary-section">
+        <button className="cancel-button">Cancel</button>
+        <h2 className="summary-title">Summary</h2>
+        <div className="price-details">
+          <p>Original Price:</p>
+          <p>€19.99</p>
         </div>
-        <div className="navigation">
-          <div className="summary">
-          Summary
-          </div>
-          <div className="container-9">
-            <div className="original-price">
-            Original Price:                                                     
-            </div>
-            <div className="container-1">
-            €19.99
-            </div>
-          </div>
-          <div className="line-146">
-          </div>
-          <div className="container-5">
-            <span className="total">
-            Total:
-            </span>
-            <span className="container-2">
-            €19.99
-            </span>
-          </div>
-          <div className="container-14">
-            <span className="complete-checkout">
-            Complete Checkout
-            </span>
-          </div>
+        <hr />
+        <div className="price-details total">
+          <p>Total:</p>
+          <p>€19.99</p>
         </div>
+        <button className="checkout-button">Complete Checkout</button>
       </div>
     </div>
-  )
+  );
 }

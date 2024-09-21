@@ -34,11 +34,12 @@ export default function Checkout() {
           </div>
         </div>
 
+
         {/* Order Details */}
         <h2 className="section-title">Order details</h2>
         <div className="order-summary">
           <div className="order-item">
-            <img src="assets/course-thumbnail.jpg" alt="Course" className="course-image" />
+            <img src="assets/images/Image1.jpeg" alt="" className="course-image" />
             <div className="course-info">
               <p className="course-title">Ionic React: Mobile Development with Ionic 5...</p>
               <p className="course-author">By Aleandro Vela</p>
@@ -50,7 +51,9 @@ export default function Checkout() {
 
       {/* Summary section */}
       <div className="summary-section">
+        {/* Pozicionimi i butonit Cancel jashtë pjesës së përmbledhjes (summary) */}
         <button className="cancel-button">Cancel</button>
+
         <h2 className="summary-title">Summary</h2>
         <div className="price-details">
           <p>Original Price:</p>

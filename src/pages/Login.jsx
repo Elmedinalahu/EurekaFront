@@ -5,7 +5,7 @@ import LoginForm from '../components/LoginForm';
 
 const LoginPage = () => {
   const navigate = useNavigate();
-
+  
   const handleLogin = async (email, password) => {
     try {
       const { token } = await login(email, password);

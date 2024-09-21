@@ -50,9 +50,12 @@
   padding: 15px 27.2px;
 }
 
-.email::placeholder {
-  color: #aaa;
+.login .email::placeholder,
+.login .password::placeholder {
+  color: #777;
+  opacity: 1;  /* Ensures placeholder visibility */
 }
+
 
 .login .container-1,
 .login .container-2 {

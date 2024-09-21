@@ -53,6 +53,7 @@ const LoginForm = ({ onSubmit }) => {
                 value={email}
                 onChange={handleEmailChange}
                 required
+                
               />
             </div>
             <div className="container-2">

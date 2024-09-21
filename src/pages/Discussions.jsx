@@ -203,6 +203,5 @@ export default function Discussions() {
           </div>
         </div>
       </div>
-    </div>
   );
 }

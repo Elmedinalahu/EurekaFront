@@ -1,5 +1,4 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './index.css';
 import F12Main from './F12Main';
@@ -13,19 +12,19 @@ import Landing from './pages/Landing';
 import Landing1 from './pages/Landing1';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
-
+import PrivateRoute from './components/PrivateRoute'; // Import PrivateRoute
 
 const router = createBrowserRouter([
   { path: '/', element: <F12Main /> },
-{ path: '/Cart', element: <Cart /> },
-{ path: '/Cart1', element: <Cart1 /> },
-{ path: '/Checkout', element: <Checkout /> },
-{ path: '/Dashboard', element: <Dashboard /> },
-{ path: '/Discussions', element: <Discussions /> },
-{ path: '/Landing', element: <Landing /> },
-{ path: '/Landing1', element: <Landing1 /> },
-{ path: '/Login', element: <Login /> },
-{ path: '/Signup', element: <Signup /> },
+  { path: '/Cart', element: <Cart /> },
+  { path: '/Cart1', element: <Cart1 /> },
+  { path: '/Checkout', element: <Checkout /> },
+  { path: '/Dashboard', element: <PrivateRoute element={<Dashboard />} /> }, // Protect Dashboard route
+  { path: '/Discussions', element: <PrivateRoute element={<Discussions />} /> }, // Protect Discussions route
+  { path: '/Landing', element: <Landing /> },
+  { path: '/Landing1', element: <Landing1 /> },
+  { path: '/Login', element: <Login /> },
+  { path: '/Signup', element: <Signup /> },
 ]);
 
 export default function App() {

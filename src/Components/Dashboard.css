@@ -1,0 +1,14 @@
+/* src/components/Dashboard.css */
+.dashboard-container {
+    display: flex;
+  }
+  
+  .main-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .course-list {
+    margin-top: 20px;
+  }
+  

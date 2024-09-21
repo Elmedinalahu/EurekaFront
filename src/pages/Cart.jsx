@@ -1,4 +1,6 @@
 import './Cart.css'
+import React, { useState } from 'react';
+import { FaHome, FaShoppingCart, FaUser, FaCog } from 'react-icons/fa';
 
 export default function Cart() {
   return (
@@ -10,22 +12,22 @@ export default function Cart() {
           <div className="e">
           E.
           </div>
-          <img className="vector-7" src="assets/vectors/Unknown" />
-          <img className="vector-13" src="assets/vectors/Unknown" />
+          <img className="vector-7" src="/assets/images/Home.png" />
+          <img className="vector-13"  src="/assets/images/Hat.png" />
           <div className="group-6">
             <div className="group">
-              <img className="vector-11" src="assets/vectors/Unknown" />
+              <img className="vector-11" src="assets\images\Profile.png" />
             </div>
-            <div className="group-1">
-              <img className="vector-12" src="assets/vectors/Unknown" />
-            </div>
+            {/* <div className="group-1">
+              <img className="vector-12" src="assets\images\Message.png" />
+            </div> */}
           </div>
           <div className="group-3">
-            <img className="vector-10" src="assets/vectors/Unknown" />
+            <img className="vector-10"  src="assets\images\Message.png"/>
           </div>
-          <img className="group-2" src="assets/vectors/Unknown" />
+          <img className="group-2" src="assets\images\Settings.png"  />
           <div className="group-7">
-            <img className="vector-14" src="assets/vectors/Unknown" />
+            <img className="vector-14" src="assets\images\Logout.png"/>
           </div>
         </div>
       </div>

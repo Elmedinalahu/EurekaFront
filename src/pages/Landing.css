@@ -1,9 +1,4 @@
-.body {
-  margin-top: 20px;
-  margin-left: 150px;
-  margin-right: 150px;
-  width: 1200px;
-}
+
 
 .landing-1 .e {
   margin: 0 35px 10px 0;
@@ -45,9 +40,8 @@
 }
 .landing-1 .nav-links{
   display: flex;
-  width: 1000px;
-align-items: center;
-justify-content: center;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .nav-right {
   display: flex;

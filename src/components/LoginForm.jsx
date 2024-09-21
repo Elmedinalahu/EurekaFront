@@ -1,16 +1,16 @@
 import { useState } from 'react';
 import "../pages/Login.css";
 
-const LoginForm = ({ onSubmit }) => {
+const LoginForm = ({ onSubmit, errorMessage }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(''); // Track error state
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    
     // Clear previous errors
-    setError('');
+    // You might want to reset error messages on form submission
+    // setError(''); 
 
     // Perform simple validation
     if (!email || !password) {
@@ -19,21 +19,15 @@ const LoginForm = ({ onSubmit }) => {
     }
 
     // Call the onSubmit function passed from the parent component (Login.js)
-    onSubmit(email, password).catch((err) => {
-      // Set error message if login fails
-      setError(err.message || 'Login failed. Please try again.');
-    });
+    onSubmit(email, password);
   };
 
-  // Reset error when user starts typing
   const handleEmailChange = (e) => {
     setEmail(e.target.value);
-    if (error) setError(''); // Reset error when user starts typing
   };
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-    if (error) setError('');
   };
 
   return (
@@ -53,7 +47,6 @@ const LoginForm = ({ onSubmit }) => {
                 value={email}
                 onChange={handleEmailChange}
                 required
-                
               />
             </div>
             <div className="container-2">
@@ -79,7 +72,7 @@ const LoginForm = ({ onSubmit }) => {
               <button type="submit" className="sign-in">Sign In</button>
             </div>
             {/* Display error message if there is an error */}
-            {error && <p className="error-message">{error}</p>}
+            {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div className="dont-have-an-account">
               Don't have an account? <a href="/signup">Register</a>
             </div>

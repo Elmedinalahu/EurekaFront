@@ -1,4 +1,4 @@
-import './Landing1.css'
+import './Landing1'
 import { CiHeart } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { GoBell } from "react-icons/go";

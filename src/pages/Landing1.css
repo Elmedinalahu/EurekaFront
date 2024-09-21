@@ -1,3 +1,10 @@
+.body {
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-right: 150px;
+  width: 1200px;
+}
+
 .landing-1 .e {
   margin: 0 35px 10px 0;
   display: inline-block;
@@ -25,90 +32,37 @@
   width: 28px;
   height: 25px;
 }
-.landing-1 .login-1 {
+.landing-1 .icon {
   border-radius: 12px;
   background: rgba(31, 87, 170, 0.07);
   position: relative;
-  margin-right: 18px;
+  margin-left: 18px;
   display: flex;
   padding: 19px 18px 20px 18px;
   width: 64px;
   height: 64px;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
-.landing-1 .basket {
-  width: 32px;
-  height: 32px;
-}
-.landing-1 .login {
-  border-radius: 12px;
-  background: rgba(31, 87, 170, 0.07);
-  position: relative;
-  margin-right: 18px;
-  display: flex;
-  padding: 16px;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-}
-.landing-1 .primary {
-  width: 21px;
-  height: 24px;
-}
-.landing-1 .bell {
-  display: flex;
-  width: 21px;
-  height: 24px;
-  box-sizing: border-box;
-}
-.landing-1 .notification {
-  border-radius: 12px;
-  background: rgba(31, 87, 170, 0.07);
-  position: relative;
-  margin-right: 18px;
-  display: flex;
-  padding: 20px 0 20px 1px;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-}
-.landing-1 .primary-1 {
-  width: 24px;
-  height: 21px;
-}
-.landing-1 .arrow-right-to-bracket {
-  display: flex;
-  width: 24px;
-  height: 21px;
-  box-sizing: border-box;
-}
-.landing-1 .login-2 {
-  border-radius: 12px;
-  background: rgba(31, 87, 170, 0.07);
-  position: relative;
-  display: flex;
-  padding: 21.5px 20px;
-  width: 64px;
-  height: 64px;
-  box-sizing: border-box;
-}
+
 .landing-1 .nav-right {
   margin-top: 16px;
   display: flex;
   flex-direction: row;
+  justify-content: left;
+
   box-sizing: border-box;
 }
 .landing-1 .navbar {
-  margin: 0 0 16px 2px;
+  margin: 0 0 30px 2px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 1520px;
   box-sizing: border-box;
 }
 .landing-1 .line-145 {
   margin: 0 0 25px 4px;
-  width: 1522px;
   height: 0px;
 }
 .landing-1 .python-1 {
@@ -124,10 +78,11 @@
   background: #F6F6F6;
   margin: 1px 23px 0 0;
   display: flex;
-  padding: 23px 0;
+  padding: 23px 23px;
   width: 159px;
-  height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-2 {
   overflow-wrap: break-word;
@@ -146,6 +101,8 @@
   width: 130px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python {
   overflow-wrap: break-word;
@@ -163,6 +120,8 @@
   width: 221px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .categories {
   margin: 0 23px 1px 0;
@@ -170,6 +129,7 @@
   width: 221px;
   height: fit-content;
   box-sizing: border-box;
+
 }
 .landing-1 .python-3 {
   overflow-wrap: break-word;
@@ -188,6 +148,8 @@
   width: 114px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-4 {
   overflow-wrap: break-word;
@@ -206,6 +168,8 @@
   width: 137px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-5 {
   overflow-wrap: break-word;
@@ -224,6 +188,8 @@
   width: 125px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-6 {
   overflow-wrap: break-word;
@@ -242,6 +208,8 @@
   width: 215px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .python-7 {
   overflow-wrap: break-word;
@@ -257,9 +225,11 @@
   margin: 1px 37.5px 0 0;
   display: flex;
   padding: 23px 0;
-  width: 182px;
+  width: 183px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .icon-10 {
   overflow-wrap: break-word;
@@ -275,18 +245,16 @@
   box-sizing: border-box;
 }
 .landing-1 .top-categories {
-  margin: 0 22.5px 127px 0;
+  margin: 0 0 50px 0;
   display: flex;
   flex-direction: row;
-  width: fit-content;
   box-sizing: border-box;
 }
 .landing-1 .rectangle-46 {
   border-radius: 10px;
   background: url('assets/images/Rectangle461.png') 50% / cover no-repeat;
-  margin: 0 0 208px 4px;
-  width: 1522px;
-  height: 606px;
+  height: 550px;
+  width: 1200px;
 }
 .landing-1 .arrows {
   transform: rotate(18.492deg);
@@ -556,9 +524,10 @@
   box-sizing: border-box;
 }
 .landing-1 .container-9 {
-  background: url('assets/images/Image3.jpeg') 50% / cover no-repeat;
+  background: url('assets/images/Image7.jpeg') 50% / cover no-repeat;
   width: 340px;
   height: 240px;
+  
 }
 .landing-1 .imgacademy-10 {
   border-radius: 10px;
@@ -984,8 +953,8 @@
   box-sizing: border-box;
 }
 .landing-1 .container-4 {
-  margin: 10px 0;
-  display: inline-block;
+  margin-top: 20px;
+  display: flex;
   overflow-wrap: break-word;
   font-family: 'Roboto';
   font-weight: 600;
@@ -994,6 +963,7 @@
   line-height: 1.25;
   text-transform: capitalize;
   color: #000000;
+  align-items: flex-end;
 }
 .landing-1 .actions-4 {
   margin-right: 18.5px;
@@ -1382,6 +1352,7 @@
   display: flex;
   flex-direction: row;
   box-sizing: border-box;
+  margin-right: 140px;
 }
 .landing-1 .arrows-1 {
   transform: rotate(15.165deg);
@@ -1419,11 +1390,6 @@
   width: 1204px;
   height: 288px;
   box-sizing: border-box;
-}
-.landing-1 .container-17 {
-  background: url('assets/images/Image10.jpeg') 50% / cover no-repeat;
-  width: 212px;
-  height: 161px;
 }
 .landing-1 .imginstructor-07 {
   border-radius: 10px;
@@ -1946,7 +1912,7 @@
   overflow-wrap: break-word;
   font-family: 'Roboto';
   font-weight: 700;
-  font-size: 48px;
+  font-size: 40px;
   line-height: 1.333;
   color: #1C1C1C;
 }
@@ -1974,13 +1940,18 @@
   box-sizing: border-box;
 }
 .landing-1 .what-they-say {
-  margin-right: 11.5px;
-  width: 815.1px;
   overflow-wrap: break-word;
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 20px;
   color: #FD953E;
+  align-items: center;
+  margin-right: 397px;
+
+}
+.landing-1 .group-12{
+  display: flex;
+  align-items: center;
 }
 .landing-1 .ellipse-1 {
   border-radius: 5px;
@@ -2025,12 +1996,17 @@
   box-sizing: border-box;
 }
 .landing-1 .container-11 {
-  margin: 0 3.3px 348.3px 0;
+  margin: 0 3.3px 0;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   width: 917.3px;
   box-sizing: border-box;
+}
+.landing-1 .container-17{
+  display: inline-flex;
+ margin-bottom: 20px;
+   
 }
 .landing-1 .icon-13 {
   overflow-wrap: break-word;
@@ -2069,12 +2045,14 @@
   border-radius: 12px;
   background: rgba(31, 87, 170, 0.07);
   position: relative;
-  margin-bottom: 2px;
+  margin-left: 10px;
   display: flex;
   padding: 13px 0;
-  width: 64px;
+  width: 60px;
   height: fit-content;
   box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 .landing-1 .container-14 {
   display: flex;
@@ -2090,15 +2068,15 @@
   flex-direction: column;
   align-items: flex-end;
   padding: 40.3px 37px 46.6px 40.3px;
-  width: 997.9px;
+  width: 800px;
   box-sizing: border-box;
 }
 .landing-1 .testimonials-section {
-  margin: 0 0 190.4px 22px;
   display: flex;
   flex-direction: row;
-  width: fit-content;
   box-sizing: border-box;
+  margin-bottom: 100px; 
+  margin-top: 100px;
 }
 .landing-1 .background-11 {
   position: absolute;
@@ -2137,15 +2115,13 @@
   color: #000000;
 }
 .landing-1 .top-footer {
-  margin: 0 49.1px 523px 0;
+  margin: 0 49.1px 200px 0;
   display: flex;
   flex-direction: row;
-  width: fit-content;
   box-sizing: border-box;
 }
 .landing-1 .privacy-policy-terms-conditions {
   margin-right: 7px;
-  width: 1238px;
   overflow-wrap: break-word;
   font-family: var(--input-text-font-family, 'Roboto');
   font-weight: var(--input-text-font-weight, 400);
@@ -2168,22 +2144,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 25px 32.9px 25px 25px;
-  width: 1472px;
   box-sizing: border-box;
 }
 .landing-1 .footer {
   border-radius: 40px 40px 0 0;
   background: #F6F6F6;
   position: relative;
-  margin: 0 184px;
   display: flex;
   flex-direction: column;
   align-items: center;
   align-self: flex-start;
   padding: 20px;
-  width: fit-content;
   box-sizing: border-box;
+
 }
 .landing {
   background: #FFFFFF;
@@ -2191,6 +2164,14 @@
   flex-direction: column;
   align-items: center;
   padding: 20px 5px 62px 1px;
-  width: 1920px;
   box-sizing: border-box;
 }
+html,body {
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+    }
+
+

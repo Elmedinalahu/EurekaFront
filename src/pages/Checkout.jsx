@@ -1,4 +1,5 @@
 import './Checkout.css';
+import './Checkout.css';
 
 export default function Checkout() {
   return (
@@ -68,4 +69,6 @@ export default function Checkout() {
       </div>
     </div>
   );
+  );
 }
+

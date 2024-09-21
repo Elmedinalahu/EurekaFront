@@ -110,6 +110,13 @@
   border-radius: 10px;
   background: #000000;
   position: relative;
+}
+
+/* Updated Menu Styles */
+.menu-discussion {
+  width: 80px;
+  background-color: #000;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -717,13 +724,15 @@
   border: 0.5px solid var(--gray-3, #828282);
   background: #FFFFFF;
   position: absolute;
-  left: 0px;
-  bottom: 0px;
+  top: -5px;
+  right: -5px;
+  background-color: red;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
   display: flex;
-  padding: 2px 4.5px 2px 6.5px;
-  width: 28px;
-  height: 21px;
-  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
 }
 
 .discussions .container-5 {
@@ -740,8 +749,7 @@
   background: #FFFFFF;
   position: relative;
   display: flex;
-  padding: 2.5px 7.7px 3.5px 7.5px;
-  box-sizing: border-box;
+  align-items: center;
 }
 
 .discussions .rating-discussion-4 {
@@ -828,8 +836,8 @@
 .discussions .container-24 {
   margin: 7.4px 0 11px 0;
   display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
+  align-items: center;
+  margin-bottom: 20px;
 }
 
 .discussions .container-6 {
@@ -999,7 +1007,6 @@
 .discussions .container-32 {
   margin: 8px 0 11px 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
   box-sizing: border-box;
 }
@@ -1529,11 +1536,12 @@
 .discussions .container-26 {
   position: relative;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 1090px;
-  height: fit-content;
-  box-sizing: border-box;
+  background-color: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  border-radius: 10px; /* Rounded corners */
 }
 
 .discussions .ellipse-286 {
@@ -1555,10 +1563,8 @@
 
 .discussions .courses-section {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  width: 1128px;
-  box-sizing: border-box;
+  margin-left: auto;
 }
 
 .discussions .container-7 {

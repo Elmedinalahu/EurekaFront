@@ -1,8 +1,6 @@
 body{
-
   background-size: cover;
   display: flex;
-  width: 1152px;
   box-sizing: border-box;
 }
 
@@ -118,6 +116,16 @@ body{
   font-weight: 700;
   font-size: 20px; /* 25px * 0.8 */
   color: #FFFFFF;
+  box-shadow: 0px 0px 3.2px 1.6px rgba(80, 104, 161, 0.5); /* 4px * 0.8, 2px * 0.8 */
+  border-radius: 8px; /* 10px * 0.8 */
+  background: rgba(80, 104, 161, 0.8);
+  position: relative;
+  display: flex;
+  padding: 16px 0; /* 12px * 0.8, 0, 11px * 0.8, 0 */
+  width: 364.8px; /* 456px * 0.8 */
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
 }
 
 .signup .container-3 {
@@ -194,6 +202,7 @@ body{
 }
 
 .input-container {
+  display: flex;
   position: relative;
   margin-bottom: 20px;
 }

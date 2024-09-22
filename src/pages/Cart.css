@@ -1,1563 +1,567 @@
-.cart .rectangle-5 {
-  opacity: 0.7;
-  filter: blur(30px);
-  border-radius: 24px;
-  background: var(--black, #000000);
-  position: absolute;
-  right: 0px;
-  bottom: 0px;
-  width: 81px;
-  height: 804px;
-}
-.cart .e {
-  margin-bottom: 91.3px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 64px;
-  color: #FFFFFF;
-}
-.cart .vector-7 {
-  margin: 0 0.9px 63.5px 0;
-  width: 26px;
-  height: 26px;
-}
-.cart .vector-13 {
-  margin: 0 0.9px 64.3px 0;
-  width: 28px;
-  height: 22.3px;
-}
-.cart .vector-11 {
-  width: 22.7px;
-  height: 22.7px;
-}
-.cart .group {
-  margin: 0 4.6px 1.5px 4.6px;
-  display: flex;
-  width: 13.7px;
-  height: 13.7px;
-  box-sizing: border-box;
-}
-.cart .vector-12 {
-  width: 22.9px;
-  height: 10.8px;
-}
-.cart .group-1 {
-  display: flex;
-  width: 22.9px;
-  height: 10.8px;
-  box-sizing: border-box;
-}
-.cart .group-6 {
-  margin: 0 0.9px 63.8px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 22.9px;
-  box-sizing: border-box;
-}
-.cart .vector-10 {
-  width: 25.9px;
-  height: 22.8px;
-}
-.cart .group-3 {
-  margin: 0 1.3px 64.2px 0;
-  display: flex;
-  width: 25.9px;
-  height: 22.8px;
-  box-sizing: border-box;
-}
-.cart .group-2 {
-  margin: 0 1.3px 224.6px 0;
-  width: 26px;
-  height: 26px;
-}
-.cart .vector-14 {
-  width: 26.1px;
-  height: 26.1px;
-}
-.cart .group-7 {
-  margin-right: 0.9px;
-  display: flex;
-  width: 26.1px;
-  height: 26.1px;
-  box-sizing: border-box;
-}
-.cart .container-15 {
-  border-radius: 24px;
-  background: #000000;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 15.6px 0 40.4px 0;
-  width: 132px;
-  height: fit-content;
-  box-sizing: border-box;
-}
-.cart .menu {
-  position: relative;
-  margin-right: 71.7px;
-  display: flex;
-  padding-bottom: 1.1px;
-  width: 132px;
-  height: fit-content;
-  box-sizing: border-box;
-}
-.cart .shopping-cart {
-  overflow-wrap: break-word;
-  font-family: var(--h-1-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-1-font-weight, 400);
-  font-size: var(--h-1-font-size, 36px);
-  color: var(--black, #000000);
-}
-.cart .header {
-  margin-bottom: 1.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .vector-6 {
-  width: 20.5px;
-  height: 20.5px;
-}
-.cart .group-35 {
-  position: relative;
-  display: flex;
-  width: 20.5px;
-  height: 20.5px;
-  box-sizing: border-box;
-}
-.cart .vector-21 {
-  width: 20.5px;
-  height: 20.5px;
-}
-.cart .group-351 {
-  display: flex;
-  width: 20.5px;
-  height: 20.5px;
-  box-sizing: border-box;
-}
-.cart .search-bar-1 {
-  border-radius: 8px;
-  background: #F5F5F7;
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  translate: -50% 0;
-  padding: 10.7px 15.8px 8.7px 15.8px;
-  width: 300px;
-  height: 40px;
-  box-sizing: border-box;
-}
-.cart .search-bar {
-  border-radius: 8px;
-  background: #F5F5F7;
-  position: relative;
-  margin: 3px 35.4px 0 0;
-  padding: 10.7px 15.8px 8.7px 15.8px;
-  width: 300px;
-  height: 40px;
-  box-sizing: border-box;
-}
-.cart .group-34 {
-  position: absolute;
-  left: 0px;
-  top: 10px;
-  width: 23.8px;
-  height: 26px;
-}
-.cart .ellipse-4 {
-  border-radius: 7px;
-  background: #F45B5B;
-  width: 14px;
-  height: 14px;
-}
-.cart .container-1 {
-  border-radius: 8px;
-  background: #FFFFFF;
-  position: absolute;
-  top: 2.5px;
-  right: 0px;
-  display: flex;
-  padding: 1px;
-  width: 16px;
-  height: 16px;
-  box-sizing: border-box;
-}
-.cart .container {
-  position: relative;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 2.2;
-  color: #FFFFFF;
-}
-.cart .group-341 {
-  position: absolute;
-  left: 0px;
-  top: 10px;
-  width: 23.8px;
-  height: 26px;
-}
-.cart .ellipse-41 {
-  border-radius: 7px;
-  background: #F45B5B;
-  width: 14px;
-  height: 14px;
-}
-.cart .container-23 {
-  border-radius: 8px;
-  background: #FFFFFF;
-  position: absolute;
-  top: 2.5px;
-  right: 0px;
-  display: flex;
-  padding: 1px;
-  width: 16px;
-  height: 16px;
-  box-sizing: border-box;
-}
-.cart .container-8 {
-  position: relative;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 10px;
-  line-height: 2.2;
-  color: #FFFFFF;
-}
-.cart .notification-1 {
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  translate: -50% 0;
-  display: flex;
-  padding: 0 5.4px 14px 19.6px;
-  box-sizing: border-box;
-}
-.cart .notification {
-  position: relative;
-  margin: 0 17.7px 7px 0;
-  display: flex;
-  padding: 0 5.4px 14px 19.6px;
-  box-sizing: border-box;
-}
-.cart .image-16 {
-  border-radius: 5px;
-  background: url('assets/images/Image16.png') 50% / cover no-repeat;
-  position: relative;
-  width: 34px;
-  height: 35px;
-}
-.cart .image-161 {
-  border-radius: 5px;
-  background: url('assets/images/Image16.png') 50% / cover no-repeat;
-  width: 40.8px;
-  height: 43.8px;
-}
-.cart .mask-group-2 {
-  border-radius: 5px;
-  position: absolute;
-  right: -0.7px;
-  bottom: -2.4px;
-  display: flex;
-  width: 40.8px;
-  height: 43.8px;
-  box-sizing: border-box;
-}
-.cart .mask-group-1 {
-  border-radius: 5px;
-  position: absolute;
-  left: 50%;
-  bottom: 0px;
-  translate: -50% 0;
-  width: 40px;
-  height: 40px;
-}
-.cart .mask-group {
-  border-radius: 5px;
-  position: relative;
-  margin-right: 8.3px;
-  display: flex;
-  width: 40px;
-  height: 40px;
-  box-sizing: border-box;
-}
-.cart .vector {
-  width: 6.9px;
-  height: 3.9px;
-}
-.cart .group-38 {
-  margin: 19px 0 17px 0;
-  display: flex;
-  width: 6.9px;
-  height: 3.9px;
-  box-sizing: border-box;
-}
-.cart .container-5 {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-  width: 55.2px;
-  height: fit-content;
-  box-sizing: border-box;
-}
-.cart .vector-15 {
-  border-radius: 5px;
-  width: 6.9px;
-  height: 3.9px;
-}
-.cart .group-381 {
-  border-radius: 5px;
-  position: absolute;
-  right: 0px;
-  bottom: 17px;
-  display: flex;
-  width: 6.9px;
-  height: 3.9px;
-  box-sizing: border-box;
-}
-.cart .profile-picture {
-  position: relative;
-  margin-top: 3px;
-  display: flex;
-  width: 55.2px;
-  height: fit-content;
-  box-sizing: border-box;
-}
-.cart .navigation {
-  margin-top: 0.3px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .container-2 {
-  margin-bottom: 36.7px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 1123.7px;
-  box-sizing: border-box;
-}
-.cart .course-in-cart {
-  margin-right: 12px;
-  width: 728px;
-  overflow-wrap: break-word;
-  font-family: var(--b-1-font-family, 'Roboto');
-  font-weight: var(--b-1-font-weight, 400);
-  font-size: var(--b-1-font-size, 16px);
-  line-height: var(--b-1-line-height, 1.5);
-  color: var(--black, #000000);
-}
-.cart .total {
-  overflow-wrap: break-word;
-  font-family: var(--b-1-font-family, 'Roboto');
-  font-weight: var(--b-1-font-weight, 400);
-  font-size: var(--b-1-font-size, 16px);
-  line-height: var(--b-1-line-height, 1.5);
-  color: var(--black, #000000);
-}
-.cart .container-8 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-self: flex-start;
-  width: 779.6px;
-  box-sizing: border-box;
-}
-.cart .line-145 {
-  background: #979797;
-  margin-bottom: 7px;
-  align-self: flex-start;
-  width: 685px;
-  height: 1px;
-}
-.cart .container-16 {
-  background: url('assets/images/Image1.jpeg') 50% / cover no-repeat;
-  width: 143px;
-  height: 93px;
-}
-.cart .imgacademy-15 {
-  border-radius: 10px;
-  margin: 0 11px 5px 0;
-  display: flex;
-  width: 143px;
-  height: 93px;
-  box-sizing: border-box;
-}
-.cart .ionic-react-mobile-development-with-ionic-5 {
-  margin-bottom: 7px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .by-aleandro-vela {
-  margin-bottom: 24.5px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 13px;
-  color: var(--black, #000000);
-}
-.cart .icon-16 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: #BDBDBD;
-}
-.cart .v-6-iconfree-12 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-612 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-12 {
-  margin-right: 8.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-17 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-13 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-613 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-13 {
-  margin-right: 10.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-18 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-14 {
-  margin-right: 12.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-614 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-14 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .information-4 {
-  margin: 0 3.3px;
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .container-18 {
-  margin: 3px 5.4px 10.5px 0;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.cart .container-17 {
-  overflow-wrap: break-word;
-  font-family: var(--h-5-font-family, 'Roboto');
-  font-weight: var(--h-5-font-weight, 500);
-  font-size: var(--h-5-font-size, 16px);
-  text-transform: var(--h-5-text-transform, capitalize);
-  color: #000000;
-}
-.cart .container-10 {
-  border-radius: 17px;
-  background: #FAFAFA;
-  position: relative;
-  display: flex;
-  padding: 8px 12.5px 7px 12.5px;
-  box-sizing: border-box;
-}
-.cart .icon-19 {
-  position: absolute;
-  left: 16.5px;
-  top: 0px;
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 12px;
-  color: var(--secondary, #FF991F);
-}
-.cart .score-4 {
-  position: relative;
-  margin-top: 51px;
-  display: flex;
-  padding: 10px 3px 3px 3px;
-  box-sizing: border-box;
-}
-.cart .my-course {
-  margin: 39px 83px 0 0;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .container-7 {
-  margin-bottom: 34px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .remove {
-  margin: 0 6.5px 3px 6.5px;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .save-for-later {
-  margin-right: 11.9px;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .container {
-  margin: 42px 57.3px 1px 0;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  box-sizing: border-box;
-}
-.cart .container-5 {
-  margin-bottom: 15px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: var(--h-1-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-1-font-weight, 400);
-  font-size: var(--h-1-font-size, 36px);
-  color: var(--black, #000000);
-}
-.cart .rectangle-24 {
-  border-radius: 8px;
-  background: var(--black, #000000);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 100%;
-}
-.cart .rectangle-25 {
-  border-radius: 8px;
-  background: var(--black, #000000);
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  height: 100%;
-}
-.cart .checkout {
-  position: relative;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 20px;
-  color: #FFFFFF;
-}
-.cart .container-20 {
-  border-radius: 8px;
-  background: #000000;
-  position: relative;
-  display: flex;
-  padding: 13px 32.8px 25px 0;
-  width: 371px;
-  box-sizing: border-box;
-}
-.cart .container-11 {
-  margin-bottom: 19px;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
-.cart .container-12 {
-  margin: 0 12.7px 6px 9px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .line-146 {
-  background: #979797;
-  margin: 0 12.7px 10px 12.7px;
-  align-self: flex-end;
-  width: 371px;
-  height: 1px;
-}
-.cart .promotions {
-  margin: 0 0 7px 447.8px;
-  display: inline-block;
-  align-self: center;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--black, #000000);
-}
-.cart .enter-coupon {
-  margin: 10px 9.5px 11px 0;
-  display: inline-block;
-  width: 257.5px;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  color: rgba(55, 55, 55, 0.99);
-}
-.cart .label-text-4 {
-  overflow-wrap: break-word;
-  font-family: var(--button-1-font-family, 'Roboto');
-  font-weight: var(--button-1-font-weight, 500);
-  font-size: var(--button-1-font-size, 14px);
-  line-height: var(--button-1-line-height, 1.429);
-  text-transform: var(--button-1-text-transform, capitalize);
-  color: var(--white, #FFFFFF);
-}
-.cart .group-66 {
-  border-radius: 8px;
-  background: #000000;
-  position: relative;
-  display: flex;
-  padding: 9px 0 11px 0;
-  width: 90px;
-  box-sizing: border-box;
-}
-.cart .container-22 {
-  border-radius: 8px;
-  background: #F5F5F7;
-  position: relative;
-  margin-bottom: 5px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding-left: 14px;
-  width: 371px;
-  box-sizing: border-box;
-}
-.cart .off-discount {
-  margin: 0 4px;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 16px;
-  color: #979797;
-}
-.cart .group-651 {
-  border-radius: 8px;
-  margin: 0 12.7px 45px 12.7px;
-  display: flex;
-  flex-direction: column;
-  align-self: flex-end;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .you-might-also-like {
-  overflow-wrap: break-word;
-  font-family: var(--h-2-font-family, 'Baloo Bhai', 'Source Sans 3');
-  font-weight: var(--h-2-font-weight, 400);
-  font-size: var(--h-2-font-size, 24px);
-  color: var(--black, #000000);
-}
-.cart .courses-section {
-  margin-bottom: 21px;
-  display: flex;
-  align-self: flex-start;
-  box-sizing: border-box;
-}
-.cart .container-9 {
-  background: url('assets/images/Image3.jpeg') 50% / cover no-repeat;
-  width: 240px;
-  height: 146px;
-}
-.cart .imgacademy-10 {
-  border-radius: 10px;
-  margin-bottom: 8px;
-  display: flex;
-  width: 240px;
-  height: 146px;
-  box-sizing: border-box;
-}
-.cart .learn-figma-ui-ux-design-essential-training {
-  margin-bottom: 13px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .skill-sprints-inc-alejandro-velazquez {
-  margin: 0 1px 25.5px 1px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 13px;
-  color: rgba(55, 55, 55, 0.99);
-}
-.cart .icon-1 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: #BDBDBD;
-}
-.cart .v-6-iconfree {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-6 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product {
-  margin-right: 8.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-2 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-1 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-61 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-1 {
-  margin-right: 10.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-3 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-2 {
-  margin-right: 12.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-62 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-2 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .information {
-  margin: 0 4.1px 7.5px 3.3px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .label-text {
-  overflow-wrap: break-word;
-  font-family: var(--button-1-font-family, 'Roboto');
-  font-weight: var(--button-1-font-weight, 500);
-  font-size: var(--button-1-font-size, 14px);
-  line-height: var(--button-1-line-height, 1.429);
-  text-transform: var(--button-1-text-transform, capitalize);
-  color: var(--white, #FFFFFF);
-}
-.cart .button {
-  border-radius: 10px;
-  background: var(--dark, #080808);
-  margin: 7px 44px 0 0;
-  display: flex;
-  padding: 10px 12.1px 10px 11.1px;
-  box-sizing: border-box;
-}
-.cart .container-1 {
-  margin: 17px 7.5px 10px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  color: #000000;
-}
-.cart .container-10 {
-  overflow-wrap: break-word;
-  font-family: var(--h-5-font-family, 'Roboto');
-  font-weight: var(--h-5-font-weight, 500);
-  font-size: var(--h-5-font-size, 16px);
-  text-transform: var(--h-5-text-transform, capitalize);
-  color: #000000;
-}
-.cart .container-7 {
-  border-radius: 17px;
-  background: #FAFAFA;
-  position: relative;
-  display: flex;
-  padding: 8px 12.5px 7px 12.5px;
-  box-sizing: border-box;
-}
-.cart .icon {
-  position: absolute;
-  left: 16.5px;
-  top: 0px;
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 12px;
-  color: var(--secondary, #FF991F);
-}
-.cart .score {
-  position: relative;
-  display: flex;
-  padding: 10px 3px 3px 3px;
-  box-sizing: border-box;
-}
-.cart .container-3 {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .card {
-  border-radius: 12px;
-  border: 1px solid var(--stroke, #F1F1F1);
-  background: #F5F5F7;
-  display: flex;
-  flex-direction: column;
-  padding: 9px 9px 12px 8px;
-  box-sizing: border-box;
-}
-.cart .container-14 {
-  background: url('assets/images/Image8.jpeg') 50% / cover no-repeat;
-  width: 240px;
-  height: 146px;
-}
-.cart .imgacademy-16 {
-  border-radius: 10px;
-  margin: 0 0px 8px 0;
-  display: flex;
-  width: 240px;
-  height: 146px;
-  box-sizing: border-box;
-}
-.cart .sports-management-the-essentials-course {
-  margin: 0 13.1px 13px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .skill-sprints-inc-alejandro-mik {
-  margin: 0 1px 25.5px 1px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 13px;
-  color: rgba(55, 55, 55, 0.99);
-}
-.cart .icon-12 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: #BDBDBD;
-}
-.cart .v-6-iconfree-9 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-69 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-9 {
-  margin-right: 8.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-13 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-10 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-610 {
-  margin: 3px 0px 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-10 {
-  margin-right: 10.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-14 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-11 {
-  margin-right: 12.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-611 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-11 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .information-3 {
-  margin: 0 4.1px 14.5px 3.3px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .label-text-3 {
-  overflow-wrap: break-word;
-  font-family: var(--button-1-font-family, 'Roboto');
-  font-weight: var(--button-1-font-weight, 500);
-  font-size: var(--button-1-font-size, 14px);
-  line-height: var(--button-1-line-height, 1.429);
-  text-transform: var(--button-1-text-transform, capitalize);
-  color: var(--white, #FFFFFF);
-}
-.cart .button-3 {
-  border-radius: 10px;
-  background: var(--dark, #080808);
-  margin-top: 0px;
-  display: flex;
-  padding: 10px 12.1px 10px 11.1px;
-  box-sizing: border-box;
-}
-.cart .container-6 {
-  margin: 10px 7.5px 10px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  color: #000000;
-}
-.cart .ellipse-42 {
-  position: absolute;
-  left: 0px;
-  top: 0px;
-  width: 40px;
-  height: 40px;
-}
-.cart .container-15 {
-  overflow-wrap: break-word;
-  font-family: var(--h-5-font-family, 'Roboto');
-  font-weight: var(--h-5-font-weight, 500);
-  font-size: var(--h-5-font-size, 16px);
-  text-transform: var(--h-5-text-transform, capitalize);
-  color: #000000;
-}
-.cart .container-19 {
-  border-radius: 17px;
-  background: #FAFAFA;
-  position: relative;
-  display: flex;
-  padding: 8px 12.5px 7px 12.5px;
-  box-sizing: border-box;
-}
-.cart .icon-15 {
-  position: absolute;
-  left: 0.5px;
-  top: 4px;
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 12px;
-  color: var(--secondary, #FF991F);
-}
-.cart .score-3 {
-  position: relative;
-  display: flex;
-  padding: 3px;
-  box-sizing: border-box;
-}
-.cart .container-9 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .container-16 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 240px;
-  box-sizing: border-box;
-}
-.cart .card-3 {
-  border-radius: 12px;
-  border: 1px solid var(--stroke, #F1F1F1);
-  background: #F5F5F7;
-  display: flex;
-  flex-direction: column;
-  padding: 9px 9px 12px 8px;
-  box-sizing: border-box;
-}
-.cart .container-12 {
-  background: url('assets/images/Image6.jpeg') 50% / cover no-repeat;
-  width: 240px;
-  height: 146px;
-}
-.cart .imgacademy-04 {
-  border-radius: 10px;
-  margin-bottom: 8px;
-  display: flex;
-  width: 240px;
-  height: 146px;
-  box-sizing: border-box;
-}
-.cart .python-for-beginners-learn-programming-from-scratch {
-  margin-bottom: 13px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .skill-sprints-inc-alejandro-velazquez-1 {
-  margin: 0 1px 25.5px 1px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 13px;
-  color: rgba(55, 55, 55, 0.99);
-}
-.cart .icon-5 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: #BDBDBD;
-}
-.cart .v-6-iconfree-3 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-63 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-3 {
-  margin-right: 8.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-6 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-4 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-64 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-4 {
-  margin-right: 10.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-7 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-5 {
-  margin-right: 12.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-65 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-5 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .information-1 {
-  margin: 0 4.1px 7.5px 3.3px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .label-text-1 {
-  overflow-wrap: break-word;
-  font-family: var(--button-1-font-family, 'Roboto');
-  font-weight: var(--button-1-font-weight, 500);
-  font-size: var(--button-1-font-size, 14px);
-  line-height: var(--button-1-line-height, 1.429);
-  text-transform: var(--button-1-text-transform, capitalize);
-  color: var(--white, #FFFFFF);
-}
-.cart .button-1 {
-  border-radius: 10px;
-  background: var(--dark, #080808);
-  margin: 7px 44px 0 0;
-  display: flex;
-  padding: 10px 12.1px 10px 11.1px;
-  box-sizing: border-box;
-}
-.cart .container-2 {
-  margin: 17px 7.5px 10px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  color: #000000;
-}
-.cart .container-11 {
-  overflow-wrap: break-word;
-  font-family: var(--h-5-font-family, 'Roboto');
-  font-weight: var(--h-5-font-weight, 500);
-  font-size: var(--h-5-font-size, 16px);
-  text-transform: var(--h-5-text-transform, capitalize);
-  color: #000000;
-}
-.cart .container-24 {
-  border-radius: 17px;
-  background: #FAFAFA;
-  position: relative;
-  display: flex;
-  padding: 8px 12.5px 7px 12.5px;
-  box-sizing: border-box;
-}
-.cart .icon-4 {
-  position: absolute;
-  left: 16.5px;
-  top: 0px;
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 12px;
-  color: var(--secondary, #FF991F);
-}
-.cart .score-1 {
-  position: relative;
-  display: flex;
-  padding: 10px 3px 3px 3px;
-  box-sizing: border-box;
-}
-.cart .container-4 {
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .card-1 {
-  border-radius: 12px;
-  border: 1px solid var(--stroke, #F1F1F1);
-  background: #F5F5F7;
-  display: flex;
-  flex-direction: column;
-  padding: 9px 9px 12px 8px;
-  box-sizing: border-box;
-}
-.cart .container-4 {
-  border-radius: 10px;
-  background: url('assets/images/Image12.jpeg');
-  margin-bottom: 8px;
-  width: 240px;
-  height: 146px;
-}
-.cart .mobile-app-development-with-flutter-darti-os-and-android {
-  margin-bottom: 13px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Baloo Bhai', 'Source Sans 3';
-  font-weight: 400;
-  font-size: 16px;
-  color: var(--black, #000000);
-}
-.cart .skill-sprints-inc-alejandro-velazquez-2 {
-  margin: 0 1px 25.5px 1px;
-  display: inline-block;
-  align-self: flex-start;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 13px;
-  color: rgba(55, 55, 55, 0.99);
-}
-.cart .icon-8 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: #BDBDBD;
-}
-.cart .v-6-iconfree-6 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-66 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-6 {
-  margin-right: 8.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-9 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-7 {
-  margin-right: 10.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-67 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-7 {
-  margin-right: 10.2px;
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .icon-10 {
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 16px;
-  color: var(--dark-25, rgba(8, 8, 8, 0.25));
-}
-.cart .v-6-iconfree-8 {
-  margin-right: 12.3px;
-  display: flex;
-  box-sizing: border-box;
-}
-.cart .lesson-68 {
-  margin: 3px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 500;
-  font-size: 11px;
-  text-transform: capitalize;
-  color: var(--dark-75, rgba(8, 8, 8, 0.75));
-}
-.cart .info-product-8 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .information-2 {
-  margin: 0 4.1px 14.5px 3.3px;
-  display: flex;
-  flex-direction: row;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .label-text-2 {
-  overflow-wrap: break-word;
-  font-family: var(--button-1-font-family, 'Roboto');
-  font-weight: var(--button-1-font-weight, 500);
-  font-size: var(--button-1-font-size, 14px);
-  line-height: var(--button-1-line-height, 1.429);
-  text-transform: var(--button-1-text-transform, capitalize);
-  color: var(--white, #FFFFFF);
-}
-.cart .button-2 {
-  border-radius: 10px;
-  background: var(--dark, #080808);
-  margin: 0px 0 1px 0;
-  display: flex;
-  padding: 10px 12.1px 10px 11.1px;
-  box-sizing: border-box;
-}
-.cart .container-3 {
-  margin: 10px 7.5px 11px 0;
-  display: inline-block;
-  overflow-wrap: break-word;
-  font-family: 'Roboto';
-  font-weight: 600;
-  font-size: 16px;
-  letter-spacing: 0.3px;
-  line-height: 1.25;
-  text-transform: capitalize;
-  color: #000000;
-}
-.cart .ellipse-52 {
-  position: absolute;
-  left: 50%;
-  top: 0px;
-  translate: -50% 0;
-  width: 40px;
-  height: 40px;
-}
-.cart .container-13 {
-  overflow-wrap: break-word;
-  font-family: var(--h-5-font-family, 'Roboto');
-  font-weight: var(--h-5-font-weight, 500);
-  font-size: var(--h-5-font-size, 16px);
-  text-transform: var(--h-5-text-transform, capitalize);
-  color: #000000;
-}
-.cart .container-14 {
-  border-radius: 17px;
-  background: #FAFAFA;
-  position: relative;
-  display: flex;
-  padding: 8px 12.5px 7px 12.5px;
-  box-sizing: border-box;
-}
-.cart .icon-11 {
-  position: absolute;
-  left: 5.5px;
-  bottom: 0px;
-  overflow-wrap: break-word;
-  font-family: 'Font Awesome 6 Free', 'Source Sans 3';
-  font-weight: 900;
-  font-size: 12px;
-  color: var(--secondary, #FF991F);
-}
-.cart .score-2 {
-  position: relative;
-  display: flex;
-  padding: 3px 3px 4px 3px;
-  box-sizing: border-box;
-}
-.cart .container-21 {
-  display: flex;
-  flex-direction: row;
-  box-sizing: border-box;
-}
-.cart .container-13 {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 240px;
-  box-sizing: border-box;
-}
-.cart .card-2 {
-  border-radius: 12px;
-  border: 1px solid var(--stroke, #F1F1F1);
-  background: #F5F5F7;
-  display: flex;
-  flex-direction: column;
-  padding: 9px 9px 11px 8px;
-  box-sizing: border-box;
-}
-.cart .container-6 {
-  margin-right: 3.7px;
-  display: flex;
-  flex-direction: row;
-  column-gap: 28px;
-  width: fit-content;
-  box-sizing: border-box;
-}
-.cart .container-17 {
-  margin: 28px 0 29.1px 0;
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-}
 .cart {
-  background: #FFFFFF;
-  display: flex;
-  flex-direction: row;
-  padding: 24px 80.3px 22.9px 32.3px;
-  width: 1440px;
-  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 999;
 }
+
+.cart-container {
+  width: 100%;
+  display: flex;
+  height: 100%; /* Full height of the cart */
+  overflow: auto; /* Allow scrolling */
+}
+
+
+  .cart .menu {
+    flex: 0 0 132px; /* Fixed width */
+  }
+
+  .cart .container-17 {
+    flex: 1; /* Remaining space */
+  }
+
+  /* Add other specific styles as needed */
+
+.cart .container-2 {
+  padding-bottom: 32px;
+}
+
+
+  .cart .rectangle-5 {
+    opacity: 0.7;
+    filter: blur(30px);
+    border-radius: 24px;
+    background: var(--black, #000000);
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 81px;
+    height: 804px;
+  }
+
+
+
+  .cart .e {
+    margin-bottom: 91.3px;
+    display: inline-block;
+    overflow-wrap: break-word;
+    font-family: 'Baloo Bhai', 'Source Sans 3';
+    font-weight: 400;
+    font-size: 64px;
+    color: #FFFFFF;
+  }
+
+
+
+  .cart .vector-7 {
+    margin: 0 0.9px 63.5px 0;
+    width: 26px;
+    height: 26px;
+  }
+
+
+  .cart .vector-13 {
+    margin: 0 0.9px 64.3px 0;
+    width: 28px;
+    height: 22.3px;
+  }
+
+
+  .cart .vector-11 {
+    width: 22.7px;
+    height: 22.7px;
+  }
+  .cart .group {
+    margin: 0 4.6px 1.5px 4.6px;
+    display: flex;
+    width: 13.7px;
+    height: 13.7px;
+    box-sizing: border-box;
+  }
+  .cart .vector-12 {
+    width: 22.9px;
+    height: 10.8px;
+  }
+  .cart .group-1 {
+    display: flex;
+    width: 22.9px;
+    height: 10.8px;
+    box-sizing: border-box;
+  }
+  .cart .group-6 {
+    margin: 0 0.9px 63.8px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 22.9px;
+    box-sizing: border-box;
+  }
+  .cart .vector-10 {
+    width: 25.9px;
+    height: 22.8px;
+  }
+  .cart .group-3 {
+    margin: 0 1.3px 64.2px 0;
+    display: flex;
+    width: 25.9px;
+    height: 22.8px;
+    box-sizing: border-box;
+  }
+  .cart .group-2 {
+    margin: 0 1.3px 224.6px 0;
+    width: 26px;
+    height: 26px;
+  }
+  .cart .vector-14 {
+    width: 26.1px;
+    height: 26.1px;
+  }
+  .cart .group-7 {
+    margin-top: auto;
+    margin-right: 0.9px;
+    display: flex;
+    width: 26.1px;
+    height: 26.1px;
+    box-sizing: border-box;
+  }
+  .cart .container-15 {
+    padding-top: 40px; /* Increase the padding-top to move the header down */
+    border-radius: 24px;
+    background: #000000;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0 40.4px 0; /* Updated padding for top */
+    width: 132px;
+    box-sizing: border-box;
+  }
+
+  .cart .menu {
+    position: relative;
+    margin-right: 71.7px;
+    display: flex;
+    padding-bottom: 1.1px;
+    width: 132px;
+    box-sizing: border-box;
+  }
+  .cart .shopping-cart {
+    overflow-wrap: break-word;
+    font-family: var(--h-1-font-family, 'Baloo Bhai', 'Source Sans 3');
+    font-weight: var(--h-1-font-weight, 1000);
+    font-size: var(--h-1-font-size, 36px);
+    color: var(--black, #000000);
+  }
+  .cart .header {
+    margin-bottom: 1.3px; /* This is the existing rule */
+    margin-top: 20px; /* Add this to move the header down */
+    display: flex;
+    box-sizing: border-box;
+  }
+
+
+
+  .cart .search-bar-1 {
+    border-radius: 8px;
+    background: #F5F5F7;
+    margin-top: 30px;
+    padding: 10.7px 15.8px 8.7px 15.8px;
+    width: 300px;
+    height: 40px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-bar-1 input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+    font-size: 14px;
+  }
+
+  .search-bar-1 input::placeholder {
+    color: #A9A9A9;
+  }
+
+
+  .right-section {
+    display: flex; /* Aligns search bar, notification icon, and avatar in a row */
+    align-items: center; /* Ensures vertical alignment */
+    
+  }
+
+  .search-bar-1 {
+    border-radius: 8px;
+    background: #F5F5F7;
+    padding: 10.7px 15.8px;
+    width: 300px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .search-input {
+    border: none;
+    background: transparent;
+    width: 100%;
+    outline: none;
+  }
+
+  .notification-icon {
+    font-size: 24px;
+    color: #000;
+    margin-top: 25px;
+    margin-left: 20px; /* Adds space between the search bar and the notification icon */
+  }
+
+  .user-avatar img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 25px;
+    margin-left: 20px; /* Adds space between the notification icon and the user avatar */
+  }
+
+  .search-bar-1 input::placeholder {
+    color: #A9A9A9;
+  }
+
+
+
+  /* Existing header and right section styling for reference */
+  .header-with-search {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+
+  .right-section {
+    display: flex;
+    gap: 15px; /* Adds spacing between search, notification, and user avatar */
+    align-items: center; /* Vertically aligns the items in the right section */
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .header-container {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+  }
+
+  .title-price-container {
+    display: flex; /* Use flexbox for alignment */
+    justify-content: space-between; /* Space between title and price */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .section-title {
+    font-weight: bold;
+    margin: 5px; /* Corrected margin value */
+    flex: 1; /* Allow title to take available space */
+    max-width: 500px; /* Set a maximum width to make it shorter */
+    overflow-wrap: break-word; /* Allow the title to wrap if it exceeds max-width */
+  }
+  
+
+  .course-price {
+    font-weight: bold;
+    font-size: 1rem !important; /* Force the font size */
+    color: #000;
+    margin-left: 40px; /* Increase this value for more space */
+  }
+  
+  .cart-label {
+    font-weight: bold;
+    margin-bottom: 5px; /* Space between label and line */
+  }
+  
+  .divider-line {
+    width: 70%; /* Adjust this value to make the line shorter */
+    height: 2px; /* Thickness of the line */
+    background-color: #000; /* Color of the line */
+    margin-left: 0; /* Align to the left */
+    margin-bottom: 50px; /* Space below the line */
+  }
+  
+  .two-section-content {
+    display: flex; /* Make the content a flex container */
+  }
+  
+  .two-section-container-left-section {
+    flex: 0 0 70%; /* Set left section to 60% */
+    display: flex;
+    align-items: flex-start; /* Align items at the start for better positioning */
+    padding: 10px; /* Optional: Add padding for spacing */
+  }
+  
+  
+  /* Ensure sections are responsive */
+  @media (max-width: 768px) {
+    .two-section-content {
+      flex-direction: column; /* Stack sections on smaller screens */
+    }
+  }
+  
+  .image-container {
+    width: 200px; /* Set width of image container */
+    margin-right: 15px; /* Adds space between the image and text */
+    border-radius: 10%;
+  }
+  
+  .section-image {
+    width: 200px; /* Adjust image size */
+    height: 150px; /* Adjust height */
+    object-fit: cover; /* Makes sure the image covers the area */
+    border-radius: 10%;
+  }
+  
+
+  
+  .section-title {
+    font-weight: bold;
+    margin-bottom: 2px; /* Reduce space below the title */
+  }
+  
+  .by-text {
+    font-size: 14px;
+    margin: 0; /* No margin to keep it close to the title */
+  }
+  
+  .icon-container {
+    display: flex;
+    gap: 20px; /* Space between icons */
+    margin-top: 40px; /* Increase space above the icons */
+  }
+  
+  .icon {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 5px; /* Space between icon and text */
+  }
+  
+  .icon img {
+    width: 24px; /* Set icon size */
+    height: 24px; /* Keep icon size consistent */
+  }
+  
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* Align items at the start */
+  }
+
+
+  .price-remove-container {
+    display: flex;
+    flex-direction: column; /* Arrange items vertically */
+    align-items: flex-end; /* Align items to the right */
+    margin-top: 10px; /* Space above the price container */
+  }
+  
+  .course-price {
+    font-weight: bold; /* Ensure the price is bold */
+    font-size: 1.2rem; /* Adjust font size as needed */
+    margin-bottom: 30px; /* Add space below the price */
+  }
+  
+  .remove-text, .save-text {
+    cursor: pointer; /* Change cursor to pointer */
+    margin-top: 10px; /* Space above each text */
+    font-weight: bold; /* Make text bold */
+    text-align: right; /* Align text to the right */
+    transition: text-decoration 0.3s; /* Smooth transition for the underline */
+  }
+  
+  .remove-text:hover, .save-text:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+.two-section-container-right-section {
+  flex: 0 0 30%; /* Adjust width of the right section */
+  padding: 10px; /* Optional: Add padding for spacing */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+}
+
+.total-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Add space between total and checkout button */
+}
+
+.total-text {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.total-price {
+  font-weight: bold;
+  font-size: 2rem;
+  margin: 5px 0;
+  color: #000;
+}
+
+.checkout-section {
+  width: 100%; /* Make button take full width */
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 20px 0 !important; /* Increase padding for larger height */
+  background-color: #000 !important; /* Black background */
+  color: #fff !important; /* White text */
+  font-size: 1.2rem !important; /* Make text size bigger */
+  font-weight: bold !important;
+  border: none !important;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px !important;
+  border-radius: 10px !important; /* Ensure rounded corners are applied */
+}
+
+.checkout-button:hover {
+  background-color: #333 !important; /* Darken button on hover */
+}
+
+
+
+.custom-line {
+  width: 100%; /* Same width as the checkout button */
+  height: 2px; /* Thickness of the line */
+  background-color: #000; /* Black color to match the button */
+  border: none; /* Remove any default border */
+  margin-top: 20px; /* Add some space above */
+}
+
+
+
+
+
+
+
+
+
+.promotions-title {
+  font-weight: bold;
+  margin-bottom: 8px; /* Reduce space below the "Promotions" title */
+}
+
+.coupon-container {
+  display: flex;
+  align-items: center;
+  margin-top: 5px; /* Reduce space between the title and the coupon input */
+}
+
+.coupon-input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 5px 0 0 5px;
+  font-size: 1rem;
+  margin-right: -1px;
+  background-color: #f0f0f0;
+}
+
+.apply-button {
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 0 5px 5px 0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.apply-button:hover {
+  background-color: #333;
+}
+
+.discount-text {
+  margin-top: 10px;
+  font-size: 0.9rem;
+  color: #b0b0b0;
+}
+
+/*=========================Final section===========================================================*/
+
+.you-might-also-like-title {
+  font-weight: bold; /* Makes the title bold */
+  margin-bottom: 20px; /* Adds space below the title */
+}
+

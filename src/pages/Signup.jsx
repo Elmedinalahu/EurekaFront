@@ -175,7 +175,7 @@ export default function Signup() {
               />
               <label className={formData.password ? 'shrink' : ''}>Password</label>
             </div>
-            <div className="container-3">
+            <div>
               <button type="submit" className="register">Register</button>
             </div>
           </form>

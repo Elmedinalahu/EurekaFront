@@ -34,6 +34,10 @@ export default function F12Main() {
             <td style={tableCellStyle}><a href='/Checkout'>/Checkout</a></td>
             <td style={tableCellStyle}><a href='/Checkout'>Checkout</a></td>
           </tr>
+          <tr>
+            <td style={tableCellStyle}><a href='/Categories'>/Categories</a></td>
+            <td style={tableCellStyle}><a href='/Categories'>Categories</a></td>
+          </tr>
 <tr>
             <td style={tableCellStyle}><a href='/Dashboard'>/Dashboard</a></td>
             <td style={tableCellStyle}><a href='/Dashboard'>Dashboard</a></td>

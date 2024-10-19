@@ -1,0 +1,113 @@
+.course-details {
+  display: flex; /* Use flexbox for layout */
+  justify-content: space-between; /* Space between info and image/price */
+  margin-top: 20px;
+}
+
+.course-info-details {
+  flex: 1; /* Take available space */
+  padding-right: 20px; /* Add space between text and image */
+  margin-right: 25px;
+}
+.space-div-course-details{
+  height: 5px;
+}
+.course-image-details-price {
+  height: 550px;
+  background-color: white; /* Set a background color for contrast */
+  border-radius: 2px; /* Optional: round the corners */
+  padding: 5px; /* Optional: add some padding */
+  box-shadow: 0 4px 8px rgba(21, 21, 92, 0.516); 
+  margin-bottom: 40px;
+}
+.course-nested{
+  margin: 5px;
+  width: 400px;
+}
+
+.course-image-details img {
+  border-radius: 2px;
+  width: 400px;
+}
+.course-image-details {
+  width: 400px;
+  height: auto; /* Maintain aspect ratio */
+}
+.course-buttons {
+  display: flex; /* Arrange buttons in a row */
+  flex-direction: column;
+  margin: 0px 10px;
+  gap: 10px;
+  width: 95%; /* Make buttons take full width of the container */
+}
+.course-price-details{
+  font-size: 32px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.add-to-cart, .buy-now {
+  padding: 10px 15px; /* Add padding */
+  border: none; /* Remove default border */
+  border-radius: 2px; /* Rounded corners */
+  background-color: #30649c; /* Primary button color */
+  color: white; /* Text color */
+  cursor: pointer; /* Pointer on hover */
+  flex: 1; /* Make buttons equally sized */
+}
+
+.add-to-cart:hover, .buy-now:hover {
+  background-color: #3d76b2; /* Darker color on hover */
+}
+.course-include{
+  padding: 10px 15px; /* Add padding */
+}
+
+.topics {
+  margin-top: 20px;
+}
+.tags {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.tag {
+  border: 1px solid #a9afce;
+  padding: 5px 10px;
+  border-radius: 25px;
+}
+.course-content-details-1 {
+  margin-top: 30px;
+  display: block;
+}
+.course-content-details-1 .section {
+  background-color: #96bbe151;
+  border: 1px solid #a9afce;
+
+}
+.h3-course-details{
+  margin: 0px;
+  padding: 15px;
+  font-size: 16px;
+}
+.course-content-details-1 ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+  
+}
+
+.course-content-details-1 li {
+  list-style: none;
+  padding-left: 15px;
+  border: 1px solid #a9afce;
+  
+}
+.course-content-details-1 span {
+  font-weight: bold;
+  color: #555;
+}
+
+.h1-course-details{
+  margin-top: 0px;
+  font-size: 38px;
+}

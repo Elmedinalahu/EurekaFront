@@ -12,6 +12,8 @@ import Landing from './pages/Landing';
 import Landing1 from './pages/Landing1';
 import Login from './pages/Login';
 import Signup from './pages/Signup';
+import Categories from './pages/Categories'
+import CourseDetails from './pages/CourseDetails'
 import PrivateRoute from './components/PrivateRoute'; // Import PrivateRoute
 
 const router = createBrowserRouter([
@@ -24,7 +26,9 @@ const router = createBrowserRouter([
   { path: '/Landing', element: <Landing /> },
   { path: '/Landing1', element: <Landing1 /> },
   { path: '/Login', element: <Login /> },
-  { path: '/Signup', element: <Signup /> },
+  { path:'/course/:courseId', element:<CourseDetails/>} ,
+  { path:'/category/:categoryId', element:<Categories /> },
+  { path: '/Signup', element: <Signup /> }
 ]);
 
 export default function App() {

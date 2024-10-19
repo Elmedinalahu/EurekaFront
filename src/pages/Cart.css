@@ -524,6 +524,9 @@
 
 .coupon-container {
   display: flex;
+  flex-direction: row;
+  padding: 24px 80.3px 22.9px 32.3px;
+  box-sizing: border-box;
   align-items: center;
   margin-top: 5px; /* Reduce space between the title and the coupon input */
 }
@@ -557,8 +560,6 @@
   font-size: 0.9rem;
   color: #b0b0b0;
 }
-
-/*=========================Final section===========================================================*/
 
 .you-might-also-like-title {
   font-weight: bold; /* Makes the title bold */

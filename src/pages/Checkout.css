@@ -1,193 +1,256 @@
-/* Checkout.css */
-.checkout {
+/* Main container layout */
+.checkout-container {
   display: flex;
-  padding: 20px;
-  background-color: #fff;
-  height: 100vh;
-  align-items: flex-start;
+  justify-content: space-between;
+  padding: 2px; /* ngret lrt checkout*/
+  max-width: 990px;
+  margin: 0 auto;
+  gap: 70px; /* Zvogëlimi i hapësirës midis formës dhe seksionit të përmbledhjes */
 }
 
-.menu-checkout {
-  width: 80px;
-  background-color: #000;
-  height: 80%;
+/* Sidebar (Shiriti anësor) */
+.sidebar {
+  background-color: black;
+  width: 100px;
+  height: 91vh;
+  position: fixed;
+  top: 15px;
+  left: 20px;
   display: flex;
+  justify-content: flex-start;
+  align-items: center;
   flex-direction: column;
+  padding-top: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+/* Logo styling inside the sidebar */
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
   align-items: center;
-  justify-content: flex-start; /* Align items at the top */
-  color: #fff;
-  border-radius: 12px; /* Added border-radius for more rounded corners */
-  padding-top: 20px; /* Add padding to give space from the top */
+  height: auto;
 }
 
-.e-checkout {
-  font-size: 30px; /* Reduced font size */
+
+.logo-text {
+  font-size: 40px;
+  color: white;
   font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font më modern */
 }
-
-.container-checkout-10 {
-  flex: 1;
-  margin: 0 20px;
-}
-
-.header-checkout {
-  font-size: 20px; /* Reduced font size */
-  font-weight: bold;
-  margin: 20px 0;
-}
-
-.fill-in-the-information-below-to-complete-the-process-checkout {
-  color: #888;
-  font-size: 12px; /* Reduced font size */
-  margin-bottom: 10px;
-}
-
-.line-checkout-145 {
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-  margin: 10px 0;
-}
-
-.billing-address-checkout, .payment-checkout, .order-details-checkout {
-  font-size: 16px; /* Reduced font size */
-  font-weight: bold;
-  margin-top: 20px;
-}
-
-.container-checkout-2 {
-  display: flex;
-  flex-direction: row; /* Display elements in a row */
-  margin: 10px 0;
-}
-
-.container-checkout-3, .container-checkout-4 {
-  flex: 1; /* Ensure elements take up equal space */
-  margin: 0 5px; /* Add margin to separate elements */
-  margin-bottom: 20px;
-}
-
-.billing-country-checkout, .billing-address-checkout-1, .name-on-card-checkout, .container-checkout-3, .mm-yy-checkout, .cvc-checkout, .original-price-checkout, .total-checkout, .label-text-checkout {
-  font-size: 12px; /* Reduced font size */
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 14px;
-}
-
-/* Updated styles for the input fields */
-.billing-country-checkout, .billing-address-checkout-1, .name-on-card-checkout, .container-checkout-3 {
-  width: 95%;
-  display: block;
-  padding: 10px;
-  border: 1px solid #ddd;
-  border-radius: 4px;
-  margin-bottom: 10px;
-  color: #888;
-}
-
-.card-number-container-checkout {
-  display: flex;
-  justify-content: space-between; /* Ensure elements are spaced out evenly */
-  margin-top: 20px; /* Add space between Name on card and card number */
-}
-
-.card-number-container-checkout .container-checkout-3 {
-  width: 32%; /* Adjust width to fit within container */
-  text-align: center;
-}
-
-.my-course-checkout {
-  display: flex;
-  align-items: center;
-  margin-top: 10px;
-}
-
-.imgacademy-checkout-15 .container-checkout-4 {
-  width: 80px;
-  height: 80px;
-  background-color: #ddd;
-  border-radius: 4px;
-  margin-right: 10px;
-}
-
-.ionic-react-mobile-development-with-ionic-checkout-5 {
-  font-size: 14px; /* Reduced font size */
-  font-weight: bold;
-}
-
-.by-aleandro-vela-checkout {
-  font-size: 12px; /* Reduced font size */
-  color: #888;
-}
-
-.container-checkout-12 {
-  width: 300px;
+/* Form Section */
+.form-section {
+  flex: 1.5;
   margin-left: 20px;
 }
 
-.group-checkout-67 {
-  background-color: #000; /* Black background for Cancel button */
-  color: #fff; /* White text color for Cancel button */
-  padding: 10px 20px; /* Padding for better button appearance */
-  text-align: center; /* Center text inside the button */
-  border-radius: 12px; /* Rounded corners */
-  cursor: pointer; /* Cursor pointer for hover effect */
-  margin-bottom: 20px; /* Space below Cancel button */
-  align-self: flex-end; /* Move to the right */
-  width: auto; /* Adjust width to fit button size */
-  border: none; /* Ensure no border is applied */
-  box-sizing: border-box; /* Include padding and border in the element's total width and height */
-  display: inline-block; /* Ensure it displays as a block element */
-  line-height: normal; /* Reset line-height */
+.checkout-title {
+  font-size: 30px; /* Madhësi më e madhe për titujt kryesorë */
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font modern */
+  color: #000; /* Ngjyra e zezë */
 }
 
-.navigation-checkout {
-  background-color: #f7f7f7;
-  padding: 20px;
-  border-radius: 12px; /* Increased border-radius for more rounded corners */
+.description {
+  font-size: 15px;
+  color: #6E6161;
+  font-family: 'Arial', sans-serif; /* Font modern */
 }
 
-.line-checkout-146 {
-  width: 100%;
-  height: 1px;
-  background-color: #ddd;
-  margin: 10px 0;
+.divider {
+  margin: 5px 0;
+  border: 1px solid #ccc;
 }
 
-.container-checkout-5, .container-checkout-1 {
+.section-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 7px;
+  font-family: 'Arial', sans-serif; /* Font modern */
+}
+
+.billing-address-fields,
+.payment-fields {
   display: flex;
+  gap: 8px;
+  margin-bottom: 18px;
+  color: #000;
+}
+.form-section .input-field {
+  padding: 13px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  width: calc(95% - 0.2px);
+  margin-bottom: 10px;
+  box-shadow: 0 2px 5px rgba(177, 18, 18, 0.1);
+  transition: box-shadow 0.2s ease;
+  font-size: 13px;
+  color: #000; /* Ngjyra e zezë për tekstin e shkruar */
+}
+
+
+.form-section .input-field::placeholder {
+  color: #636363; /* Ngjyra gri për placeholder-in */
+  font-size: 10px;
+}
+
+.input-field:focus {
+  outline: none;
+  box-shadow: none; /* Heq efektin e hijes nëse ka */
+}
+
+.input-field.small {
+  width: 100px;
+}
+
+.payment-fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-details {
+  display: flex;
+  gap: 20px;
   justify-content: space-between;
-  align-items: center;
 }
 
-.container-checkout-14 {
-  background-color: #000;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  border-radius: 12px; /* Increased border-radius for more rounded corners */
-  margin-top: 20px;
-  cursor: pointer;
+/* Order Summary */
+.order-summary {
+  margin-top: 15pxpx;
 }
 
-.complete-checkout {
-  font-weight: bold;
-}
-
-.label-text-checkout {
-  font-weight: bold;
-}
-
-.container-checkout-7 {
-  margin-top: 20px; /* Move the E element to the top */
-}
-
-.card-number-container-checkout {
+.order-item {
   display: flex;
-  justify-content: space-between; /* Ensure elements are spaced out evenly */
-  margin-top: 20px; /* Add space between Name on card and card number */
+  align-items: center;
+  justify-content: space-between;
 }
 
-.name-on-card-checkout {
-  margin-top: 20px; /* Add space between Payment and Name on Card */
+.course-image {
+  width: 80px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: 70px;
+  margin-right: 15px;
+  background-image:url('assets/images/Image1.jpeg');
+  background-size: cover;
+  background-position: center;
+}
+
+.course-info {
+  flex-grow: 1;
+}
+
+.course-title {
+  font-size: 12px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font modern për titullin e kursit */
+}
+
+.course-author {
+  font-size: 10px;
+  color: #6E6161;
+  font-family: 'Arial', sans-serif; /* Font modern për autorin e kursit */
+}
+
+.course-price {
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font modern për çmimin e kursit */
+}
+
+/* Summary Section */
+.summary-section {
+  flex: 0.7;
+  background-color: #f5f5f7;
+  padding: 20px;
+  border-radius: 0px;
+  box-shadow: 0 4px 10px rgba(149, 56, 56, 0.1);
+  position: relative;
+  margin-top: 100px; /* Shtova hapësirë për të ndarë seksionin e përmbledhjes nga butoni Cancel */
+}
+
+/* Butoni Cancel */
+.cancel-button {
+  background-color: #000;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  position: absolute;
+  top: -70px; /* Vendos butonin sipër seksionit të përmbledhjes, por jashtë tij */
+  right: 0;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font modern */
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #111111;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.summary-title {
+  font-size: 17px;
+  font-family: 'Arial', sans-serif; /* Font modern */
+}
+
+/* Për seksionin e butonit "Complete Checkout" */
+.checkout-button {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 12px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font modern */
+  cursor: pointer;
+  margin-top: 0px;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.checkout-button:hover {
+  background-color: #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Price details and summary */
+.price-details {
+  display: flex;
+  font-size: 13px;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-family: 'Arial', sans-serif; /* Font modern për detajet e çmimit */
+}
+
+.total {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif; /* Font modern për totalin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .checkout-container {
+    flex-direction: column;
+  }
+
+  .form-section {
+    width: 100%;
+    margin-right: 60px;
+  }
+
+
+  .sidebar {
+    width: 60px;
+  }
+
+  .logo-text {
+    font-size: 40px;
+  }
 }

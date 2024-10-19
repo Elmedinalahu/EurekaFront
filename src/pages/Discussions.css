@@ -1,16 +1,114 @@
-/* Discussions.css */
-
-/* Existing CSS */
-.body-discussion {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background-color: #f5f5f5;
+.discussions .rectangle-5 {
+  opacity: 0.7;
+  filter: blur(30px);
+  border-radius: 8px;
+  background: var(--black, #000000);
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 20px;
+  height: 804px;
+  
 }
 
-.discussions {
+.discussions .e {
+  margin-bottom: 50px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400px;
+  font-size: 44px;
+  color: #FFFFFF;
+}
+
+/*Fotoja 1*/
+.discussions .vector-9 {
+  margin: 0 0.9px 63.5px 0;
+  width: 22px;
+  height: 22px;
+}
+
+/*Fotoja 2*/
+.discussions .vector-15 {
+  margin: 0 0.1px 60.3px 0;
+  width: 22px;
+  height: 22px;
+  margin-top: 7px;
+}
+
+.discussions .group {
+  margin: 0 4.6px 1.5px 4.6px;
   display: flex;
-  padding: 20px;
+  width: 13.7px;
+  height: 13.7px;
+  box-sizing: border-box;
+}
+
+/*Fotoja e 4*/
+.discussions .vector-14 {
+  width: 22px;
+  height: 22px;
+  margin-top: -20px;
+  
+}
+
+.discussions .group-1 {
+  display: flex;
+  width: 22.9px;
+  height: 10.8px;
+  box-sizing: border-box;
+}
+
+.discussions .group-6 {
+  margin: 0 0.9px 63.8px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 22.9px;
+  box-sizing: border-box;
+}
+
+/*Foto 5*/
+.discussions .vector-12 {
+  width: 22px;
+  height: 22px;
+  margin-top: -40px;
+}
+
+.discussions .group-3 {
+  margin: 0 1.3px 64.2px 0;
+  display: flex;
+  width: 25.9px;
+  height: 22.8px;
+  box-sizing: border-box;
+}
+
+.discussions .group-2 {
+  margin: 0 1.3px 224.6px 0;
+  width: 26px;
+  height: 26px;
+}
+
+/*foto 2*/
+.discussions .vector-16 {
+  margin: 0 1.3px 224.6px 0;
+  width: 23px;
+  height: 23px;
+  margin-top: -285px;
+}
+
+.discussions .group-7 {
+  margin-right: 0.9px;
+  display: flex;
+  width: 20px;
+  height: 10px;
+  box-sizing: border-box;
+  margin-top: -250px;
+}
+
+.discussions .container-12 {
+  border-radius: 10px;
+  background: #000000;
   position: relative;
 }
 
@@ -22,96 +120,609 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  position: fixed;
-  height: 90vh;
-  left: 10px;
-  top: 10px;
-  border-radius: 10px; /* Rounded corners */
-  z-index: 1; /* Ensure it's above other content */
+  padding: 15px 0 35px 0;
+  width: 192px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 
-.e-discussion {
-  font-size: 30px;
-  font-weight: bold;
-}
-
-.menu-discussion img {
-  margin-bottom: 10px;
-  cursor: pointer;
-}
-
-.icon-discussion {
-  color: white;
-  margin: 20px 0;
-  font-size: 20px;
-}
-
-/* Right Section Styles */
-.container-7-discussion {
-  background-color: white;
-  width: calc(100% - 120px);
-  padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-top: 20px;
-  margin-left: 100px; /* Adjusted to move closer to menu */
-  border-radius: 10px; /* Rounded corners */
-  z-index: 0; /* Ensure content is below menu */
-}
-
-.header-discussion {
-  margin-bottom: 20px;
-}
-
-.discussions-1-discussion {
-  font-size: 25px;
-  font-weight: bold;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.discuss-the-eureka-platform-discussion {
-  color: #5d5b5b;
-  font-size: 13px;
-}
-
-.navigation-discussion {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-bottom: 20px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-}
-
-.search-bar-discussion {
-  display: flex;
-  align-items: center;
-  background-color: #eee;
-  padding: 5px 10px;
-  border-radius: 5px;
-}
-
-.search-bar-discussion .vector-6-discussion {
-  width: 20px;
-  height: 20px;
-}
-
-.notification-discussion {
-  display: flex;
-  align-items: center;
+.discussions .menu {
   position: relative;
+  margin-right: 20px;
+  display: flex;
+  padding-bottom: 1.1px;
+  width: 102px;
+  height: fit-content;
+  box-sizing: border-box;
 }
 
-.notification-discussion .group-34-discussion {
+.discussions .discussions-1 {
+  margin-bottom: 2px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: var(--h-1-font-family, 'Baloo Bhai', 'Source Sans 3');
+  font-weight: var(--h-1-font-weight, 400);
+  font-size: var(--h-1-font-size, 24px);
+  color: var(--black, #000000);
+  font-weight: bold;
+
+
+}
+
+.discussions .discuss-the-eureka-platform-this-includes-sharing-feedback-asking-questions-and-more {
+  overflow-wrap: break-word;
+  font-family: var(--b-1-font-family, 'Roboto');
+  font-weight: var(--b-1-font-weight, 400);
+  font-size: var(--b-1-font-size, 12px);
+  line-height: var(--b-1-line-height, 1.5);
+  color: var(--black, #000000);
+}
+
+.discussions .header {
+  margin-right: 110px;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  top: 50px;
+}
+
+.search-bar {
+  /* Mund të modifikosh padding për hapësirën brenda butonit */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Hapësira mes tekstit dhe ikonës */
+  border-radius: 5px;
+  /* Opsionale për qoshe të rrumbullakëta */
+  position: relative;
+  right: -96px;
+  top: -26px;
+}
+
+.search-bar .group-35 img {
+  width: 12px;
+  /* Bëje ikonën më të vogël */
+  height: 12px;
+  position: relative;
+  margin-top: 5px;
+}
+
+.discussions .vector-6 {
+  width: 25.5px;
+  height: 20.5px;
+}
+
+.discussions .group-35 {
+  display: flex;
+  width: 20.5px;
+  height: 20.5px;
+  box-sizing: border-box;
+}
+
+.discussions .search-bar {
+  border-radius: 8px;
+  background: #F5F5F7;
+  position: relative;
+  margin: 3px 35.4px 0 0;
+  padding: 10.7px 15.8px 8.7px 15.8px;
+  width: 250px;
+  height: 27px;
+  box-sizing: border-box;
+}
+
+.discussions .group-34 {
+  position: absolute;
+  left: 70px;
+  top: 10px;
+  width: 29.8px;
+  height: -26px;
+  top: -23px;
+  right: 30px;
+}
+
+.discussions .ellipse-4 {
+  border-radius: 7px;
+  background: #F45B5B;
+  width: 10px;
+  height: 10px;
+  margin-top: -18px;
+  position: relative;
+  right: -5px;
+
+}
+
+.discussions .container-1 {
+  border-radius: 8px;
+  background: #FFFFFF;
+  position: absolute;
+  top: -2.5px;
+  right: 0px;
+  display: flex;
+  padding: 1px;
+  width: 16px;
+  height: 16px;
+  box-sizing: border-box;
+}
+
+.discussions .container {
+  position: relative;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: -50px;
+  line-height: 2.2;
+  color: #FFFFFF;
+}
+
+.discussions .notification {
+  position: relative;
+  margin: 0 17.7px 7px 0;
+  display: flex;
+  padding: 0 5.4px 14px 19.6px;
+  box-sizing: border-box;
+}
+
+.discussions .image-16 {
+  border-radius: 5px;
+  background: url('assets/images/Image16.png') 50% / cover no-repeat;
+  width: 35.8px;
+  height: 27.8px;
+  position: relative;
+  margin-top: -25px;
+}
+
+.discussions .mask-group-1 {
+  border-radius: 15px;
+  position: absolute;
+  right: -0.7px;
+  bottom: -2.4px;
+  display: flex;
+  width: 40.8px;
+  height: 43.8px;
+  box-sizing: border-box;
+}
+
+.discussions .mask-group {
+  border-radius: 5px;
+  position: relative;
+  margin-right: 8.3px;
+  width: 40px;
+  box-sizing: border-box;
+}
+
+.discussions .vector {
+  border-radius: 5px;
+  width: 6.9px;
+  height: 3.9px;
+}
+
+.discussions .group-38 {
+  border-radius: 5px;
+  margin: 19px 0 17px 0;
+  display: flex;
+  width: 6.9px;
+  height: 3.9px;
+  box-sizing: border-box;
+}
+
+.discussions .profile-picture {
+  border-radius: 5px;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: row;
+  width: 55.2px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .navigation {
+  margin: 12.3px 0 19.7px 0;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .container-23 {
+  margin: 0 4.3px 20px 0;
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .rectangle-211 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 889px;
+  height: 58px;
+}
+
+.discussions .vector-8 {
+  width: 20.5px;
+  height: 20.5px;
+}
+
+.discussions .group-351 {
+  display: flex;
+  width: 20.5px;
+  height: 20.5px;
+  box-sizing: border-box;
+}
+
+.discussions .search-discussions {
+  margin-bottom: 0.5px;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 400;
+  font-size: 12px;
+  color: var(--black, #000000);
+  position: relative;
+  margin-top: -1px;
+  right: 560px;
+}
+
+.my-course {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #F5F5F7;
+  /* Ngjyra gri e lehtë për sfondin */
+  border-radius: 5px;
+  /* Qoshe të rrumbullakëta për shiritin */
+  width: 880px;
+  /* Gjerësia e shiritit */
+  height: 30px;
+  /* Lartësia e shiritit */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* Efekt hijeje për theksim */
+  box-sizing: border-box;
+  position: relative;
+  margin-top: -72px;
+
+}
+
+.container-19 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.discussions .line-144 {
+  background: rgba(0, 0, 0, 0.7);
+  margin: 2px 41px 2px 0;
+  width: 1px;
+  height: 34px;
+  position: relative;
+  margin-top: 10px;
+  left: 185px;
+}
+
+.discussions .ask-new {
+  overflow-wrap: break-word;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 12px;
+  color: #ffffff;
+  position: relative;
+  right: -5px;
+  margin-top: -5px;
+}
+
+.discussions .container-33 {
+  border-radius: 8px;
+  background: #000000;
+  position: relative;
+  display: flex;
+  padding: 13px 0 9px 14px;
+  width: 100px;
+  height: 33px;
+  box-sizing: border-box;
+  right: -170px;
+  margin-top: 9px;
+}
+
+.discussions .container-27 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  width: 182px;
+  box-sizing: border-box;
+}
+
+.my-course .vector-8 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2px;
+  background-color: #F5F5F7;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(248, 246, 246, 0.1);
   width: 20px;
   height: 20px;
+  box-sizing: border-box;
+  margin-top: -1px;
 }
 
-.notification-discussion .container-1-discussion {
+.container-5 {
+  margin-top: 15px;
+}
+
+.discussions .label {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: var(--body-2-font-size, 14px);
+  letter-spacing: var(--body-2-letter-spacing, 1.3px);
+  line-height: var(--body-2-line-height, 1.429);
+  color: var(--gray-1, #333333);
+}
+
+.discussions .choice-chipa-enabled {
+  border-radius: 16px;
+  border: 1px solid var(--gray-4, #BDBDBD);
+  margin-right: 10px;
+  display: flex;
+  padding: 4px 11.3px 5px 11px;
+  box-sizing: border-box;
+}
+
+.discussions .label-1 {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: var(--body-2-font-size, 14px);
+  letter-spacing: var(--body-2-letter-spacing, 0.3px);
+  line-height: var(--body-2-line-height, 1.429);
+  color: var(--gray-11, #333333);
+}
+
+.discussions .choice-chipb-active {
+  border-radius: 16px;
+  border: 1px solid var(--gray-4, #BDBDBD);
+  margin-right: 8px;
+  display: flex;
+  padding: 5px 11.4px 5px 11px;
+  box-sizing: border-box;
+}
+
+.discussions .label-2 {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: var(--body-2-font-size, 14px);
+  letter-spacing: var(--body-2-letter-spacing, 0.3px);
+  line-height: var(--body-2-line-height, 1.429);
+  color: var(--gray-1, #333333);
+}
+
+.discussions .choice-chipa-enabled-1 {
+  border-radius: 16px;
+  border: 1px solid var(--gray-4, #BDBDBD);
+  margin-right: 8px;
+  display: flex;
+  padding: 5px 11.5px 5px 11px;
+  box-sizing: border-box;
+}
+
+.discussions .label-3 {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: var(--body-2-font-size, 14px);
+  letter-spacing: var(--body-2-letter-spacing, 0.3px);
+  line-height: var(--body-2-line-height, 1.429);
+  color: var(--gray-1, #333333);
+}
+
+.discussions .choice-chipa-enabled-2 {
+  border-radius: 16px;
+  border: 1px solid var(--gray-4, #BDBDBD);
+  margin-right: 8px;
+  display: flex;
+  padding: 5px 11.4px 5px 11px;
+  box-sizing: border-box;
+}
+
+.discussions .label-4 {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: var(--body-2-font-size, 14px);
+  letter-spacing: var(--body-2-letter-spacing, 0.3px);
+  line-height: var(--body-2-line-height, 1.429);
+  color: var(--gray-1, #333333);
+}
+
+.discussions .choice-chipa-enabled-3 {
+  border-radius: 16px;
+  border: 1px solid var(--gray-4, #BDBDBD);
+  display: flex;
+  padding: 5px 11.5px 5px 11px;
+  box-sizing: border-box;
+}
+
+.discussions .frame-1235 {
+  margin-right: 21px;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .label-5 {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: var(--body-2-font-size, 14px);
+  letter-spacing: var(--body-2-letter-spacing, 0.3px);
+  line-height: var(--body-2-line-height, 1.429);
+  color: var(--gray-1, #333333);
+}
+
+.discussions .choice-chipa-enabled-4 {
+  border-radius: 16px;
+  margin: 6px 0px 6px 0;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.discussions .container-5 {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.container-5 {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  /* Zvogëluar margjinën për më pak hapësirë poshtë */
+  display: flex;
+  flex-direction: row;
+  align-self: flex-start;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .label,
+.discussions .label-1,
+.discussions .label-2,
+.discussions .label-3,
+.discussions .label-4,
+.discussions .label-5 {
+  overflow-wrap: break-word;
+  font-family: var(--body-2-font-family, 'Roboto');
+  font-weight: var(--body-2-font-weight, 400);
+  font-size: 11.5px;
+  /* Madhësia më e vogël e tekstit */
+  letter-spacing: var(--body-2-letter-spacing, 0.3px);
+  line-height: 1;
+  /* Linjat më të ngushta */
+  color: var(--gray-1, #333333);
+}
+
+.discussions .choice-chipa-enabled,
+.discussions .choice-chipb-active,
+.discussions .choice-chipa-enabled-1,
+.discussions .choice-chipa-enabled-2,
+.discussions .choice-chipa-enabled-3 {
+  border-radius: 66px;
+  border: 1px solid var(--gray-4, #BDBDBD);
+  margin-right: 14px;
+  /* Ngushtimi i hapësirës ndërmjet butonave */
+  display: flex;
+  padding: -4px 10px;
+  /* Ngushtimi i padding-it për një formë më të vogël të butonit */
+  box-sizing: border-box;
+}
+
+.discussions .frame-1235 {
+  margin-right: 5px;
+  /* Margjinë më të vogël për më shumë kompaktësi */
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .rectangle-7 {
+  border-radius: 10px;
+  position: absolute;
+  left: 23px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 1; /* Kjo vlerë bën që ky imazh të jetë më poshtë */
+  height: 43px;
+  width: 50px;
+  margin-top: 4.7px;
+  background-color: #ffffff;
+  /* Sfond i lehtë si në foto */
+}
+
+
+
+.discussions .ellipse-2861 {
+  border-radius: 20px;
+  position: relative;
+  width: 40px;
+  height: 36px;
+  left: 19px;
+  margin-top: 1.9px;
+  z-index: 1;
+}
+
+.discussions .ellipse-2854 {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  width: 24px;
+  height: 34px;
+  left: 970px;
+}
+
+ /* .discussions .container-18 {
+  border-radius: 12px;
+  background: #d00b0b;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 8.4px 8.5px 8px 8px;
+  width: 40.5px;
+  height: 40px;
+  left: 10px;
+  box-sizing: border-box;
+  margin-top: 4px;
+}  */
+
+.discussions .dplace-solution {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+  position: relative;
+  font-weight: bold;
+  margin-top: -4px;
+  right: 720px;
+}
+
+.discussions .shams-tabrez-last-comment-7-hago-by-nahin-5 {
+  overflow-wrap: break-word; /* Kjo mund të hiqet nëse e ke përdorur për të ndarë fjalët */
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 11px);
+  color: var(--black, #000000);
+  position: relative;
+  margin-top: 3px;
+  right: 720px; /* Rregullo këtë vlerë ose hiqe nëse nuk është e nevojshme */
+  white-space: nowrap; /* Siguron që teksti të shfaqet në një rresht të vetëm */
+  overflow: hidden; /* Opsionale: e përdor për të prerë çdo pjesë të tepërt të tekstit */
+  text-overflow: ellipsis; /* Opsionale: shfaq "..." nëse teksti është shumë i gjatë për hapësirën */
+}
+
+
+.discussions .container-13 {
+  margin: 8.4px 0 11.4px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+.discussions .arrow-drop-up-8 {
+  width: 16px;
+  height: 16px;
+}
+
+.discussions .frame-12774 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
   position: absolute;
   top: -5px;
   right: -5px;
@@ -124,113 +735,806 @@
   justify-content: center;
 }
 
-.notification-discussion .container-discussion {
-  color: white;
+.discussions .container-5 {
+  overflow-wrap: break-word;
+  font-family: 'Gilroy-Medium', 'Source Sans 3';
+  font-weight: 400;
   font-size: 12px;
+  color: #000000;
 }
 
-.profile-picture-discussion {
+.discussions .frame-12784 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: relative;
   display: flex;
   align-items: center;
 }
 
-.profile-picture-discussion .mask-group-discussion {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-right: 10px;
-}
-
-.profile-picture-discussion .mask-group-1-discussion {
-  width: 100%;
-  height: 100%;
-  background-color: #ccc;
-}
-
-.profile-picture-discussion .group-38-discussion .vector-discussion {
-  width: 20px;
-  height: 20px;
-}
-
-.my-course-discussion {
+.discussions .rating-discussion-4 {
+  border-radius: 16px;
+  background: #000000;
+  position: relative;
+  margin: 0 0 4px 19px;
   display: flex;
-  align-items: center;
-  margin-bottom: 20px;
+  width: fit-content;
+  box-sizing: border-box;
 }
 
-.my-course-discussion .rectangle-211-discussion {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+.discussions .comments-4 {
+  margin-right: 1.4px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
 }
 
-.my-course-discussion .container-19-discussion {
-  display: flex;
-  align-items: center;
-}
-
-.my-course-discussion {
-  margin-left: 10px;
-}
-
-.search-discussions-discussion {
-  border: none; /* Remove border */
-  outline: none; /* Remove outline */
-  
-  background-color: #eee;
-  /* Add other styles here if necessary */
-}
-
-.container-27-discussion {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
-.line-144-discussion {
-  flex-grow: 1;
-  height: 1px;
-  background-color: #ccc;
-}
-
-.container-33-discussion {
-  margin-left: 10px;
-}
-
-.ask-new-discussion {
-  color: blue;
-  cursor: pointer;
-}
-
-.frame-1235-discussion {
-  display: flex;
-  margin-bottom: 20px;
-}
-
-.choice-chipa-enabled-discussion,
-.choice-chipb-active-discussion {
-  padding: 10px 20px;
-  border-radius: 20px;
-  cursor: pointer;
-}
-
-.choice-chipa-enabled-discussion {
-  background-color: #eee;
-}
-
-.choice-chipb-active-discussion {
-  background-color: blue;
-  color: white;
-}
-
-.courses-section-discussion {
+.discussions .container-4 {
+  position: relative;
+  margin: 10.4px 0 14px 0;
   display: flex;
   flex-direction: column;
+  width: 74px;
+  box-sizing: border-box;
 }
 
-.courses-section-discussion > div {
+.learn-figma {
+  background-color: #f0eeee; /* Ngjyra e sfondit */
+  position: relative;
+  margin: 0 4px 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  left: -50px;
+  padding: 7.6px 26px 8px 8px;
+  width: 1014px;
+  box-sizing: border-box;
+  height: 55px; /* Përmasat e kutisë */
+
+}
+
+.discussions .rectangle-8 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.discussions .rectangle-13 {
+  border-radius: 12px;
+  background: #ebe3e3;
+  margin-right: 23.5px;
+  width: 64px;
+  height: 64px;
+}
+
+.discussions .what-is-the-pcb-board-made-of {
+  margin-bottom: 9.6px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black, #000000);
+}
+
+.discussions .shams-tabrez-last-comment-7-hago-by-nahin-4 {
+  margin-left: 0.5px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-24 {
+  margin: 7.4px 0 11px 0;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.discussions .container-6 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .arrow-drop-up-6 {
+  width: 16px;
+  height: 16px;
+}
+
+.discussions .frame-12773 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 2px 4.5px 2px 6.5px;
+  width: 28px;
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.discussions .container-4 {
+  overflow-wrap: break-word;
+  font-family: 'Gilroy-Medium', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.discussions .frame-12783 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  padding: 2.5px 7.7px 3.5px 7.5px;
+  box-sizing: border-box;
+}
+
+.discussions .rating-discussion-3 {
+  border-radius: 16px;
+  background: #000000;
+  position: relative;
+  margin: 0 0 4px 19px;
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .comments-3 {
+  margin-right: 1.4px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container {
+  margin: 10.4px 0 13.6px 0;
+  display: flex;
+  flex-direction: column;
+  width: 74px;
+  box-sizing: border-box;
+}
+
+.discussions .container-22 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1089.5px;
+  height: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .ellipse-2853 {
+  position: absolute;
+  left: 8px;
+  bottom: 7px;
+  width: 64px;
+  height: 64px;
+}
+
+.discussions .ellipse-2843 {
+  border-radius: 24px;
+  background: url('assets/images/Ellipse284.jpeg'), linear-gradient(#D9D9D9, #D9D9D9);
+  position: absolute;
+  left: 16px;
+  bottom: 16px;
+  width: 48px;
+  height: 48px;
+}
+
+.discussions .analog-photography {
+  position: relative;
+  margin: 0 4px 16px 0;
+  display: flex;
+  padding: 7.6px 26px 8.4px 8.5px;
+  width: 1124px;
+  box-sizing: border-box;
+}
+
+.discussions .rectangle-9 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.discussions .ellipse-2842 {
+  border-radius: 24px;
+  background: url('assets/images/Ellipse2843.jpeg'), linear-gradient(#D9D9D9, #D9D9D9);
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.discussions .ellipse-2852 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 64px;
+  height: 64px;
+}
+
+.discussions .container-16 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 23.5px;
+  display: flex;
+  padding: 8px 8.5px 8px 8px;
+  width: 64.5px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.discussions .deep-learning-in-the-field-of-labour {
+  margin: 0 22.1px 9px 0;
+  display: inline-block;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black, #000000);
+}
+
+.discussions .shams-tabrez-last-comment-7-hago-by-nahin-3 {
+  margin-left: 0.5px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-32 {
+  margin: 8px 0 11px 0;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.discussions .container-30 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .arrow-drop-up-4 {
+  width: 16px;
+  height: 16px;
+}
+
+.discussions .frame-12772 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 2px 4.5px 2px 6.5px;
+  width: 28px;
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.discussions .container-3 {
+  overflow-wrap: break-word;
+  font-family: 'Gilroy-Medium', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.discussions .frame-12782 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  padding: 2.5px 7.7px 3.5px 7.5px;
+  box-sizing: border-box;
+}
+
+.discussions .rating-discussion-2 {
+  border-radius: 16px;
+  background: #000000;
+  position: relative;
+  margin: 0 0 4px 19px;
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .comments-2 {
+  margin-right: 1.4px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-3 {
+  position: relative;
+  margin: 10px 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  width: 74px;
+  box-sizing: border-box;
+}
+
+.discussions .master-instagram {
+  position: relative;
+  margin: 0 4px 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 26px 8px 8px;
+  width: 1124px;
+  box-sizing: border-box;
+}
+
+.discussions .rectangle-10 {
+  border-radius: 14px;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  height: 100%;
+}
+
+.discussions .ellipse-2841 {
+  border-radius: 24px;
+  background: url('assets/images/Ellipse2842.jpeg') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.discussions .ellipse-2862 {
+  border-radius: 10px;
+  position: absolute;
+  top: 1px;
+  right: 0.5px;
+  width: 32px;
+  height: 34.8px;
+}
+
+.discussions .container-14 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 23.5px;
+  display: flex;
+  padding: 8px 8.5px 8px 7.5px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.discussions .soil-moisture-prediction-with-ml {
+  margin-bottom: 10px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black, #000000);
+}
+
+.discussions .shams-tabrez-last-comment-7-hago-by-nahin-2 {
+  margin-left: 0.5px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-20 {
+  margin: 7px 0 11px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.discussions .container-9 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .arrow-drop-up-2 {
+  width: 16px;
+  height: 16px;
+}
+
+.discussions .frame-12771 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 2px 4.5px 2px 6.5px;
+  width: 28px;
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.discussions .container-2 {
+  overflow-wrap: break-word;
+  font-family: 'Gilroy-Medium', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.discussions .frame-12781 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  padding: 2.5px 7.7px 3.5px 7.5px;
+  box-sizing: border-box;
+}
+
+.discussions .rating-discussion-1 {
+  border-radius: 16px;
+  background: #000000;
+  position: relative;
+  margin: 0 0 4px 19px;
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .comments-1 {
+  margin-right: 1.4px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-28 {
+  position: relative;
+  margin: 10px 0 14px 0;
+  display: flex;
+  flex-direction: column;
+  width: 74px;
+  box-sizing: border-box;
+}
+
+.discussions .basics-of-drawing {
+  position: relative;
+  margin: 0 4px 16px 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 8px 26px 8px 8.5px;
+  width: 1124px;
+  box-sizing: border-box;
+}
+
+.discussions .rectangle-11 {
+  border-radius: 14px;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  translate: -50% 0;
+  width: 1124px;
+  height: 80px;
+}
+
+.discussions .rectangle-21 {
+  border-radius: 14px;
+  position: absolute;
+  left: 50%;
+  top: 94.4px;
+  translate: -50% 0;
+  width: 1124px;
+  height: 80px;
+}
+
+.discussions .ellipse-284 {
+  border-radius: 24px;
+  background: url('assets/images/Ellipse2841.jpeg') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
+  width: 48px;
+  height: 48px;
+}
+
+.discussions .container-15 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 24px;
+  display: flex;
+  padding: 8.4px 8.5px 7.6px 7.5px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.discussions .photoshop-essence {
+  margin: 0 1.5px 9.3px 1.5px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black, #000000);
+}
+
+.discussions .shams-tabrez-last-comment-7-hago-by-nahin {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-29 {
+  margin: 8.4px 39.7px 10.3px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.discussions .vector-7 {
+  width: 1.6px;
+  height: 0px;
+}
+
+.discussions .flame-8 {
+  margin: 40.6px 0 23.4px 0;
+  display: flex;
+  width: 1.6px;
+  height: 0px;
+  box-sizing: border-box;
+}
+
+.discussions .container-2 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .arrow-drop-up {
+  width: 16px;
+  height: 16px;
+}
+
+.discussions .frame-1277 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 2px 4.5px 2px 6.5px;
+  width: 28px;
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.discussions .container-1 {
+  overflow-wrap: break-word;
+  font-family: 'Gilroy-Medium', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.discussions .frame-1278 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  padding: 2.5px 7.7px 3.5px 7.5px;
+  box-sizing: border-box;
+}
+
+.discussions .rating-discussion {
+  border-radius: 16px;
+  background: #000000;
+  position: relative;
+  margin: 0 0 4px 19px;
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .comments {
+  margin-right: 1.4px;
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-8 {
+  margin: 10.4px 0 13.6px 0;
+  display: flex;
+  flex-direction: column;
+  width: 74px;
+  box-sizing: border-box;
+}
+
+.discussions .container-17 {
+  margin: 0 0 30.4px 0.5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1089.5px;
+  box-sizing: border-box;
+}
+
+.discussions .ellipse-285 {
+  border-radius: 24px;
+  background: url('assets/images/Ellipse285.jpeg') 50% / cover no-repeat, linear-gradient(#D9D9D9, #D9D9D9);
+  position: relative;
+  width: 48px;
+  height: 48px;
+}
+
+.discussions .ellipse-2851 {
+  border-radius: 10px;
+  position: absolute;
+  top: 1px;
+  right: 0px;
+  width: 32px;
+  height: 61px;
+}
+
+.discussions .container-31 {
+  border-radius: 12px;
+  background: #FFFFFF;
+  position: relative;
+  margin-right: 26px;
+  display: flex;
+  padding: 8px;
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+}
+
+.discussions .big-opportunity-of-io-tin-africa {
+  margin-bottom: 8px;
+  display: inline-block;
+  align-self: flex-start;
+  overflow-wrap: break-word;
+  font-family: 'Baloo Bhai', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 18px;
+  color: var(--black, #000000);
+}
+
+.discussions .shams-tabrez-last-comment-7-hago-by-nahin-1 {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-10 {
+  margin: 8px 0 12px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.discussions .container-34 {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+}
+
+.discussions .arrow-drop-up-10 {
+  width: 16px;
+  height: 16px;
+}
+
+.discussions .frame-12775 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  display: flex;
+  padding: 2px 4.5px 2px 6.5px;
+  width: 28px;
+  height: 21px;
+  box-sizing: border-box;
+}
+
+.discussions .container-6 {
+  overflow-wrap: break-word;
+  font-family: 'Gilroy-Medium', 'Source Sans 3';
+  font-weight: 400;
+  font-size: 12px;
+  color: #000000;
+}
+
+.discussions .frame-12785 {
+  border-radius: 15px 0 0 15px;
+  border: 0.5px solid var(--gray-3, #828282);
+  background: #FFFFFF;
+  position: relative;
+  display: flex;
+  padding: 2.5px 7.7px 3.5px 7.5px;
+  box-sizing: border-box;
+}
+
+.discussions .rating-discussion-5 {
+  border-radius: 16px;
+  background: #000000;
+  position: relative;
+  margin: 0 0.6px 4px 17px;
+  display: flex;
+  width: fit-content;
+  box-sizing: border-box;
+}
+
+.discussions .comments-5 {
+  overflow-wrap: break-word;
+  font-family: var(--caption-font-family, 'Roboto');
+  font-weight: var(--caption-font-weight, 400);
+  font-size: var(--caption-font-size, 13px);
+  color: var(--black, #000000);
+}
+
+.discussions .container-21 {
+  margin: 8px 0px 16px 0;
+  display: flex;
+  flex-direction: column;
+  width: 72.6px;
+  box-sizing: border-box;
+}
+
+.discussions .container-11 {
+  margin-right: 4.4px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1085.6px;
+  box-sizing: border-box;
+}
+
+.discussions .container-26 {
+  position: relative;
   display: flex;
   align-items: center;
   background-color: white;
@@ -240,32 +1544,41 @@
   border-radius: 10px; /* Rounded corners */
 }
 
-.courses-section-discussion img {
-  width: 40px;
-  height: 40px;
-  margin-right: 10px;
+.discussions .ellipse-286 {
+  position: absolute;
+  left: 8px;
+  top: 9px;
+  width: 64px;
+  height: 64px;
 }
 
-.courses-section-title-discussion {
-  font-weight: bold;
+.discussions .group-66 {
+  position: relative;
+  margin-left: 4px;
+  display: flex;
+  padding: 7.6px 26px 8.4px 8px;
+  width: 1124px;
+  box-sizing: border-box;
 }
 
-.courses-section-discussion .shams-tabrez-last-comment-discussion {
-  color: #666;
-}
-
-.rating-discussion {
+.discussions .courses-section {
   display: flex;
   align-items: center;
   margin-left: auto;
 }
 
-.rating-discussion img {
-  width: 20px;
-  height: 20px;
-  margin-right: 5px;
+.discussions .container-7 {
+  margin: 16px 0 40.8px 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
 }
 
-.comments-discussion {
-  margin-left: 10px;
+.discussions {
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  padding: 24px 76px 22.9px 32.3px;
+  width: 1440px;
+  box-sizing: border-box;
 }

@@ -1,0 +1,77 @@
+/* Grid.css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Create 4 equal-height rows */
+    gap: 20px; /* Space between rows */
+  }
+  
+  .grid-item {
+    border-radius: 10px;
+    background-color: #F5F5F7;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    color: #333;
+  }
+
+  .grid-item img {
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  .grid-item .card-title {
+    font-size: 16px;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .grid-item .card-description {
+    font-size: 13px;
+    text-align: left;
+    color: #373737;
+  }
+
+  .grid-item .icon {
+    font-size: 13px;
+    color: #BDBDBD;
+  }
+
+  .grid-item .icon .svg {
+    color: #BDBDBD;
+  }
+
+  .grid-item .icon span {
+    color: #080808;
+  }
+
+  .grid-item .icon-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+
+  .grid-item .card-footer {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .grid-item .card-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: background-color 0.3s, transform 0.1s;
+  }
+  
+  .grid-item .card-button:hover {
+    background-color: #333; /* Darker shade on hover */
+  }

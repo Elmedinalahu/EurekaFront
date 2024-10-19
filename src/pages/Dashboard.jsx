@@ -10,23 +10,23 @@ export default function Dashboard() {
           <div className="e">
           E.
           </div>
-          <img className="vector-64" src="assets/vectors/Unknown" />
-          <img className="vector-70" src="assets/vectors/Unknown" />
+          <img className="vector-64" src="/assets/images/Home.png" alt="Icon 9" />
+          <img className="vector-70"  src="/assets/images/Hat.png" />
           <div className="group-6">
             <div className="group-16">
-              <img className="vector-68" src="assets/vectors/Unknown" />
+              <img className="vector-68" src="assets\images\Profile.png" />
             </div>
             <div className="group-17">
-              <img className="vector-69" src="assets/vectors/Unknown" />
+              <img className="vector-69"  src="assets\images\Message.png"/>
             </div>
           </div>
           <div className="group-3">
-            <img className="vector-67" src="assets/vectors/Unknown" />
+            <img className="vector-67" src="assets\images\Settings.png"  />
           </div>
-          <img className="group-2" src="assets/vectors/Unknown" />
-          <div className="group-7">
+          <img className="group-2" src="assets\images\Logout.png"/>
+          {/* <div className="group-7">
             <img className="vector-71" src="assets/vectors/Unknown" />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="container-40">

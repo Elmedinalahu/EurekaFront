@@ -1,18 +1,10 @@
 body{
-  background: url('../images/Screenshot\ 2024-07-15\ 232523.jpg') no-repeat center center fixed;
   background-size: cover;
   display: flex;
-  width: 1152px;
   box-sizing: border-box;
 }
 
-.signup {
-  background: #FFFFFF;
-  display: flex;
-  padding: 113.6px 115.04px 156px 115.04px; /* 142px * 0.8, 143.8px * 0.8, 195px * 0.8, 143.8px * 0.8 */
-  width: 1152px; /* 1440px * 0.8 */
-  box-sizing: border-box;
-}
+
 
 .signup .rectangle-40 {
   background: #000000;
@@ -51,15 +43,18 @@ body{
 }
 
 .signup .unlock-your-potential-join-now {
-  backdrop-filter: blur(1.6px); /* 2px * 0.8 */
-  margin: 0 0 36.8px 1.6px; /* 0, 0, 46px * 0.8, 2px * 0.8 */
-  display: inline-block;
+  backdrop-filter: blur(1.6px);
+  margin: 0 0 36.8px -10px; /* Shift more to the left with negative margin */
+  display: block;
   overflow-wrap: break-word;
   font-family: 'David Libre';
   font-weight: 400;
-  font-size: 40px; /* 50px * 0.8 */
+  font-size: 40px;
   color: #FFFFFF;
+  text-align: left;
 }
+
+
 
 .signup .first-name,
 .signup .last-name,
@@ -121,6 +116,16 @@ body{
   font-weight: 700;
   font-size: 20px; /* 25px * 0.8 */
   color: #FFFFFF;
+  box-shadow: 0px 0px 3.2px 1.6px rgba(80, 104, 161, 0.5); /* 4px * 0.8, 2px * 0.8 */
+  border-radius: 8px; /* 10px * 0.8 */
+  background: rgba(80, 104, 161, 0.8);
+  position: relative;
+  display: flex;
+  padding: 16px 0; /* 12px * 0.8, 0, 11px * 0.8, 0 */
+  width: 364.8px; /* 456px * 0.8 */
+  box-sizing: border-box;
+  text-align: center;
+  justify-content: center;
 }
 
 .signup .container-3 {
@@ -149,4 +154,103 @@ body{
   color: #FFFFFF;
   text-decoration: underline;
   font-weight: 400;
+}
+
+
+
+.signup .unlock-your-potential-join-now {
+  backdrop-filter: blur(1.6px);
+  margin: 0 0 36.8px 0; /* Remove negative margin */
+  display: block;
+  overflow-wrap: break-word;
+  font-family: 'David Libre';
+  font-weight: 400;
+  font-size: 40px;
+  color: #FFFFFF;
+  text-align: left; /* Align text to the left */
+  width: 100%; /* Make it take full width */
+}
+
+
+
+
+
+
+
+
+.signup {
+  font-family: Arial, sans-serif;
+}
+
+.rectangle-40 {
+  width: 100%;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+}
+
+.container-5 {
+  max-width: 400px;
+  margin: auto;
+}
+
+.unlock-your-potential-join-now {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-container {
+  display: flex;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  outline: none;
+}
+
+.input-container label {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  color: #aaa;
+  font-size: 16px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.input-container input:focus + label,
+.input-container .shrink {
+  top: -10px;
+  font-size: 12px;
+  color: #333;
+}
+
+.container-3 {
+  text-align: center;
+}
+
+.register {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.register:hover {
+  background-color: #0056b3;
+}
+
+.already-have-an-account {
+  margin-top: 10px;
+  text-align: center;
 }

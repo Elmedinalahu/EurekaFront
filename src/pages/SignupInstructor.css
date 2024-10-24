@@ -1,4 +1,4 @@
-.login-student {
+.signup-din {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   background-color: #f4f4f4;
 }
 
-.login-student-container {
+.signup-din-container {
   display: flex;
   box-shadow: 0px 4px 20px #7a49882c;
   background-color: white;
@@ -16,29 +16,30 @@
   max-width: 1200px;
 }
 
-.login-student-left {
+.signup-din-left {
   flex: 1;
   background-image: url(C:\Users\online\Downloads\Eurkea\src\assets\eurekalogo.JPG);
   background-size: cover;
 }
 
-.login-student-right {
+
+.signup-din-right {
   flex: 0.7;
   padding: 40px;
 }
 
-.login-student-header {
+.signup-din-header {
   font-size: 32px;
   font-weight: bold;
   margin-bottom: 20px;
 }
 
-.input-student-container {
+.input-din-container {
   position: relative;
   margin-bottom: 15px;
 }
 
-.loginstudent-input {
+.sigup-input {
   width: 95%;
   padding: 10px;
   font-size: 16px;
@@ -47,26 +48,12 @@
   outline: none;
 }
 
-.keep-me-logged-in-container {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
 
-.keep-me-logged-in {
-  font-size: 14px;
-}
-
-.forgot-password {
+.signin-color{
   color: #7a4988;
-  text-decoration: none;
+    text-decoration: none;
 }
-
-.forgot-password:hover {
-  text-decoration: underline;
-}
-
-.login-din {
+.register-din {
   width: 100%;
   padding: 12px;
   margin-top: 20px;
@@ -79,22 +66,20 @@
   transition: background-color 0.3s ease;
 }
 
-.login-din:hover {
+.register-din:hover {
   background-color: #7a49889f;
 }
 
-.dont-have-an-account {
+.already-din-have-an-account {
   margin-top: 10px;
   font-size: 14px;
 }
 
-.error-message {
-  color: red;
-  font-size: 14px;
-  margin-top: 10px;
+.already-din-have-an-account a {
+  color: #007bff;
+  text-decoration: none;
 }
-.keep-me-logged-in-checkbox
-{
- display: flex;
-align-items: center;
+
+.already-din-have-an-account a:hover {
+  text-decoration: underline;
 }

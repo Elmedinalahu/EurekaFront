@@ -452,13 +452,13 @@
 
 
 .two-section-container-right-section {
-  flex: 0 0 30%; /* Adjust width of the right section */
-  padding: 10px; /* Optional: Add padding for spacing */
   display: flex;
   flex-direction: column;
   align-items: flex-start; /* Align items to the start (left) */
 }
-
+.two-section-content{
+  width: min-content;
+}
 .total-section {
   display: flex;
   flex-direction: column;

@@ -1,4 +1,5 @@
 // src/pages/CourseDetails.js
+// ...other imports
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { FaStar, FaStarHalfAlt, FaUser, FaClock } from 'react-icons/fa';
@@ -65,9 +66,11 @@ export default function CourseDetails() {
 
     const handleBuyNow = () => {
         if (!isLoggedIn()) {
-            navigate('/login'); // Redirect to login if not logged in
+            navigate('/login', { state: { from: '/checkout' } });
         } else {
-            navigate('/checkout'); // Redirect to checkout if logged in
+            const email = 'user@example.com'; 
+            const price = course.price; 
+            navigate('/checkout', { state: { courseId: course.id, email, price } });
         }
     };
 
@@ -89,15 +92,14 @@ export default function CourseDetails() {
                         <div className="icon"><GoBell size={20} color="black" /></div>
                         <div className="icon" onClick={handleLoginLogout}>
                             {isLoggedIn() ? (
-                                <FaSignOutAlt size={20} color="black" /> // Show logout icon if logged in
+                                <FaSignOutAlt size={20} color="black" />
                             ) : (
-                                <FaSignInAlt size={20} color="black" /> // Show login icon if not logged in
+                                <FaSignInAlt size={20} color="black" />
                             )}
                         </div>
                     </div>
                 </div>
 
-                {/* Top Categories Slider with Links */}
                 <div className="top-categories-nav">
                     {categories.map(category => (
                         <Link key={category.id} to={`/category/${category.id}`} className={`categorie-item`}>
@@ -110,15 +112,23 @@ export default function CourseDetails() {
                     <div className="course-details">
                         <div className="course-info-details">
                             <h1 className='h1-course-details'>{course.name}</h1>
+                            {course.price === 0 && ( // Check if course is free
+                                <div className="free-course-content">
+                                    <h2>This course is free!</h2>
+                                    <video controls>
+                                        <source src={course.videoUrl} type="video/mp4" />
+                                        Your browser does not support the video tag.
+                                    </video>
+                                    <p>Enjoy learning without any cost!</p>
+                                </div>
+                            )}
                             <p>{course.longDescription}</p>
                             <p className="course-rating">
                                 <span>{course.ratingsCount}</span>
                                 <div className="rating-stars">
-                                    <FaStar size={20} color="gold" />
-                                    <FaStar size={20} color="gold" />
-                                    <FaStar size={20} color="gold" />
-                                    <FaStar size={20} color="gold" />
-                                    <FaStarHalfAlt size={20} color="gold" />
+                                    {[...Array(5)].map((_, index) => (
+                                        index < Math.floor(course.rating) ? <FaStar key={index} size={20} color="gold" /> : <FaStarHalfAlt key={index} size={20} color="gold" />
+                                    ))}
                                 </div>
                             </p>
                             <div className="course-meta">
@@ -155,7 +165,7 @@ export default function CourseDetails() {
                                 {course.courseContent?.sections.map((section, sectionIndex) => (
                                     <div key={sectionIndex} className="section">
                                         <h3 className='h3-course-details' onClick={() => toggleSection(sectionIndex)} style={{ cursor: 'pointer' }}>
-                                            {isSectionOpen(sectionIndex) ? <FaChevronUp size={16} /> : <FaChevronDown size={16} />} {/* Conditional arrow */}
+                                            {isSectionOpen(sectionIndex) ? <FaChevronUp size={16} /> : <FaChevronDown size={16} />}
                                             {section.title}
                                         </h3>
                                         {isSectionOpen(sectionIndex) && (
@@ -181,26 +191,29 @@ export default function CourseDetails() {
                             </div>
                         </div>
 
-                        <div className="course-image-details-price">
-                            <div className="course-nested">
-                                <div className="course-image-details">
-                                    <img src={course.pictureUrl} alt={course.name} />
-                                </div>
-                                <div className="course-buttons">
-                                    <p className="course-price-details">€{course.price}</p>
-                                    <button className="add-to-cart">Add to Cart</button>
-                                    <button className="buy-now" onClick={handleBuyNow}>Buy Now</button>
-                                </div>
-                                <div className='course-include'>
-                                    <p>This course includes:</p>
-                                    <ul>
-                                        <li>Access on mobile and TV</li>
-                                        <li>Full lifetime access</li>
-                                        <li>Certificate of completion</li>
-                                    </ul>
+                        {/* Conditionally render this div only if the course is not free */}
+                        {course.price > 0 && (
+                            <div className="course-image-details-price">
+                                <div className="course-nested">
+                                    <div className="course-image-details">
+                                        <img src={course.pictureUrl} alt={course.name} />
+                                    </div>
+                                    <div className="course-buttons">
+                                        <p className="course-price-details">€{course.price}</p>
+                                        <button className="add-to-cart">Add to Cart</button>
+                                        <button className="buy-now" onClick={handleBuyNow}>Buy Now</button>
+                                    </div>
+                                    <div className='course-include'>
+                                        <p>This course includes:</p>
+                                        <ul>
+                                            <li>Access on mobile and TV</li>
+                                            <li>Full lifetime access</li>
+                                            <li>Certificate of completion</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
+                        )}
                     </div>
                 ) : (
                     <p>Course not found.</p>

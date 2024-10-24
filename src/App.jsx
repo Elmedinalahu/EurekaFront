@@ -1,5 +1,7 @@
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { loadStripe } from '@stripe/stripe-js';
+import { Elements } from '@stripe/react-stripe-js';
 import './index.css';
 import F12Main from './F12Main';
 
@@ -11,24 +13,48 @@ import Discussions from './pages/Discussions';
 import Landing from './pages/Landing';
 import Landing1 from './pages/Landing1';
 import Login from './pages/Login';
+import TeachingExperience from './pages/TeachingExperience';
+import VideoExperience from './pages/VideoExperience';
+import ExistingAudience from './pages/ExistingAudience';
+import InstructorCourse from './pages/InstructorCourse';
+import CourseCreate from './pages/CourseCreate';
+import Performance from './pages/Performance';
 import Signup from './pages/Signup';
-import Categories from './pages/Categories'
-import CourseDetails from './pages/CourseDetails'
+import SignupInstructor from './pages/SignupInstructor';
+import Categories from './pages/Categories';
+import CourseDetails from './pages/CourseDetails';
 import PrivateRoute from './components/PrivateRoute'; // Import PrivateRoute
 
+// Initialize Stripe
+const stripePromise = loadStripe('pk_test_51QBcCpJtrNUkrP9kHXpuhiaIN8PqJHTA3wEKAtpsgnhfaI13tZ7bDMlJ1cFDOabEeEIwoHMxsycGfNIHgltK26wz00usRo0NHG');
+
 const router = createBrowserRouter([
-  { path: '/', element: <F12Main /> },
+  { path: '/', element: <Landing /> },
   { path: '/Cart', element: <Cart /> },
   { path: '/Cart1', element: <Cart1 /> },
-  { path: '/Checkout', element: <Checkout /> },
+  {
+    path: '/Checkout',
+    element: (
+      <Elements stripe={stripePromise}>
+        <Checkout />
+      </Elements>
+    ),
+  },
   { path: '/Dashboard', element: <PrivateRoute element={<Dashboard />} /> }, // Protect Dashboard route
   { path: '/Discussions', element: <PrivateRoute element={<Discussions />} /> }, // Protect Discussions route
   { path: '/Landing', element: <Landing /> },
   { path: '/Landing1', element: <Landing1 /> },
-  { path: '/Login', element: <Login /> },
-  { path:'/course/:courseId', element:<CourseDetails/>} ,
-  { path:'/category/:categoryId', element:<Categories /> },
-  { path: '/Signup', element: <Signup /> }
+  { path: '/login', element: <Login /> },
+  { path: '/course/:courseId', element: <CourseDetails /> },
+  { path: '/category/:categoryId', element: <Categories /> },
+  { path: '/student/signup', element: <Signup /> },
+  { path: '/instructor/signup', element: <SignupInstructor /> },
+  { path: '/teaching/teaching-experience', element: <TeachingExperience /> },
+  { path: '/teaching/video-experience', element: <VideoExperience /> },
+  { path: '/teaching/existing-audience', element: <ExistingAudience /> },
+  { path: '/instructor/courses', element: <InstructorCourse /> },
+  { path: '/instructor/create-course', element: <CourseCreate /> },
+  { path: '/instructor/performance', element: <Performance /> }
 ]);
 
 export default function App() {

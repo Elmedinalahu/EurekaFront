@@ -1,0 +1,136 @@
+.instructor-courses-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 50px;
+  padding: 2px; 
+  gap: 80px;
+}
+
+.instructor-courses-sidebar {
+  background-color: #2d2f31;
+  width: 250px;
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; 
+  top: 0; /* Ensure it starts at the top */
+  left: 0; /* Ensure it is aligned to the left */
+  display: flex;
+  flex-direction: column; /* Ensure children stack vertically */
+  justify-content: space-between; /* Distribute space between children */
+  padding-top: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Keep the sidebar on top if necessary */
+}
+
+
+.instructor-courses-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+
+.instructor-courses-logo-text {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  font-family: 'Arial', sans-serif; 
+}
+
+.instructor-course-icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 5px;
+  width: 250px;
+}
+
+/* Individual row that contains icon and label */
+.instructor-course-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.instructor-intro-container {
+  padding: 20px;
+  text-align: left;
+  margin-left: 250px; /* Ensure intro content doesn't overlap with sidebar */
+}
+
+.instructor-intro-header {
+  margin-bottom: 20px;
+}
+.instructor-courses-footer {
+  margin-top: 170%; /* Push footer to the bottom of the sidebar */
+  width: 100%;
+  position: relative;
+}
+.upload-course-prompt {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+}
+
+.upload-course-button {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #9a398afe; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+
+}
+
+.upload-course-button:hover {
+  background-color: #cea5c7fe; /* New background color on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.instructor-courses-icon.active,
+.instructor-courses-data.active {
+  color: #ad95a9fe; /* Change to the fill color for the active icon */
+}
+
+.instructor-courses-icon,
+.instructor-courses-data {
+  color: white; /* Default color for icons */
+  font-size: 30px;
+  margin-right: 10px; /* Space between icon and label */
+}
+
+
+.category {
+  font-size: 16px;
+  font-weight: 400;
+  color: white; /* Default color for the label text */
+}
+
+/* Hover effect */
+.instructor-course-row:hover {
+  background-color: #444; /* Slight highlight on hover */
+}
+
+/* Active row styling */
+.instructor-course-row.active {
+  background-color: #444; /* Slight highlight on hover */
+  color: white; /* White text for active row */
+}
+
+.instructor-course-row.active .instructor-courses-icon,
+.instructor-course-row.active .instructor-courses-data {
+  color: white; /* White icons in the active row */
+}

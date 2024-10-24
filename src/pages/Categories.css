@@ -25,11 +25,10 @@
 
 .categorie-item {
   margin: 0 10px; /* Space between each category */
-  font-size: 16px;
+  font-size: 15px;
   text-transform: uppercase; /* Make text uppercase */
   text-decoration: none;
   cursor: pointer;
-  padding: 10px 10px; /* Padding for clickable area */
   color: black;
   border-radius: 5px;
   margin-top: 7px;

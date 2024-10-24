@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
-import './Landing1';
+import './Landing1.css';
 import { CiHeart } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { GoBell } from "react-icons/go";
-import { FaSignInAlt } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import { ImQuotesLeft } from "react-icons/im";
 import { PiLessThanLight, PiGreaterThanLight } from "react-icons/pi";
 import axios from 'axios'; // Import Axios for API requests
@@ -12,13 +13,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaSearch } from 'react-icons/fa';
 import { MdArrowForward } from 'react-icons/md';
-
-
-
-
+import { isLoggedIn, removeToken } from '../utils/auth'; // Assuming these are your auth utilities
 
 export default function Landing() {
   const [categories, setCategories] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     axios.get('https://localhost:7143/api/Category')
@@ -30,6 +29,16 @@ export default function Landing() {
       });
   }, []);
 
+  const handleLoginLogout = () => {
+    if (isLoggedIn()) {
+      removeToken(); // Log out
+      alert('Logged out successfully.');
+      navigate('/'); // Redirect to home after logout
+    } else {
+      navigate('/login'); // Redirect to login page if not logged in
+    }
+  };
+
   return (
     <div class="body">
       <div className="landing-1">
@@ -37,21 +46,25 @@ export default function Landing() {
           <div className="e">
             Eureka...
           </div>
-          <div className="nav">
+          <div className="nav" onClick={() => navigate('/instructor/signup')}>
             <span className="course-1">Become an Instructor</span>
           </div>
           <div className="nav-right">
-            <div className="icon">
+            <div className="icon" onClick={() => navigate('/wishlist')}>
               <CiHeart size={24} color="black" />
             </div>
-            <div className="icon">
+            <div className="icon" onClick={() => navigate('/cart')}>
               <SlBasket size={20} color="black" />
             </div>
-            <div className="icon">
+            <div className="icon" onClick={() => navigate('/notifications')}>
               <GoBell size={20} color="black" />
             </div>
-            <div className="icon">
-              <FaSignInAlt size={20} color="black" />
+            <div className="icon" onClick={handleLoginLogout}>
+              {isLoggedIn() ? (
+                <FaSignOutAlt size={20} color="black" /> // Show logout icon if logged in
+              ) : (
+                <FaSignInAlt size={20} color="black" /> // Show login icon if not logged in
+              )}
             </div>
           </div>
         </div>
@@ -59,9 +72,9 @@ export default function Landing() {
         {/* Top Categories Slider */}
         <div className="top-categories-nav">
           {categories.map(category => (
-            <div key={category.id} className={`categorie-item ${category.active ? 'active' : ''}`}>
-              <span className="category-name">{category.name}</span>
-            </div>
+              <Link key={category.id} to={`/category/${category.id}`} className={`categorie-item ${category.active ? 'active' : ''}`}>
+                <span className="category-name">{category.name}</span>
+              </Link>
           ))}
         </div>
 

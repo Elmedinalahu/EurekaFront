@@ -1,21 +1,26 @@
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { login } from '../api/auth';
 import { setToken } from '../utils/auth';
 import LoginForm from '../components/LoginForm';
-import { useState } from 'react'; // Import useState
+import { useState } from 'react';
+
 
 const LoginPage = () => {
   const navigate = useNavigate();
-  const [errorMessage, setErrorMessage] = useState(''); // State for error message
+  const location = useLocation();
+  const [errorMessage, setErrorMessage] = useState('');
+
+  // Get the "from" state, or default to "/dashboard" if not provided
+  const redirectTo = location.state?.from || '/dashboard';
 
   const handleLogin = async (email, password) => {
     try {
       const { token } = await login(email, password);
-      setToken(token);
-      navigate('/dashboard'); // Redirect to a dashboard or other page on successful login
+      setToken(token);  // Store the token
+      navigate(redirectTo);  // Redirect to the desired page after successful login
     } catch (error) {
       console.error('Login failed:', error.message);
-      setErrorMessage('Login failed. Please check your credentials.'); // Set error message
+      setErrorMessage('Login failed. Please check your credentials.');
     }
   };
 

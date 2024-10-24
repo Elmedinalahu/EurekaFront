@@ -33,53 +33,6 @@ export default function Landing1() {
           </div>
         </div>
       </div>
-
-      <div className="top-categories">
-        <div className="categorie-item-1">
-          <span className="python-1">
-          Development
-          </span>
-        </div>
-        <div className="categorie-item-2">
-          <span className="python-2">
-          Bussines
-          </span>
-        </div>
-        <div className="categories">
-          <div className="categorie-item">
-            <span className="python">
-            Finance &amp; Accounting
-            </span>
-          </div>
-        </div>
-        <div className="categorie-item-3">
-          <span className="python-3">
-          Design
-          </span>
-        </div>
-        <div className="categorie-item-4">
-          <span className="python-4">
-          Marketing
-          </span>
-        </div>
-        <div className="categorie-item-5">
-          <span className="python-5">
-          Lifestyle
-          </span>
-        </div>
-        <div className="categorie-item-6">
-          <span className="python-6">
-          Photography &amp; Video
-          </span>
-        </div>
-        <div className="categorie-item-7">
-          <span className="python-7">
-          Health &amp; Fitness
-          </span>
-         
-        </div>
-       
-      </div>
       <div className="rectangle-46">
       </div>
 </div>

@@ -413,7 +413,6 @@ padding-left: 14px;
   margin-bottom: 16px;
   display: flex;
   width: 340px;
-  height: 240px;
   box-sizing: border-box;
 }
 .landing-1 .title-1 {
@@ -425,7 +424,7 @@ padding-left: 14px;
   color: var(--dark, #080808);
 }
 .landing-1 .title {
-  margin: 0 8.2px 16px 6px;
+  margin: 0 8.2px 16px 22px;
   display: flex;
   box-sizing: border-box;
 }
@@ -2027,6 +2026,9 @@ padding-left: 14px;
 .space-div{
   height: 100px;
 }
+.space-div2{
+  height: 50px;
+}
 .landing-1 .supporting-text-1 {
   position: relative;
   overflow-wrap: break-word;
@@ -2115,3 +2117,71 @@ html,body {
     }
 
 
+    .swiper-container {
+      width: 100%;
+      height: auto;
+    }
+    .label-text-15{
+      background-color: #000;
+      border: none;
+    }
+    .imgacademy-10 {
+      /* Adjust dimensions as needed */
+      width: 100%; /* Or a fixed height/width */
+      height: auto; /* Maintain aspect ratio */
+      overflow: hidden; /* Hide overflow */
+    }
+    
+    .img-course-image {
+      width: 100%; /* Ensure the image fills the container */
+      height: 200px; /* Maintain aspect ratio */
+      border-radius: 5px; /* Optional: add some rounding */
+      object-fit: cover; /* Optional: cover the container nicely */
+    }
+    .hero-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-left: 60px;
+      background-color: #f5f5f5;
+    }
+    
+    .hero-text {
+      flex: 1;
+      padding-right: 20px;
+    }
+    
+    .hero-text h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    
+    .hero-text p {
+      font-size: 1.2em;
+      margin-bottom: 30px;
+    }
+    
+    .get-started-button {
+      background-color: black;
+      color: white;
+      border: none;
+      padding: 15px 30px;
+      font-size: 1em;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    
+    .get-started-button:hover {
+      background-color: #333;
+    }
+    
+    .hero-image {
+      flex: 1;
+    }
+    
+    .hero-image img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    

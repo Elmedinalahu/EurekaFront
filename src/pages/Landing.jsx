@@ -17,8 +17,15 @@ import { isLoggedIn, removeToken } from '../utils/auth'; // Assuming these are y
 
 export default function Landing() {
   const [categories, setCategories] = useState([]);
+  const [courses, setCourses] = useState([]);
   const navigate = useNavigate();
 
+  // Function to handle button click for instructor signup
+  const handleButtonClick = () => {
+    navigate('/instructor/signup');  // Redirects to the login page
+  };
+
+  // Fetch categories on component mount
   useEffect(() => {
     axios.get('https://localhost:7143/api/Category')
       .then(response => {
@@ -29,6 +36,18 @@ export default function Landing() {
       });
   }, []);
 
+  // Fetch latest courses on component mount
+  useEffect(() => {
+    axios.get('https://localhost:7143/api/Course/latest')
+      .then(response => {
+        setCourses(response.data); // Set the fetched courses into state
+      })
+      .catch(error => {
+        console.error('Error fetching courses:', error);
+      });
+  }, []);
+
+  // Function to handle login/logout
   const handleLoginLogout = () => {
     if (isLoggedIn()) {
       removeToken(); // Log out
@@ -56,9 +75,6 @@ export default function Landing() {
             <div className="icon" onClick={() => navigate('/cart')}>
               <SlBasket size={20} color="black" />
             </div>
-            <div className="icon" onClick={() => navigate('/notifications')}>
-              <GoBell size={20} color="black" />
-            </div>
             <div className="icon" onClick={handleLoginLogout}>
               {isLoggedIn() ? (
                 <FaSignOutAlt size={20} color="black" /> // Show logout icon if logged in
@@ -77,9 +93,18 @@ export default function Landing() {
               </Link>
           ))}
         </div>
-
-        <div className="rectangle-46">
-        </div>
+        <div className="hero-section">
+      <div className="hero-text">
+        <h1>Come teach with us</h1>
+        <p>Become an instructor and change lives — including your own</p>
+        <button className="get-started-button" onClick={handleButtonClick}>
+          Get started
+        </button>
+      </div>
+      <div className="hero-image">
+        <img src="src\assets\instructor-removebg-preview.png" alt="Instructor" />
+      </div>
+    </div>
 
         <div className="search-section">
           <div className="search-among-58340-courses-and-find-your-favorite-course">
@@ -128,97 +153,25 @@ export default function Landing() {
             </div>
           </div>
           <div className="container-courses">
-            <div className="card">
-              <div className="imgacademy-10">
-                <div className="container-10"></div>
-              </div>
-              <div className="title">
-                <span className="title-1">Learn Figma - UI/UX Design Essential Training</span>
-              </div>
-              <div className="actions">
-                <div className="button">
-                  <span className="label-text-2">Start course</span>
-                  <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
-                </div>
-                <div className="container-course-price">$25.50</div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="imgacademy-10">
-                <div className="container-10"></div>
-              </div>
-              <div className="title">
-                <span className="title-1">Learn Figma - UI/UX Design Essential Training</span>
-              </div>
-              <div className="actions">
-                <div className="button">
-                  <span className="label-text-2">Start course</span>
-                  <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
-                </div>
-                <div className="container-course-price">$25.50</div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="imgacademy-10">
-                <div className="container-10"></div>
-              </div>
-              <div className="title">
-                <span className="title-1">Learn Figma - UI/UX Design Essential Training</span>
-              </div>
-              <div className="actions">
-                <div className="button">
-                  <span className="label-text-2">Start course</span>
-                  <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
-                </div>
-                <div className="container-course-price">$25.50</div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="imgacademy-10">
-                <div className="container-10"></div>
-              </div>
-              <div className="title">
-                <span className="title-1">Learn Figma - UI/UX Design Essential Training</span>
-              </div>
-              <div className="actions">
-                <div className="button">
-                  <span className="label-text-2">Start course</span>
-                  <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
-                </div>
-                <div className="container-course-price">$25.50</div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="imgacademy-10">
-                <div className="container-10"></div>
-              </div>
-              <div className="title">
-                <span className="title-1">Learn Figma - UI/UX Design Essential Training</span>
-              </div>
-              <div className="actions">
-                <div className="button">
-                  <span className="label-text-2">Start course</span>
-                  <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
-                </div>
-                <div className="container-course-price">$25.50</div>
-              </div>
-            </div>
-            <div className="card">
-              <div className="imgacademy-10">
-                <div className="container-10"></div>
-              </div>
-              <div className="title">
-                <span className="title-1">Learn Figma - UI/UX Design Essential Training</span>
-              </div>
-              <div className="actions">
-                <div className="button">
-                  <span className="label-text-2">Start course</span>
-                  <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
-                </div>
-                <div className="container-course-price">$25.50</div>
-              </div>
-            </div>
-          </div>
+  {courses.map(course => (
+    <div key={course.id} className="card">
+      <div className="imgacademy-10">
+        <img  src={course.pictureUrl} alt={course.name} className="img-course-image" /> {/* Displaying the course image */}
+      </div>
+      <div className="title">
+        <span className="title-1">{course.name}</span>
+      </div>
+      <div className="actions">
+        <div className="button">
+          <span className="label-text-2">Start course</span>
+          <div className="v-6-iconfree-2"><MdArrowForward size={20} color="white" /></div>
+        </div>
+        <div className="container-course-price">${course.price}</div>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
         <div className='space-div'></div>
         <div className="instructor-section">
@@ -231,15 +184,17 @@ export default function Landing() {
                 Instructors from around the world teach millions of learners on Eureka. We provide the tools and skills to teach what you love.
               </span>
               <div className="button-8">
-                <span className="label-text-15">
+              <button className="label-text-15" onClick={handleButtonClick}>
                   Start teaching today
-                </span>
+              </button>
               </div>
             </div>
           </div>
         </div>
 
         <div className='space-div'></div>
+        <div className='space-div2'></div>
+
         <div className="newsletters">
           <img className="background-newsletter" src="/assets/images/Picture2.png" />
           <p className="find-out-about-the-latest-courses-with-eurka">Find out about the latest courses with <span>EURKA</span></p>
@@ -252,7 +207,7 @@ export default function Landing() {
           </div>
         </div>
         <div className='space-div'></div>
-
+        <div className='space-div2'></div>
         <div className="testimonials-section">
           <div className="title-what-thy-say">
             <ImQuotesLeft size={70} color="orange" />
@@ -320,8 +275,6 @@ export default function Landing() {
             </span>
           </div>
         </div>
-        <div className='space-div'></div>
-
       </div>
     </div>
   )

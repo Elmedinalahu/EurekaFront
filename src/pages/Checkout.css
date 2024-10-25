@@ -2,10 +2,10 @@
 .checkout-container {
   display: flex;
   justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 50px;
   padding: 2px; /* ngret lrt checkout*/
-  max-width: 990px;
-  margin: 0 auto;
-  gap: 70px; /* Zvogëlimi i hapësirës midis formës dhe seksionit të përmbledhjes */
+  gap: 80px; /* Zvogëlimi i hapësirës midis formës dhe seksionit të përmbledhjes */
 }
 
 /* Sidebar (Shiriti anësor) */
@@ -13,9 +13,6 @@
   background-color: black;
   width: 100px;
   height: 91vh;
-  position: fixed;
-  top: 15px;
-  left: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -46,6 +43,7 @@
 }
 
 .checkout-title {
+  margin-top: 30px;
   font-size: 30px; /* Madhësi më e madhe për titujt kryesorë */
   font-weight: bold;
   font-family: 'Arial', sans-serif; /* Font modern */
@@ -59,14 +57,14 @@
 }
 
 .divider {
-  margin: 5px 0;
-  border: 1px solid #ccc;
+  margin: 10px 0 20px;
+  border: 1px solid #cccccc66
 }
 
-.section-title {
-  font-size: 18px;
+.checkout-section-title {
+  font-size: 20px;
   font-weight: bold;
-  margin-bottom: 7px;
+  margin-bottom: 15px;
   font-family: 'Arial', sans-serif; /* Font modern */
 }
 
@@ -83,7 +81,7 @@
   border-radius: 5px;
   width: calc(95% - 0.2px);
   margin-bottom: 10px;
-  box-shadow: 0 2px 5px rgba(177, 18, 18, 0.1);
+  box-shadow: 0 2px 5px rgba(177, , 18, 0.1);
   transition: box-shadow 0.2s ease;
   font-size: 13px;
   color: #000; /* Ngjyra e zezë për tekstin e shkruar */
@@ -92,7 +90,7 @@
 
 .form-section .input-field::placeholder {
   color: #636363; /* Ngjyra gri për placeholder-in */
-  font-size: 10px;
+  font-size: 14px;
 }
 
 .input-field:focus {
@@ -117,7 +115,7 @@
 
 /* Order Summary */
 .order-summary {
-  margin-top: 15pxpx;
+  margin-top: 15px;
 }
 
 .order-item {
@@ -162,13 +160,13 @@
 
 /* Summary Section */
 .summary-section {
-  flex: 0.7;
   background-color: #f5f5f7;
   padding: 20px;
   border-radius: 0px;
-  box-shadow: 0 4px 10px rgba(149, 56, 56, 0.1);
   position: relative;
-  margin-top: 100px; /* Shtova hapësirë për të ndarë seksionin e përmbledhjes nga butoni Cancel */
+  margin-top: 115px;
+  width: 300px;
+  height: 450px;
 }
 
 /* Butoni Cancel */
@@ -246,9 +244,7 @@
   }
 
 
-  .sidebar {
-    width: 60px;
-  }
+ 
 
   .logo-text {
     font-size: 40px;

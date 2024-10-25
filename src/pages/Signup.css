@@ -1,256 +1,86 @@
-body{
-  background-size: cover;
-  display: flex;
-  box-sizing: border-box;
-}
+.signup-student {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+  }
+  
+  .signup-student-container {
+    display: flex;
+    box-shadow: 0px 4px 20px #7a49882c;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 70%;
+    max-width: 1200px;
+  }
+  
+  .signup-student-left {
+    flex: 1;
+    background-image: url(C:\Users\online\Downloads\Eurkea\src\assets\eurekalogo.JPG);
+    background-size: cover;
+  }
+  
+  
+  .signup-student-right {
+    flex: 0.7;
+    padding: 40px;
+  }
+  
+  .signup-student-header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .input-student-container {
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  .sigupstudent-input {
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+  }
 
-
-
-.signup .rectangle-40 {
-  background: #000000;
-  position: absolute;
-  top: 45.6px; /* 57px * 0.8 */
-  right: 80px; /* 100px * 0.8 */
-  width: 496px; /* 620px * 0.8 */
-  height: 628px; /* 785px * 0.8 */
-  padding: 16px; /* 20px * 0.8 */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.email::placeholder {
-  /* Styles for the email input placeholder */
-  color: white; /* Change placeholder color to white */
-}
-
-
-.signup .container-5 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; /* Adjust width as needed */
-}
-
-.signup .rectangle-41 {
-  background: #000000;
-  position: absolute;
-  top: 45.6px; /* 57px * 0.8 */
-  right: 80px; /* 100px * 0.8 */
-  width: 496px; /* 620px * 0.8 */
-  height: 628px; /* 785px * 0.8 */
-  padding: 16px; /* 20px * 0.8 */
-}
-
-.signup .unlock-your-potential-join-now {
-  backdrop-filter: blur(1.6px);
-  margin: 0 0 36.8px -10px; /* Shift more to the left with negative margin */
-  display: block;
-  overflow-wrap: break-word;
-  font-family: 'David Libre';
-  font-weight: 400;
-  font-size: 40px;
-  color: #FFFFFF;
-  text-align: left;
-}
-
-
-
-.signup .first-name,
-.signup .last-name,
-.signup .email,
-.signup .password {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 20px; /* 25px * 0.8 */
-  color: rgba(80, 104, 161, 0.8);
-}
-
-.signup .container-6,
-.signup .container-4,
-.signup .container-1,
-.signup .container-2 {
-  box-shadow: 0px 0px 3.2px 1.6px rgba(80, 104, 161, 0.5); /* 4px * 0.8, 2px * 0.8 */
-  border-radius: 8px; /* 10px * 0.8 */
-  background: #FFFFFF;
-  position: relative;
-  margin-bottom: 16px; /* 20px * 0.8 */
-  padding: 9.6px 27.2px 8.8px 27.2px; /* 12px * 0.8, 34px * 0.8, 11px * 0.8, 34px * 0.8 */
-  width: 400px; /* 500px * 0.8 */
-  box-sizing: border-box;
-}
-
-.signup .rectangle-38 {
-  border-radius: 4px; /* 5px * 0.8 */
-  border: 1px solid #2E4989;
-  background: #FFFFFF;
-  margin: 3.6px 9.6px 11.6px 0; /* 4.5px * 0.8, 12px * 0.8, 14.5px * 0.8, 0 */
-  width: 20px; /* 25px * 0.8 */
-  height: 20px; /* 25px * 0.8 */
-  margin-left: 40px; /* 50px * 0.8 */
-  margin-top: 12.8px; /* 16px * 0.8 */
-}
-
-.signup .by-registering-an-account-you-agree-to-our-terms-conditions-and-privacy {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 14.4px; /* 18px * 0.8 */
-  color: #FFFFFF;
-  text-align: left; /* Center text within the element */
-}
-
-.signup .container {
-  margin: 0 7.2px 38.8px 7.2px; /* 0, 9px * 0.8, 48.5px * 0.8, 9px * 0.8 */
-  display: flex;
-  flex-direction: row;
-  align-self: flex-start;
-  width: fit-content;
-  box-sizing: border-box;
-}
-
-.signup .register {
-  overflow-wrap: break-word;
-  font-family: 'Inter';
-  font-weight: 700;
-  font-size: 20px; /* 25px * 0.8 */
-  color: #FFFFFF;
-  box-shadow: 0px 0px 3.2px 1.6px rgba(80, 104, 161, 0.5); /* 4px * 0.8, 2px * 0.8 */
-  border-radius: 8px; /* 10px * 0.8 */
-  background: rgba(80, 104, 161, 0.8);
-  position: relative;
-  display: flex;
-  padding: 16px 0; /* 12px * 0.8, 0, 11px * 0.8, 0 */
-  width: 364.8px; /* 456px * 0.8 */
-  box-sizing: border-box;
-  text-align: center;
-  justify-content: center;
-}
-
-.signup .container-3 {
-  box-shadow: 0px 0px 3.2px 1.6px rgba(80, 104, 161, 0.5); /* 4px * 0.8, 2px * 0.8 */
-  border-radius: 8px; /* 10px * 0.8 */
-  background: rgba(80, 104, 161, 0.8);
-  position: relative;
-  margin: 0 30.56px 0 1.6px; /* 0, 38.2px * 0.8, 0, 2px * 0.8 */
-  display: flex;
-  padding: 9.6px 0 8.8px 0; /* 12px * 0.8, 0, 11px * 0.8, 0 */
-  width: 364.8px; /* 456px * 0.8 */
-  box-sizing: border-box;
-  text-align: center;
-  justify-content: center;
-}
-
-.signup .already-have-an-account {
-  margin-top: 16px; /* 20px * 0.8 */
-  font-family: 'Inter';
-  font-size: 14.4px; /* 18px * 0.8 */
-  color: #FFFFFF;
-  text-align: center;
-}
-
-.signup .already-have-an-account a {
-  color: #FFFFFF;
-  text-decoration: underline;
-  font-weight: 400;
-}
-
-
-
-.signup .unlock-your-potential-join-now {
-  backdrop-filter: blur(1.6px);
-  margin: 0 0 36.8px 0; /* Remove negative margin */
-  display: block;
-  overflow-wrap: break-word;
-  font-family: 'David Libre';
-  font-weight: 400;
-  font-size: 40px;
-  color: #FFFFFF;
-  text-align: left; /* Align text to the left */
-  width: 100%; /* Make it take full width */
-}
-
-
-
-
-
-
-
-
-.signup {
-  font-family: Arial, sans-serif;
-}
-
-.rectangle-40 {
-  width: 100%;
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 10px;
-}
-
-.container-5 {
-  max-width: 400px;
-  margin: auto;
-}
-
-.unlock-your-potential-join-now {
-  font-size: 24px;
-  margin-bottom: 20px;
-  text-align: center;
-  font-weight: bold;
-}
-
-.input-container {
-  display: flex;
-  position: relative;
-  margin-bottom: 20px;
-}
-
-.input-container input {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  font-size: 16px;
-  outline: none;
-}
-
-.input-container label {
-  position: absolute;
-  left: 12px;
-  top: 12px;
-  color: #aaa;
-  font-size: 16px;
-  pointer-events: none;
-  transition: all 0.2s ease;
-}
-
-.input-container input:focus + label,
-.input-container .shrink {
-  top: -10px;
-  font-size: 12px;
-  color: #333;
-}
-
-.container-3 {
-  text-align: center;
-}
-
-.register {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.register:hover {
-  background-color: #0056b3;
-}
-
-.already-have-an-account {
-  margin-top: 10px;
-  text-align: center;
-}
+  
+  .signin-color{
+    color: #7a4988;
+      text-decoration: none;
+  }
+  .register-din {
+    width: 100%;
+    padding: 12px;
+    margin-top: 20px;
+    background-color: #7a4988;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-din:hover {
+    background-color: #7a49889f;
+  }
+  
+  .already-student-have-an-account {
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  .already-student-have-an-account a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .already-student-have-an-account a:hover {
+    text-decoration: underline;
+  }
+  

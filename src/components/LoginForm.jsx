@@ -1,25 +1,24 @@
 import { useState } from 'react';
-import "../pages/Login.css";
+import '../pages/Login.css';
+import { setToken } from '../utils/auth'; // Import the token utility
 
 const LoginForm = ({ onSubmit, errorMessage }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  
-  const handleSubmit = (e) => {
+  const [keepMeLoggedIn, setKeepMeLoggedIn] = useState(false); // State for 'Keep me logged in'
+
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    
-    // Clear previous errors
-    // You might want to reset error messages on form submission
-    // setError(''); 
-
-    // Perform simple validation
     if (!email || !password) {
-      setError('Both email and password are required.');
-      return;
+      return; // Add validation logic here
     }
-
-    // Call the onSubmit function passed from the parent component (Login.js)
-    onSubmit(email, password);
+    try {
+      const token = await onSubmit(email, password); // Assuming `onSubmit` returns a token on success
+      setToken(token, keepMeLoggedIn); // Save token based on 'keepMeLoggedIn'
+      console.log('Login successful');
+    } catch (error) {
+      console.error('Login failed:', error);
+    }
   };
 
   const handleEmailChange = (e) => {
@@ -30,51 +29,60 @@ const LoginForm = ({ onSubmit, errorMessage }) => {
     setPassword(e.target.value);
   };
 
+  const handleKeepMeLoggedInChange = (e) => {
+    setKeepMeLoggedIn(e.target.checked); // Toggle the keepMeLoggedIn state
+  };
+
   return (
-    <div className="login">
-      <div className="rectangle-40">
-        <div className="container-5">
-          <div className="welcome-to-the-next-level">
+    <div className="login-student">
+      <div className="login-student-container">
+        <div className="login-student-left">
+        </div>
+        <div className="login-student-right">
+          <div className="login-student-header">
             Welcome to <br />
             the next level.
           </div>
           <form onSubmit={handleSubmit}>
-            <div className="container-1">
+            <div className="input-student-container">
               <input
-                type="email"
-                className="email"
+                className="loginstudent-input"
                 placeholder="Email"
+                type="email"
                 value={email}
                 onChange={handleEmailChange}
                 required
               />
             </div>
-            <div className="container-2">
+            <div className="input-student-container">
               <input
-                type="password"
-                className="password"
+                className="loginstudent-input"
                 placeholder="Password"
+                type="password"
                 value={password}
                 onChange={handlePasswordChange}
                 required
               />
             </div>
-            <div className="container">
-              <div className="keep-me-logged-in-wrapper">
-                <div className="rectangle-38"></div>
-                <p className="keep-me-logged-in">Keep me logged in</p>
+            <div className="keep-me-logged-in-container">
+              <div className="keep-me-logged-in-checkbox">
+                <input
+                  type="checkbox"
+                  checked={keepMeLoggedIn}
+                  onChange={handleKeepMeLoggedInChange}
+                />
+                <label className="keep-me-logged-in">Keep me logged in</label>
               </div>
               <a href="/forgot-password" className="forgot-password">
                 Forgot Password?
               </a>
             </div>
-            <div className="container-3">
-              <button type="submit" className="sign-in">Sign In</button>
+            <div>
+              <button type="submit" className="login-din">Sign In</button>
             </div>
-            {/* Display error message if there is an error */}
             {errorMessage && <p className="error-message">{errorMessage}</p>}
             <div className="dont-have-an-account">
-              Don't have an account? <a href="/signup">Register</a>
+              Don't have an account? <a href="/signup" className="signin-color">Register</a>
             </div>
           </form>
         </div>

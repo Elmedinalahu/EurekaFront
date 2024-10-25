@@ -1,0 +1,104 @@
+.category-heading-1{
+  text-transform: uppercase;
+}
+
+.subcategory-tag {
+  display: inline-block;
+  background-color: #f9f6f652;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.subcategory-tag:hover {
+  background-color: #e0e0e0;
+}
+
+.active-subcategory {
+  background-color: #d0e0f0; /* Change this color as needed */
+  color: rgb(0, 0, 0);
+}
+
+.categorie-item {
+  margin: 0 10px; /* Space between each category */
+  font-size: 15px;
+  text-transform: uppercase; /* Make text uppercase */
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  border-radius: 5px;
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 25px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.categorie-item:hover {
+  background-color: #f0f0f080; /* Light grey on hover */
+  color: #000000; 
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 25px;
+}
+
+.active-category {
+  background-color: #f0f0f0; /* Blue background for active category */
+  color: rgb(0, 0, 0); 
+  margin-top: 7px;
+  margin-bottom: 7px;
+  border-radius: 25px;
+}
+
+.courses-container {
+  display: flex;
+  flex-direction: column;
+}
+.course-card {
+  display: flex;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: left;
+  transition: transform 0.3s;
+  max-width: 750px;
+  margin-bottom: 20px;
+}
+
+.course-card:hover {
+  transform: scale(1.05);
+}
+
+.course-link {
+  display: flex;
+  width: 100%;
+  text-decoration: none;
+  color: inherit;
+}
+
+.course-content {
+  display: flex;
+  justify-content: space-between; /* Ensure text and image are on opposite sides */
+  align-items: center; /* Align vertically */
+  width: 100%;
+  padding: 15px;
+}
+
+.course-info {
+  flex: 1; /* Text section takes available space */
+  padding-right: 15px; /* Space between text and image */
+}
+
+.course-image-container {
+  flex-shrink: 0; /* Prevent image from shrinking */
+}
+
+.course-image {
+  width: 200px; /* Adjust the size as needed */
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}

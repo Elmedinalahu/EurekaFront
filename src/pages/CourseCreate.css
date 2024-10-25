@@ -1,0 +1,266 @@
+.course-create-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 50px;
+  padding: 2px; 
+  gap: 80px;
+}
+.price-input{
+  margin:10px 0px ;
+  height: 40px;
+}
+.price-free{
+  border: 1px solid #dbdcdd; 
+  margin-left: 5px;
+  height: 30px;
+}
+
+.course-create-sidebar {
+  background-color: #2d2f31;
+  width: 250px;
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; 
+  top: 0; /* Ensure it starts at the top */
+  left: 0; /* Ensure it is aligned to the left */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Keep the sidebar on top if necessary */
+}
+
+.course-create-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+
+.course-create-logo-text {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  font-family: 'Arial', sans-serif; 
+}
+
+.instructor-course-icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 5px;
+  width: 250px;
+}
+
+/* Individual row that contains icon and label */
+.instructor-course-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.instructor-intro-container {
+  padding: 20px;
+  text-align: left;
+  margin-left: 250px; /* Ensure intro content doesn't overlap with sidebar */
+}
+
+.course-intro-header {
+  margin-bottom: 20px;
+}
+.course-intro-header1{
+  color: #2d2f31;
+  font-size: 25px;
+}
+.course-price-free{
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.free-course-button
+{
+  width: 70%;
+}
+.create-course-prompt {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #cccccc7d;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  justify-content: center;
+  align-items: center;
+  gap: 350px;
+  width: 1010px;
+  padding-left: 50px;
+}
+
+.upload-course-buton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #9a398afe; /* Bootstrap primary color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+
+}
+
+.upload-course-button:hover {
+  background-color: #cea5c7fe; /* New background color on hover */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Shadow effect */
+}
+
+.course-create-icon.active,
+.course-create-data.active {
+  color: #ad95a9fe; /* Change to the fill color for the active icon */
+}
+
+.course-create-icon,
+.course-create-data {
+  color: white; /* Default color for icons */
+  font-size: 30px;
+  margin-right: 10px; /* Space between icon and label */
+}
+
+
+.category {
+  font-size: 16px;
+  font-weight: 400;
+  color: white; /* Default color for the label text */
+}
+
+/* Hover effect */
+.instructor-course-row:hover {
+  background-color: #444; /* Slight highlight on hover */
+}
+
+/* Active row styling */
+.instructor-course-row.active {
+  background-color: #444; /* Slight highlight on hover */
+  color: white; /* White text for active row */
+}
+
+.instructor-course-row.active .course-create-icon,
+.instructor-course-row.active .course-create-data {
+  color: white; /* White icons in the active row */
+}
+
+.inputClass {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; /* Change the border color and size here */
+}
+
+.alias{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.015); /* Horizontal, Vertical, Blur, Spread, Color */
+
+  text-transform: uppercase;
+  padding: 6px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color:#3a2152a4;
+  width: fit-content;
+  font-weight: bold;
+  color: white;
+}
+.ready{
+  font-size: 15px;
+  color: #3a2152db;
+  margin-top: -10px;
+}
+
+.flex-container {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px; /* Space between image and video upload sections */
+}
+
+.upload-section {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.custom-file-upload {
+  margin-bottom: 10px;
+  display: inline-block;
+  padding: 10px 10px;
+  cursor: pointer;
+  background-color: #fffffffe;  /* Primary color for the button */
+  color: #444;                  /* Text color */
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+  width: 450px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+
+.custom-file-upload:hover {
+  background-color: #fffffffe; /* Change background on hover */
+}
+
+
+.file-name-input {
+  border: none;
+}
+
+.create-course-button {
+  margin-top: 30px;
+  padding: 10px 40px;
+  background-color: #3a2152a4;
+  border: none;
+  border-radius: 5px;
+  color: white; /* To make the text visible on the dark background */
+  cursor: pointer; /* Changes the cursor to a pointer on hover */
+  
+  /* Adding box shadow */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal, Vertical, Blur, Spread, Color */
+  transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+.section-item-input{
+  width: 81%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+
+.lesson-item-input, .lesson-item-time{
+  width: 39.5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+.section-item-button, .lesson-item-button{
+  width: 13%;
+  margin-left: 1%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+.add-item-button{
+  width: 14%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+.create-course-button:hover {
+  /* Increase the shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}

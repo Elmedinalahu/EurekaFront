@@ -1,0 +1,72 @@
+.course-create-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+  margin-left: 50px;
+  padding: 2px; 
+  gap: 80px;
+}
+
+.course-create-sidebar {
+  background-color: #2d2f31;
+  width: 250px;
+  height: 100vh; /* Full height of the viewport */
+  position: fixed; 
+  top: 0; /* Ensure it starts at the top */
+  left: 0; /* Ensure it is aligned to the left */
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 40px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  z-index: 999; /* Keep the sidebar on top if necessary */
+}
+
+.course-create-logo-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: auto;
+}
+
+.course-create-logo-text {
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  margin-right: 20px;
+  font-family: 'Arial', sans-serif; 
+}
+
+.instructor-course-icons {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 5px;
+  width: 250px;
+}
+
+/* Individual row that contains icon and label */
+.instructor-course-row {
+  display: flex;
+  align-items: center;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  
+}
+
+.instructor-intro-container {
+  padding: 20px;
+  text-align: left;
+  margin-left: 250px; /* Ensure intro content doesn't overlap with sidebar */
+}
+
+.course-intro-header {
+  margin-bottom: 20px;
+}
+.course-intro-header1{
+  color: #2d2f31;
+  font-size: 25px;
+}

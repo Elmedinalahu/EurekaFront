@@ -6,6 +6,15 @@
   padding: 2px; 
   gap: 80px;
 }
+.price-input{
+  margin:10px 0px ;
+  height: 40px;
+}
+.price-free{
+  border: 1px solid #dbdcdd; 
+  margin-left: 5px;
+  height: 30px;
+}
 
 .course-create-sidebar {
   background-color: #2d2f31;
@@ -69,6 +78,17 @@
 .course-intro-header1{
   color: #2d2f31;
   font-size: 25px;
+}
+.course-price-free{
+width: 80%;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.free-course-button
+{
+  width: 70%;
 }
 .create-course-prompt {
   margin-top: 30px;
@@ -197,7 +217,7 @@
   border: none;
 }
 
-.course-submit {
+.create-course-button {
   margin-top: 30px;
   padding: 10px 40px;
   background-color: #3a2152a4;
@@ -210,8 +230,37 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Horizontal, Vertical, Blur, Spread, Color */
   transition: box-shadow 0.3s ease; /* Smooth transition on hover */
 }
+.section-item-input{
+  width: 81%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
 
-.course-submit:hover {
+.lesson-item-input, .lesson-item-time{
+  width: 39.5%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+.section-item-button, .lesson-item-button{
+  width: 13%;
+  margin-left: 1%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+.add-item-button{
+  width: 14%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #dbdcdd; 
+}
+.create-course-button:hover {
   /* Increase the shadow on hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

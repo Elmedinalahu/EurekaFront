@@ -5,24 +5,29 @@ import { BsClipboardData } from "react-icons/bs";
 import { useState, useEffect } from 'react';
 import { VscSignIn, VscSignOut } from "react-icons/vsc";
 import { jwtDecode } from 'jwt-decode';
+import { getToken } from '../utils/auth';
 
 export default function InstructorCourse() {
-  const navigate = useNavigate(); // Hook to navigate between pages
-  const [activeIcon, setActiveIcon] = useState('video'); // State to track the active icon
+  const navigate = useNavigate(); 
+  const [activeIcon, setActiveIcon] = useState('video'); 
   const [instructorName, setInstructorName] = useState(''); // State to store the instructor's name
-  const [isLoggedIn, setIsLoggedIn] = useState(false); // Track login state
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
   useEffect(() => {
-    const token = localStorage.getItem('token');
+    const token = getToken(); 
     if (token) {
-      const decodedToken = jwtDecode(token); // Decode the token
-      setInstructorName(decodedToken.given_name || decodedToken.DisplayName || 'Instructor'); // Extract the name or set a default
-      setIsLoggedIn(true); // User is logged in
+      try {
+        const decodedToken = jwtDecode(token); // Decode the token
+        setInstructorName(decodedToken.given_name || decodedToken.DisplayName || 'Instructor'); // Extract the name or set a default
+        setIsLoggedIn(true); // User is logged in
+      } catch (error) {
+        console.error('Token decoding failed:', error);
+        navigate('/login'); // Redirect to login if token decoding fails
+      }
     } else {
-      setInstructorName(''); // No user logged in
-      setIsLoggedIn(false); // User is logged out
+      navigate('/login'); // Redirect to login if no token is found
     }
-  }, []);
+  }, [navigate]);
 
   const handleUploadCourse = () => {
     navigate('/instructor/create-course'); // Redirect to the course upload page
@@ -36,6 +41,7 @@ export default function InstructorCourse() {
   const handleLoginLogout = () => {
     if (isLoggedIn) {
       localStorage.removeItem('token'); // Remove token on logout
+      sessionStorage.removeItem('token'); // Also remove from sessionStorage
       setIsLoggedIn(false); // Update state to logged out
       navigate('/login'); // Redirect to login page
     } else {

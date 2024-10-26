@@ -23,11 +23,11 @@ export default function CourseDetails() {
     const [expandedSections, setExpandedSections] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://localhost:7143/api/Course/${courseId}`, {
+        axios.get(`https://api.eurekaelearn.com/api/Course/${courseId}`, {
             headers: {
-              Authorization: `Bearer ${getToken()}`, // Ensure token is used for API request
+                Authorization: `Bearer ${getToken()}`, // Ensure token is used for API request
             },
-          })
+        })
             .then(response => {
                 setCourse(response.data);
                 setIsLoading(false);
@@ -39,7 +39,7 @@ export default function CourseDetails() {
     }, [courseId]);
 
     useEffect(() => {
-        axios.get('https://localhost:7143/api/Category')
+        axios.get('https://api.eurekaelearn.com/api/Category')
             .then(response => {
                 setCategories(response.data);
             })
@@ -97,9 +97,9 @@ export default function CourseDetails() {
                         <span className="course-1">Become an Instructor</span>
                     </div>
                     <div className="nav-right">
-                        <div className="icon"><CiHeart size={24} color="black" /></div>
-                        <div className="icon"><SlBasket size={20} color="black" /></div>
-                        <div className="icon"><GoBell size={20} color="black" /></div>
+                        <div className="icon" onClick={() => navigate('/purchased-courses')}>
+                            <CiHeart size={24} color="black" />
+                        </div>
                         <div className="icon" onClick={handleLoginLogout}>
                             {isLoggedIn() ? (
                                 <FaSignOutAlt size={20} color="black" />
@@ -134,31 +134,31 @@ export default function CourseDetails() {
                                 </div>
                             )}
 
-<div className="course-info-course-details">
-  {/* Course Rating */}
-  <div className="course-rating">
-    <span className='test-review'>Review</span>
-    <div className="rating-stars">
-      {[...Array(5)].map((_, index) => (
-        index < Math.floor(course.ratings.averageRating)
-          ? <FaStar key={index} size={20} color="gold" />
-          : <FaStarHalfAlt key={index} size={20} color="gold" />
-      ))}
-    </div>
-  </div>
+                            <div className="course-info-course-details">
+                                {/* Course Rating */}
+                                <div className="course-rating">
+                                    <span className='test-review'>Review</span>
+                                    <div className="rating-stars">
+                                        {[...Array(5)].map((_, index) => (
+                                            index < Math.floor(course.ratings.averageRating)
+                                                ? <FaStar key={index} size={20} color="gold" />
+                                                : <FaStarHalfAlt key={index} size={20} color="gold" />
+                                        ))}
+                                    </div>
+                                </div>
 
-  {/* Created By */}
-  <div className="course-meta">
-    <p className='test-review'>Instructor</p>
-    <p>Instructor Name</p>
-  </div>
+                                {/* Created By */}
+                                <div className="course-meta">
+                                    <p className='test-review'>Instructor</p>
+                                    <p>Instructor Name</p>
+                                </div>
 
-  {/* Last Updated */}
-  <div className="course-meta">
-    <p className='test-review'>Updated on:</p>
-    <p>{new Date().toLocaleDateString()}</p>
-  </div>
-</div>
+                                {/* Last Updated */}
+                                <div className="course-meta">
+                                    <p className='test-review'>Updated on:</p>
+                                    <p>{new Date().toLocaleDateString()}</p>
+                                </div>
+                            </div>
 
 
                             <div className='space-div-course-details'></div>
@@ -182,32 +182,32 @@ export default function CourseDetails() {
 
                             <hr className='hr-breaker'></hr>
 
-                           {/* What You'll Learn */}
-<div className="what-youll-learn">
-  <h2>What you'll learn</h2>
-  <ul className='ul-list-coursee'>
-    {course.whatYouWillLearn.map((item, index) => (
-      <li className='list-what' key={index}>
-        <IoIosCheckmarkCircleOutline style={{ marginRight: '8px', color: '#000000' }} />
-        {item}
-      </li>
-    ))}
-  </ul>
-</div>
-<hr className='hr-breaker'></hr>
-  {/* Who This Course Is For */}
-  <div className="topics">
+                            {/* What You'll Learn */}
+                            <div className="what-youll-learn">
+                                <h2>What you'll learn</h2>
+                                <ul className='ul-list-coursee'>
+                                    {course.whatYouWillLearn.map((item, index) => (
+                                        <li className='list-what' key={index}>
+                                            <IoIosCheckmarkCircleOutline style={{ marginRight: '8px', color: '#000000' }} />
+                                            {item}
+                                        </li>
+                                    ))}
+                                </ul>
+                            </div>
+                            <hr className='hr-breaker'></hr>
+                            {/* Who This Course Is For */}
+                            <div className="topics">
                                 <h2>Who this course is for</h2>
                                 <ul>
                                     {course.whoThisCourseIsFor.map((item, index) => (
                                         <li className='list-what' key={index}>
-                                        <IoIosCheckmarkCircleOutline style={{ marginRight: '8px', color: '#000000' }} />
-                                        {item}
-                                      </li>
+                                            <IoIosCheckmarkCircleOutline style={{ marginRight: '8px', color: '#000000' }} />
+                                            {item}
+                                        </li>
                                     ))}
                                 </ul>
                             </div>
-<hr className='hr-breaker'></hr>
+                            <hr className='hr-breaker'></hr>
 
 
                             {/* Course Content */}
@@ -234,7 +234,7 @@ export default function CourseDetails() {
 
                             <div className='space-div-course-details'></div>
 
-                          
+
                         </div>
 
                         {/* Conditionally render this div only if the course is not free */}

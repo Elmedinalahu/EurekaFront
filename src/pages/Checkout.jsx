@@ -74,7 +74,7 @@ export default function Checkout() {
           return;
         }
 
-        const response = await axios.post('https://localhost:7143/api/payments/buy-now', {
+        const response = await axios.post('https://api.eurekaelearn.com/api/payments/buy-now', {
           courseId: courseId,
           email: emailUser,
           price: price,

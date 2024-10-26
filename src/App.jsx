@@ -19,6 +19,7 @@ import ExistingAudience from './pages/ExistingAudience';
 import InstructorCourse from './pages/InstructorCourse';
 import CourseCreate from './pages/CourseCreate';
 import Performance from './pages/Performance';
+import PurchasedCoursesPage from './pages/PurchasedCoursesPage'; // Import the new component
 import Signup from './pages/Signup';
 import SignupInstructor from './pages/SignupInstructor';
 import Categories from './pages/Categories';
@@ -53,7 +54,8 @@ const router = createBrowserRouter([
   { path: '/teaching/existing-audience', element: <ExistingAudience /> },
   { path: '/instructor/courses', element: <InstructorCourse /> },
   { path: '/instructor/create-course', element: <CourseCreate /> },
-  { path: '/instructor/performance', element: <Performance /> }
+  { path: '/instructor/performance', element: <Performance /> },
+  { path: '/purchased-courses', element: <PurchasedCoursesPage  /> }
 ]);
 
 export default function App() {

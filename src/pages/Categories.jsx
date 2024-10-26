@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom'; // Added Link
+import { useParams, Link, useNavigate } from 'react-router-dom'; // Added useNavigate
 import axios from 'axios';
 import { CiHeart } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { GoBell } from "react-icons/go";
-import { FaSignInAlt } from "react-icons/fa";
+import { FaSignInAlt, FaSignOutAlt } from "react-icons/fa";
 import './Categories.css';
+import { isLoggedIn, removeToken, getToken } from '../utils/auth'; // Make sure getToken is defined
+
 
 export default function CategoryPage() {
 
@@ -14,10 +16,11 @@ export default function CategoryPage() {
   const [courses, setCourses] = useState([]); // State to store courses
   const [isLoading, setIsLoading] = useState(true);
   const { categoryId } = useParams(); // Get the category ID from the URL
+  const navigate = useNavigate(); // Initialize navigate
 
   useEffect(() => {
     // Fetch all categories for the top slider
-    axios.get('https://localhost:7143/api/Category')
+    axios.get('https://api.eurekaelearn.com/api/Category')
       .then(response => {
         setCategories(response.data);
       })
@@ -25,6 +28,15 @@ export default function CategoryPage() {
         console.error('Error fetching categories:', error);
       });
   }, []);
+  const handleLoginLogout = () => {
+    if (isLoggedIn()) {
+        removeToken(); // Log out
+        alert('Logged out successfully.');
+        navigate('/'); // Redirect to home after logout
+    } else {
+        navigate('/login'); // Redirect to login page if not logged in
+    }
+};
 
   useEffect(() => {
     if (categoryId) {
@@ -32,7 +44,7 @@ export default function CategoryPage() {
       setCourses([]); // Clear previous courses
   
       // Fetch the category details
-      axios.get(`https://localhost:7143/api/Category/${categoryId}`)
+      axios.get(`https://api.eurekaelearn.com/api/Category/${categoryId}`)
         .then(response => {
           setCategory(response.data);
           setIsLoading(false);
@@ -42,7 +54,7 @@ export default function CategoryPage() {
           setIsLoading(false);
         });
   
-      axios.get(`https://localhost:7143/api/Course/category/${categoryId}`)
+      axios.get(`https://api.eurekaelearn.com/api/Course/category/${categoryId}`)
         .then(response => {
           setCourses(response.data); // Store courses of the category
         })
@@ -54,7 +66,7 @@ export default function CategoryPage() {
 
   const handleSubcategoryClick = (subcategoryId) => {
     // Fetch courses by subcategory when a subcategory is clicked
-    axios.get(`https://localhost:7143/api/Course/subcategory/${subcategoryId}`)
+    axios.get(`https://api.eurekaelearn.com/api/Course/subcategory/${subcategoryId}`)
       .then(response => {
         setCourses(response.data);
       })
@@ -75,20 +87,19 @@ export default function CategoryPage() {
           <div className="nav">
             <span className="course-1">Become an Instructor</span>
           </div>
+          
           <div className="nav-right">
-            <div className="icon">
-              <CiHeart size={24} color="black" />
-            </div>
-            <div className="icon">
-              <SlBasket size={20} color="black" />
-            </div>
-            <div className="icon">
-              <GoBell size={20} color="black" />
-            </div>
-            <div className="icon">
-              <FaSignInAlt size={20} color="black" />
-            </div>
-          </div>
+                        <div className="icon" onClick={() => navigate('/purchased-courses')}>
+                            <CiHeart size={24} color="black" />
+                        </div>
+                        <div className="icon" onClick={handleLoginLogout}>
+                            {isLoggedIn() ? (
+                                <FaSignOutAlt size={20} color="black" />
+                            ) : (
+                                <FaSignInAlt size={20} color="black" />
+                            )}
+                        </div>
+                    </div>
         </div>
 
         {/* Top Categories Slider with Links */}

@@ -25,7 +25,7 @@ export default function SignupInstructor() {
     setIsSubmitting(true);
     setErrorMessage(''); // Clear previous error messages
     try {
-      const response = await axios.post('https://localhost:7143/api/Account/instructor/signup', {
+      const response = await axios.post('https://api.eurekaelearn.com/api/Account/instructor/signup', {
         DisplayName: `${formData.firstName} ${formData.lastName}`,
         Email: formData.email,
         Password: formData.password

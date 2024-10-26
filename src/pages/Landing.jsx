@@ -27,7 +27,7 @@ export default function Landing() {
 
   // Fetch categories on component mount
   useEffect(() => {
-    axios.get('https://localhost:7143/api/Category')
+    axios.get('https://api.eurekaelearn.com/api/Category')
       .then(response => {
         setCategories(response.data);
       })
@@ -38,7 +38,7 @@ export default function Landing() {
 
   // Fetch latest courses on component mount
   useEffect(() => {
-    axios.get('https://localhost:7143/api/Course/latest')
+    axios.get('https://api.eurekaelearn.com/api/Course/latest')
       .then(response => {
         setCourses(response.data); // Set the fetched courses into state
       })
@@ -69,11 +69,8 @@ export default function Landing() {
             <span className="course-1">Become an Instructor</span>
           </div>
           <div className="nav-right">
-            <div className="icon" onClick={() => navigate('/wishlist')}>
+            <div className="icon" onClick={() => navigate('/purchased-courses')}>
               <CiHeart size={24} color="black" />
-            </div>
-            <div className="icon" onClick={() => navigate('/cart')}>
-              <SlBasket size={20} color="black" />
             </div>
             <div className="icon" onClick={handleLoginLogout}>
               {isLoggedIn() ? (

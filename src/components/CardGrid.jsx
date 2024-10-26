@@ -131,7 +131,7 @@ const Grid = () => {
   useEffect(() => {
     const fetchCourses = async () => {
       try {
-        const response = await axios.get("https://localhost:7143/api/Course/List");
+        const response = await axios.get("https://api.eurekaelearn.com/api/Course/List");
         setCourses(response.data); // Update the state with the fetched courses
       } catch (error) {
         console.error("Error fetching courses:", error);

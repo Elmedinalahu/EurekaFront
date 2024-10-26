@@ -22,7 +22,7 @@ const LoginPage = () => {
 
     try {
       // Make the API call to log in
-      const response = await axios.post('https://localhost:7143/api/Account/login', {
+      const response = await axios.post('https://api.eurekaelearn.com/api/Account/login', {
         email, // Use the state values directly
         password
       }, {

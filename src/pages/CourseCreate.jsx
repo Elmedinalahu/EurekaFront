@@ -32,7 +32,7 @@ export default function CourseCreate() {
     // Fetch categories on component mount
     const fetchCategories = async () => {
       try {
-        const response = await axios.get('https://localhost:7143/api/Category', {
+        const response = await axios.get('https://api.eurekaelearn.com/api/Category', {
           headers: {
             Authorization: `Bearer ${token}`, // Include token
           },
@@ -53,7 +53,7 @@ export default function CourseCreate() {
     // Fetch subcategories for the selected category
     if (selectedCategoryId) {
       try {
-        const response = await axios.get(`https://localhost:7143/api/Category/${selectedCategoryId}`, {
+        const response = await axios.get(`https://api.eurekaelearn.com/api/Category/${selectedCategoryId}`, {
           headers: {
             Authorization: `Bearer ${token}`, // Include token
           },
@@ -91,7 +91,7 @@ export default function CourseCreate() {
     };
 
     try {
-        const response = await axios.post('https://localhost:7143/api/Course/create', courseData, {
+        const response = await axios.post('https://api.eurekaelearn.com/api/Course/create', courseData, {
             headers: {
                 Authorization: `Bearer ${token}`, // Include token
             },
@@ -106,7 +106,7 @@ export default function CourseCreate() {
             mediaFormData.append('VideoFile', videoFile);
         }
 
-        await axios.patch(`https://localhost:7143/api/Course/${courseId}/upload`, mediaFormData, {
+        await axios.patch(`https://api.eurekaelearn.com/api/Course/${courseId}/upload`, mediaFormData, {
             headers: {
                 'Content-Type': 'multipart/form-data',
                 Authorization: `Bearer ${token}`, // Include token

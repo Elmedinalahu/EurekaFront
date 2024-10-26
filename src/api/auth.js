@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://localhost:7143/api/Account';
+const API_URL = 'https://api.eurekaelearn.com/api/Account';
 
 export const login = async (email, password) => {
   try {

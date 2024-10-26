@@ -17,7 +17,7 @@ export default function Signup() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('https://localhost:7143/api/Account/student/signup', {
+      const response = await axios.post('https://api.eurekaelearn.com/api/Account/student/signup', {
         DisplayName: `${formData.firstName} ${formData.lastName}`,
         Email: formData.email,
         Password: formData.password

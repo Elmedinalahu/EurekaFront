@@ -65,6 +65,7 @@ export default function CategoryPage() {
   }, [categoryId]);
 
   const handleSubcategoryClick = (subcategoryId) => {
+    console.log('Subcategory clicked:', subcategoryId); // Debug log
     // Fetch courses by subcategory when a subcategory is clicked
     axios.get(`https://api.eurekaelearn.com/api/Course/subcategory/${subcategoryId}`)
       .then(response => {
@@ -73,7 +74,7 @@ export default function CategoryPage() {
       .catch(error => {
         console.error('Error fetching subcategory courses:', error);
       });
-  };
+};
 
   if (isLoading) {
     return <p>Loading category details...</p>;

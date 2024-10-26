@@ -134,32 +134,6 @@ export default function CourseDetails() {
                                 </div>
                             )}
 
-                            <div className="course-info-course-details">
-                                {/* Course Rating */}
-                                <div className="course-rating">
-                                    <span className='test-review'>Review</span>
-                                    <div className="rating-stars">
-                                        {[...Array(5)].map((_, index) => (
-                                            index < Math.floor(course.ratings.averageRating)
-                                                ? <FaStar key={index} size={20} color="gold" />
-                                                : <FaStarHalfAlt key={index} size={20} color="gold" />
-                                        ))}
-                                    </div>
-                                </div>
-
-                                {/* Created By */}
-                                <div className="course-meta">
-                                    <p className='test-review'>Instructor</p>
-                                    <p>Instructor Name</p>
-                                </div>
-
-                                {/* Last Updated */}
-                                <div className="course-meta">
-                                    <p className='test-review'>Updated on:</p>
-                                    <p>{new Date().toLocaleDateString()}</p>
-                                </div>
-                            </div>
-
 
                             <div className='space-div-course-details'></div>
 
@@ -246,7 +220,6 @@ export default function CourseDetails() {
                                     </div>
                                     <div className="course-buttons">
                                         <p className="course-price-details">€{course.price}</p>
-                                        <button className="add-to-cart">Add to Cart</button>
                                         <button className="buy-now" onClick={handleBuyNow}>Buy Now</button>
                                     </div>
                                     <div className='course-include'>

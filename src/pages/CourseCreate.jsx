@@ -19,11 +19,11 @@ export default function CourseCreate() {
   const [videoFile, setVideoFile] = useState(null);
   const [description, setDescription] = useState('');
   const [longDescription, setLongDescription] = useState('');
-  const [whatYouWillLearn, setWhatYouWillLearn] = useState('');
   const [isFree, setIsFree] = useState(false);
   const [price, setPrice] = useState(0);
+  const [whatYouWillLearn, setWhatYouWillLearn] = useState([]);
+  const [whoThisCourseIsFor, setWhoThisCourseIsFor] = useState([]);
   const [tags, setTags] = useState(['']); // Changed to array for tags
-  const [whoThisCourseIsFor, setWhoThisCourseIsFor] = useState('');
   const [sections, setSections] = useState([{ title: '', lessons: [{ title: '', timestamp: '00:00:00' }] }]); // Initial section
   const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
@@ -107,6 +107,12 @@ export default function CourseCreate() {
     };
 
     try {
+      const token = localStorage.getItem('token');
+    if (!token) {
+      console.error('Token not found. Please log in again.');
+      return; // Exit function if token is missing
+    }
+
       const response = await axios.post('https://api.eurekaelearn.com/api/Course/create', courseData, {
         headers: {
           Authorization: `Bearer ${token}`, // Include token
@@ -117,6 +123,7 @@ export default function CourseCreate() {
       const courseId = response.data.id; // Assuming the response contains the created course's ID
 
       const mediaFormData = new FormData();
+      mediaFormData.append('CourseId', courseId);
       mediaFormData.append('ImageFile', imageFile);
       if (videoFile) {
         mediaFormData.append('VideoFile', videoFile);
@@ -132,7 +139,7 @@ export default function CourseCreate() {
 
       // Redirect after successful creation and upload
       alert('Course created successfully!');
-      navigate('/courses'); // Redirect after successful creation
+      navigate('/Landing'); // Redirect after successful creation
     } catch (error) {
       console.error(error);
       alert('Error creating course or uploading media.');
@@ -333,14 +340,15 @@ export default function CourseCreate() {
             </div>
 
             <div className='course-what-you-will-learn'>
-              <p className='alias'>What You'll Learn</p>
-              <textarea className='inputClass'
-                placeholder="Outline what students will learn"
-                value={whatYouWillLearn}
-                onChange={(e) => setWhatYouWillLearn(e.target.value)}
-                required
-              />
-            </div>
+  <p className='alias'>What You'll Learn</p>
+  <textarea
+    className='inputClass'
+    placeholder="Outline what students will learn, separated by commas"
+    value={whatYouWillLearn.join(', ')} // Display what you'll learn as a comma-separated string
+    onChange={(e) => setWhatYouWillLearn(e.target.value.split(',').map(item => item.trim()))} // Update what you'll learn based on input
+    required
+  />
+</div>
 
             <p className='alias'>Price</p>
             <div className='course-price-free'>
@@ -375,14 +383,15 @@ export default function CourseCreate() {
             </div>
 
             <div className='course-who-is-it-for'>
-              <p className='alias'>Who is this course for?</p>
-              <textarea className='inputClass'
-                placeholder="Specify who should take this course"
-                value={whoThisCourseIsFor}
-                onChange={(e) => setWhoThisCourseIsFor(e.target.value)}
-                required
-              />
-            </div>
+  <p className='alias'>Who is this course for?</p>
+  <textarea
+    className='inputClass'
+    placeholder="Specify who should take this course, separated by commas"
+    value={whoThisCourseIsFor.join(', ')} // Display who this course is for as a comma-separated string
+    onChange={(e) => setWhoThisCourseIsFor(e.target.value.split(',').map(item => item.trim()))} // Update who this course is for based on input
+    required
+  />
+</div>
 
             <div className='section-container'>
               <h3 className='alias'>Course Sections</h3>
@@ -410,13 +419,6 @@ export default function CourseCreate() {
                         value={lesson.title}
                         onChange={(e) => handleLessonChange(sectionIndex, lessonIndex, 'title', e.target.value)}
                         required
-                      />
-                      <input
-                        className="lesson-item-time"
-                        type="text"
-                        placeholder="Timestamp (e.g., 00:10:30)"
-                        value={lesson.timestamp}
-                        onChange={(e) => handleLessonChange(sectionIndex, lessonIndex, 'timestamp', e.target.value)}
                       />
                       <button className="lesson-item-button" type="button" onClick={() => handleRemoveLesson(sectionIndex, lessonIndex)}>Remove Lesson</button>
                     </div>

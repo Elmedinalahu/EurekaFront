@@ -18,6 +18,7 @@ import { isLoggedIn, removeToken } from '../utils/auth'; // Assuming these are y
 export default function Landing() {
   const [categories, setCategories] = useState([]);
   const [courses, setCourses] = useState([]);
+  const [totalCourses, setTotalCourses] = useState(0); // State for total courses
   const navigate = useNavigate();
 
   // Function to handle button click for instructor signup
@@ -44,6 +45,17 @@ export default function Landing() {
       })
       .catch(error => {
         console.error('Error fetching courses:', error);
+      });
+  }, []);
+
+  useEffect(() => {
+    axios.get('https://api.eurekaelearn.com/api/Course/total')
+      .then(response => {
+        setTotalCourses(response.data.totalCourses); // Set total courses
+        console.log(response.data.totalCourses);
+      })
+      .catch(error => {
+        console.error('Error fetching total courses:', error);
       });
   }, []);
 
@@ -106,7 +118,7 @@ export default function Landing() {
         <div className="search-section">
           <div className="search-among-58340-courses-and-find-your-favorite-course">
             <span className="search-among-58340-courses-and-find-your-favorite-course-sub">Search among</span>
-            <span className="search-among-58340-courses-and-find-your-favorite-course-sub-1"> 58340 </span>
+            <span className="search-among-58340-courses-and-find-your-favorite-course-sub-1"> {totalCourses} </span> 
             <span className='search-among-58340-courses-and-find-your-favorite-course-sub'>courses and find your favorite course</span>
           </div>
           <div className="container">

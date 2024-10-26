@@ -196,7 +196,7 @@ export default function Landing() {
         <div className='space-div2'></div>
 
         <div className="newsletters">
-          <img className="background-newsletter" src="/assets/images/Picture2.png" />
+          <img className="background-newsletter" src="http://res.cloudinary.com/dkulnjbr2/image/upload/v1729921594/xqtamfcmpk5fuilsztq8.png" />
           <p className="find-out-about-the-latest-courses-with-eurka">Find out about the latest courses with <span>EURKA</span></p>
           <div className="newsletters-1">
             <div className="email-address">

@@ -13,7 +13,7 @@ const LoginPage = () => {
   const [errorMessage, setErrorMessage] = useState(''); // State for error messages
 
   // Get the "from" state, or default to "/dashboard" if not provided
-  const redirectTo = location.state?.from || '/dashboard';
+  const redirectTo = location.state?.from || '/Landing';
 
   const handleSubmit = async (e) => {
     e.preventDefault(); // Prevent form submission default behavior

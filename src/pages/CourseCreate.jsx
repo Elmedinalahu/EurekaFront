@@ -29,6 +29,15 @@ export default function CourseCreate() {
 
   useEffect(() => {
     const token = getToken(); 
+    if (token) {
+        setIsLoggedIn(true); // User is logged in
+    } else {
+    }
+  }, [navigate]);
+
+  
+  useEffect(() => {
+    const token = getToken();
     // Fetch categories on component mount
     const fetchCategories = async () => {
       try {
@@ -49,7 +58,14 @@ export default function CourseCreate() {
   const handleCategoryChange = async (e) => {
     const selectedCategoryId = e.target.value;
     setSubcategoryId(''); // Reset subcategory when category changes
-
+  
+    // Retrieve token from local storage
+    const token = localStorage.getItem('token');
+    if (!token) {
+      console.error('Token not found. Please log in again.');
+      return; // Exit function if token is missing
+    }
+  
     // Fetch subcategories for the selected category
     if (selectedCategoryId) {
       try {
@@ -58,7 +74,7 @@ export default function CourseCreate() {
             Authorization: `Bearer ${token}`, // Include token
           },
         });
-        setSubcategories(response.data.subcategories); // Adjust this based on your API response
+        setSubcategories(response.data.subcategories || []); // Adjust this based on your API response structure
       } catch (error) {
         console.error('Error fetching subcategories:', error);
       }
@@ -66,7 +82,7 @@ export default function CourseCreate() {
       setSubcategories([]); // Clear subcategories if no category is selected
     }
   };
-
+  
   const handleIconClick = (icon) => {
     setActiveIcon(icon);
   };
@@ -76,52 +92,52 @@ export default function CourseCreate() {
 
     // Step 1: Create the course
     const courseData = {
-        name: courseName,
-        description,
-        longDescription,
-        whatYouWillLearn,
-        price: isFree ? 0 : price,
-        isFree,
-        tags,
-        whoThisCourseIsFor,
-        subcategoryId: parseInt(subcategoryId),
-        courseContent: {
-            sections,
-        },
+      name: courseName,
+      description,
+      longDescription,
+      whatYouWillLearn,
+      price: isFree ? 0 : price,
+      isFree,
+      tags,
+      whoThisCourseIsFor,
+      subcategoryId: parseInt(subcategoryId),
+      courseContent: {
+        sections,
+      },
     };
 
     try {
-        const response = await axios.post('https://api.eurekaelearn.com/api/Course/create', courseData, {
-            headers: {
-                Authorization: `Bearer ${token}`, // Include token
-            },
-        });
-        
-        // Step 2: Upload media files
-        const courseId = response.data.id; // Assuming the response contains the created course's ID
-        
-        const mediaFormData = new FormData();
-        mediaFormData.append('ImageFile', imageFile);
-        if (videoFile) {
-            mediaFormData.append('VideoFile', videoFile);
-        }
+      const response = await axios.post('https://api.eurekaelearn.com/api/Course/create', courseData, {
+        headers: {
+          Authorization: `Bearer ${token}`, // Include token
+        },
+      });
 
-        await axios.patch(`https://api.eurekaelearn.com/api/Course/${courseId}/upload`, mediaFormData, {
-            headers: {
-                'Content-Type': 'multipart/form-data',
-                Authorization: `Bearer ${token}`, // Include token
-            },
-        });
-        alert('Media uploaded successfully!');
+      // Step 2: Upload media files
+      const courseId = response.data.id; // Assuming the response contains the created course's ID
 
-        // Redirect after successful creation and upload
-        alert('Course created successfully!');
-        navigate('/courses'); // Redirect after successful creation
+      const mediaFormData = new FormData();
+      mediaFormData.append('ImageFile', imageFile);
+      if (videoFile) {
+        mediaFormData.append('VideoFile', videoFile);
+      }
+
+      await axios.patch(`https://api.eurekaelearn.com/api/Course/${courseId}/upload`, mediaFormData, {
+        headers: {
+          'Content-Type': 'multipart/form-data',
+          Authorization: `Bearer ${token}`, // Include token
+        },
+      });
+      alert('Media uploaded successfully!');
+
+      // Redirect after successful creation and upload
+      alert('Course created successfully!');
+      navigate('/courses'); // Redirect after successful creation
     } catch (error) {
-        console.error(error);
-        alert('Error creating course or uploading media.');
+      console.error(error);
+      alert('Error creating course or uploading media.');
     }
-};
+  };
 
   const handleAddSection = () => {
     setSections([...sections, { title: '', lessons: [{ title: '', timestamp: '' }] }]);
@@ -200,7 +216,7 @@ export default function CourseCreate() {
             </div>
           </div>
 
-</div>
+          </div>
         </div>
       </div>
 
@@ -259,7 +275,7 @@ export default function CourseCreate() {
               <div className="upload-section">
                 <p className="alias">Image</p>
                 <label htmlFor="imageUpload" className="custom-file-upload">
-                  Choose Image: 
+                  Choose Image:
                   <input
                     id="imageFileName"
                     type="text"
@@ -284,7 +300,7 @@ export default function CourseCreate() {
               <div className="upload-section">
                 <p className="alias">Video</p>
                 <label htmlFor="videoUpload" className="custom-file-upload">
-                  Choose Video: 
+                  Choose Video:
                   <input
                     id="videoFileName"
                     type="text"
@@ -326,7 +342,7 @@ export default function CourseCreate() {
               />
             </div>
 
-              <p className='alias'>Price</p>
+            <p className='alias'>Price</p>
             <div className='course-price-free'>
               <input
                 className='inputClass'
@@ -374,7 +390,7 @@ export default function CourseCreate() {
                 <div key={sectionIndex} className="section-item">
                   <div>
                     <input
-                    className="section-item-input"
+                      className="section-item-input"
                       type="text"
                       placeholder="Section Title"
                       value={section.title}
@@ -388,7 +404,7 @@ export default function CourseCreate() {
                   {section.lessons.map((lesson, lessonIndex) => (
                     <div key={lessonIndex} className="lesson-item">
                       <input
-                      className="lesson-item-input"
+                        className="lesson-item-input"
                         type="text"
                         placeholder="Lesson Title"
                         value={lesson.title}
@@ -396,7 +412,7 @@ export default function CourseCreate() {
                         required
                       />
                       <input
-                      className="lesson-item-time"
+                        className="lesson-item-time"
                         type="text"
                         placeholder="Timestamp (e.g., 00:10:30)"
                         value={lesson.timestamp}
@@ -408,7 +424,7 @@ export default function CourseCreate() {
                   <button className="add-item-button" type="button" onClick={() => handleAddLesson(sectionIndex)}>Add Lesson</button>
                 </div>
               ))}
-              <button  className="add-item-button"type="button" onClick={handleAddSection}>Add Section</button>
+              <button className="add-item-button" type="button" onClick={handleAddSection}>Add Section</button>
             </div>
 
 

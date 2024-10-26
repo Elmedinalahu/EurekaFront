@@ -137,9 +137,11 @@ export default function CategoryPage() {
                           <div className="course-content">
                             {/* Text content on the left */}
                             <div className="course-info">
-                              <h3 className="course-title">{course.name}</h3>
+                              <h3 className="course-titles">{course.name}</h3>
                               <p className="course-description">{course.description}</p>
-                              <p className="course-price">Price: ${course.price}</p>
+                              <p className="course-prices">
+   {course.isFree ? 'Free Course' : `Price: $${course.price}`}
+</p>
                             </div>
                             {/* Image on the right */}
                             <div className="course-image-container">

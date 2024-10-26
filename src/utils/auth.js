@@ -1,10 +1,14 @@
-export const setToken = (token, rememberMe) => {
-    if (rememberMe) {
+export const setToken = (token) => {
+  if (!token) {
+      // If token is undefined, null, or an empty string, don't save it
+      removeToken();
+      return;
+  }
+
       localStorage.setItem('token', token);  // Save token in localStorage for persistent login
-    } else {
       sessionStorage.setItem('token', token); // Save token in sessionStorage for session-based login
-    }
-  };
+};
+
   
   export const getToken = () => {
     return localStorage.getItem('token') || sessionStorage.getItem('token');

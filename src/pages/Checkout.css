@@ -1,11 +1,10 @@
 /* Main container layout */
 .checkout-container {
   display: flex;
-  justify-content: space-between;
   margin-top: 15px;
   margin-left: 50px;
   padding: 2px; /* ngret lrt checkout*/
-  gap: 80px; /* Zvogëlimi i hapësirës midis formës dhe seksionit të përmbledhjes */
+  gap: 100px; /* Zvogëlimi i hapësirës midis formës dhe seksionit të përmbledhjes */
 }
 
 /* Sidebar (Shiriti anësor) */
@@ -38,7 +37,6 @@
 }
 /* Form Section */
 .form-section {
-  flex: 1.5;
   margin-left: 20px;
 }
 
@@ -60,7 +58,7 @@
   margin: 10px 0 20px;
   border: 1px solid #cccccc66
 }
-
+.checkout-section-titles
 .checkout-section-title {
   font-size: 20px;
   font-weight: bold;
@@ -68,6 +66,10 @@
   font-family: 'Arial', sans-serif; /* Font modern */
 }
 
+.checkout-section-titles{
+  margin-top: 50px;
+  margin-bottom: -5px;
+}
 .billing-address-fields,
 .payment-fields {
   display: flex;
@@ -124,15 +126,12 @@
   justify-content: space-between;
 }
 
-.course-image {
+.course-image-checkout {
   width: 80px;
   height: 40px;
-  border-radius: 8px;
+  border-radius: 5px;
   object-fit: 70px;
   margin-right: 15px;
-  background-image:url('assets/images/Image1.jpeg');
-  background-size: cover;
-  background-position: center;
 }
 
 .course-info {

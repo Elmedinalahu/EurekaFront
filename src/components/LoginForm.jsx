@@ -5,7 +5,6 @@ import { setToken } from '../utils/auth'; // Import the token utility
 const LoginForm = ({ onSubmit, errorMessage }) => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [keepMeLoggedIn, setKeepMeLoggedIn] = useState(false); // State for 'Keep me logged in'
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -14,8 +13,10 @@ const LoginForm = ({ onSubmit, errorMessage }) => {
     }
     try {
       const token = await onSubmit(email, password); // Assuming `onSubmit` returns a token on success
-      setToken(token, keepMeLoggedIn); // Save token based on 'keepMeLoggedIn'
-      console.log('Login successful');
+      console.log(token); // Log the token for debugging
+
+      setToken(token); // Save the token
+      console.log('Login successful, token set:', token); // Log the token for debugging
     } catch (error) {
       console.error('Login failed:', error);
     }
@@ -27,10 +28,6 @@ const LoginForm = ({ onSubmit, errorMessage }) => {
 
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
-  };
-
-  const handleKeepMeLoggedInChange = (e) => {
-    setKeepMeLoggedIn(e.target.checked); // Toggle the keepMeLoggedIn state
   };
 
   return (
@@ -63,19 +60,6 @@ const LoginForm = ({ onSubmit, errorMessage }) => {
                 onChange={handlePasswordChange}
                 required
               />
-            </div>
-            <div className="keep-me-logged-in-container">
-              <div className="keep-me-logged-in-checkbox">
-                <input
-                  type="checkbox"
-                  checked={keepMeLoggedIn}
-                  onChange={handleKeepMeLoggedInChange}
-                />
-                <label className="keep-me-logged-in">Keep me logged in</label>
-              </div>
-              <a href="/forgot-password" className="forgot-password">
-                Forgot Password?
-              </a>
             </div>
             <div>
               <button type="submit" className="login-din">Sign In</button>

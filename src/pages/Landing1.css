@@ -102,7 +102,7 @@
   font-weight: bold;
   text-transform: uppercase; /* Make text uppercase */
   cursor: pointer;
-  padding: 15px 10px; /* Padding for clickable area */
+  padding: 12px 9px; /* Padding for clickable area */
   border-radius: 5px;
 }
 

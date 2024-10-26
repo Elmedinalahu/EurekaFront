@@ -7,7 +7,7 @@ import { FaGreaterThan } from "react-icons/fa6";
 
 export default function Landing1() {
   return (
-    <div class = "body">
+    <div className = "body">
     <div className="landing-1">
       <div className="navbar">
         <div className="e">

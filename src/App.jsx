@@ -30,8 +30,7 @@ const stripePromise = loadStripe('pk_test_51QBcCpJtrNUkrP9kHXpuhiaIN8PqJHTA3wEKA
 
 const router = createBrowserRouter([
   { path: '/', element: <Landing /> },
-  { path: '/Cart', element: <Cart /> },
-  { path: '/Cart1', element: <Cart1 /> },
+  { path: '/cart', element: <Cart /> },
   {
     path: '/Checkout',
     element: (

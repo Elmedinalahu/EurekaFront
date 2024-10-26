@@ -1,9 +1,11 @@
 import './Checkout.css';
 import { CardElement, useStripe, useElements } from '@stripe/react-stripe-js';
 import { loadStripe } from '@stripe/stripe-js';
-import { useLocation } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import axios from 'axios'; // Import Axios
+import { jwtDecode } from 'jwt-decode';
+import { getToken } from '../utils/auth';
 
 const stripePromise = loadStripe('pk_test_51QBcCpJtrNUkrP9kHXpuhiaIN8PqJHTA3wEKAtpsgnhfaI13tZ7bDMlJ1cFDOabEeEIwoHMxsycGfNIHgltK26wz00usRo0NHG'); // Your Stripe publishable key
 
@@ -11,17 +13,22 @@ export default function Checkout() {
   const stripe = useStripe();
   const elements = useElements();
   const location = useLocation();
-  const { courseId, email, price } = location.state || {};
+  const navigate = useNavigate(); // Use for redirection
+  const { courseId, email, price, name, instructor, pictureUrl } = location.state?.courseData || {}; // Use optional chaining
+  console.log("Checkout data:", { courseId, email, price, name, instructor, pictureUrl });
+
+  // Retrieve course data from location.state
+  
   // State for address and country
   const [address, setAddress] = useState('');
   const [country, setCountry] = useState('');
-  
+
   const handleSubmit = async (event) => {
     event.preventDefault();
 
     if (!stripe || !elements) {
       console.error("Stripe or Elements is not loaded");
-      return; // Exit if Stripe is not loaded
+      return; 
     }
 
     const cardElement = elements.getElement(CardElement);
@@ -41,22 +48,52 @@ export default function Checkout() {
       alert('Payment failed: ' + error.message);
     } else {
       console.log('Payment Method:', paymentMethod);
-      
-      // Send the payment details to your backend
+
       try {
-        const response = await axios.post('https://localhost:7143/api/Payments/buy-now', {
-          CourseId: courseId,
-          Email: email,
-          Price: price,
-          PaymentMethodId: paymentMethod.id, // Send the payment method ID
-        });
-        
-        if (response.status === 200) {
-          alert('Payment succeeded!');
+        const token = getToken(); 
+        const decodedToken = jwtDecode(token); // Decode the token
+
+        console.log("Token in Checkout:", token); // Log the token
+
+        if (!token) {
+          console.error("Token is missing");
+          alert("You must be logged in to make a payment.");
+          return;
         }
-      } catch (err) {
-        console.error('Error processing payment:', err);
-        alert('Payment failed: ' + (err.response?.data?.message || 'An error occurred'));
+
+        let emailUser;
+        try {
+          const decodedToken = jwtDecode(token); // Decode the token
+          console.log(decodedToken);
+          emailUser = decodedToken.email; // Get email from decoded token
+        } catch (decodeError) {
+          console.error("Invalid token:", decodeError);
+          alert("Invalid token. Please log in again.");
+          removeToken();
+          navigate('/login'); 
+          return;
+        }
+
+        const response = await axios.post('https://localhost:7143/api/payments/buy-now', {
+          courseId: courseId,
+          email: emailUser,
+          price: price,
+          paymentMethodId: paymentMethod.id,
+        }, {
+          headers: {
+            Authorization: `Bearer ${token}`, // Ensure token is used for API request
+          },
+        });
+console.log(response.data)
+        if (response.data.statusCode === 200) {
+          alert("Payment succeeded!");
+          navigate(`/course/${courseId}`); // Redirect to course page after success
+        } else {
+          alert("Payment failed. Please try again.");
+        }
+      } catch (apiError) {
+        console.error("Error during API request:", apiError);
+        alert("An error occurred while processing your payment. Please try again.");
       }
     }
   };
@@ -95,15 +132,15 @@ export default function Checkout() {
           <CardElement />
 
           {/* Order Details */}
-          <h2 className="checkout-section-title">Order details</h2>
+          <h2 className="checkout-section-titles">Order details</h2>
           <div className="order-summary">
             <div className="order-item">
-              <img src="assets/images/Image1.jpeg" alt="" className="course-image" />
+              <img src={pictureUrl} alt={name} className="course-image-checkout" />
               <div className="course-info">
-                <p className="course-title">Ionic React: Mobile Development with Ionic 5...</p>
-                <p className="course-author">By Aleandro Vela</p>
+                <p className="course-title">{name}</p>
+                <p className="course-author">By {instructor}</p>
               </div>
-              <div className="course-price">€19.99</div>
+              <div className="course-price">€{price}</div> {/* Display price dynamically */}
             </div>
           </div>
         </div>
@@ -115,12 +152,12 @@ export default function Checkout() {
           <h2 className="summary-title">Summary</h2>
           <div className="price-details">
             <p>Original Price:</p>
-            <p>€19.99</p>
+            <p>€{price}</p> {/* Display original price dynamically */}
           </div>
           <hr />
           <div className="price-details total">
             <p>Total:</p>
-            <p>€19.99</p>
+            <p>€{price}</p> {/* Display total dynamically */}
           </div>
           <button type="submit" disabled={!stripe} className="checkout-button">Complete Checkout</button>
         </div>

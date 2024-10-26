@@ -1,16 +1,18 @@
-// src/pages/CourseDetails.js
-// ...other imports
+// CourseDetails.js
+
 import React, { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { FaStar, FaStarHalfAlt, FaUser, FaClock } from 'react-icons/fa';
+import { FaStar, FaStarHalfAlt, FaUser, FaClock, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import axios from 'axios';
 import { CiHeart } from "react-icons/ci";
 import { SlBasket } from "react-icons/sl";
 import { GoBell } from "react-icons/go";
-import { FaSignInAlt, FaChevronDown, FaChevronUp } from 'react-icons/fa';
-import { FaSignOutAlt } from 'react-icons/fa';
-import { isLoggedIn, removeToken } from '../utils/auth';
+import { FaSignInAlt, FaSignOutAlt } from 'react-icons/fa';
+import { isLoggedIn, removeToken, getToken } from '../utils/auth'; // Make sure getToken is defined
 import './CourseDetails.css';
+import { IoIosCheckmarkCircleOutline } from "react-icons/io";
+import { jwtDecode } from 'jwt-decode';
+
 
 export default function CourseDetails() {
     const { courseId } = useParams();
@@ -21,9 +23,13 @@ export default function CourseDetails() {
     const [expandedSections, setExpandedSections] = useState([]);
 
     useEffect(() => {
-        axios.get(`https://localhost:7143/api/Course/${courseId}`)
+        axios.get(`https://localhost:7143/api/Course/${courseId}`, {
+            headers: {
+              Authorization: `Bearer ${getToken()}`, // Ensure token is used for API request
+            },
+          })
             .then(response => {
-                setCourse(response.data.course);
+                setCourse(response.data);
                 setIsLoading(false);
             })
             .catch(error => {
@@ -68,15 +74,19 @@ export default function CourseDetails() {
         if (!isLoggedIn()) {
             navigate('/login', { state: { from: '/checkout' } });
         } else {
-            const email = 'user@example.com'; 
-            const price = course.price; 
-            navigate('/checkout', { state: { courseId: course.id, email, price } });
+            const token = getToken();
+            const email = jwtDecode(token).email; // Assuming your token structure
+            const { id, price, name, instructor, pictureUrl } = course; // Extract course data
+
+            // Pass course data through location state
+            navigate('/checkout', { state: { courseData: { courseId: id, email, price, name, instructor, pictureUrl } } });
         }
     };
 
     if (isLoading) {
         return <p>Loading course details...</p>;
     }
+
 
     return (
         <div className="body">
@@ -112,67 +122,108 @@ export default function CourseDetails() {
                     <div className="course-details">
                         <div className="course-info-details">
                             <h1 className='h1-course-details'>{course.name}</h1>
-                            {course.price === 0 && ( // Check if course is free
+                            <p className='p-description-details'>{course.description}</p>
+                            {course.isFree && ( // Check if course is free
                                 <div className="free-course-content">
-                                    <h2>This course is free!</h2>
-                                    <video controls>
-                                        <source src={course.videoUrl} type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                    <p>Enjoy learning without any cost!</p>
+                                    <div className='test-div-video'>
+                                        <video className='test-video' controls>
+                                            <source src={course.videoUrl} type="video/mp4" />
+                                            Your browser does not support the video tag.
+                                        </video>
+                                    </div>
                                 </div>
                             )}
+
+<div className="course-info-course-details">
+  {/* Course Rating */}
+  <div className="course-rating">
+    <span className='test-review'>Review</span>
+    <div className="rating-stars">
+      {[...Array(5)].map((_, index) => (
+        index < Math.floor(course.ratings.averageRating)
+          ? <FaStar key={index} size={20} color="gold" />
+          : <FaStarHalfAlt key={index} size={20} color="gold" />
+      ))}
+    </div>
+  </div>
+
+  {/* Created By */}
+  <div className="course-meta">
+    <p className='test-review'>Instructor</p>
+    <p>Instructor Name</p>
+  </div>
+
+  {/* Last Updated */}
+  <div className="course-meta">
+    <p className='test-review'>Updated on:</p>
+    <p>{new Date().toLocaleDateString()}</p>
+  </div>
+</div>
+
+
+                            <div className='space-div-course-details'></div>
+
+
+
+                            <h2 className='title-course-details'>Course Overview</h2>
                             <p>{course.longDescription}</p>
-                            <p className="course-rating">
-                                <span>{course.ratingsCount}</span>
-                                <div className="rating-stars">
-                                    {[...Array(5)].map((_, index) => (
-                                        index < Math.floor(course.rating) ? <FaStar key={index} size={20} color="gold" /> : <FaStarHalfAlt key={index} size={20} color="gold" />
+
+
+                            <hr className='hr-breaker'></hr>
+                            {/* Course Tags */}
+                            <div className="topics">
+                                <h2>Tags</h2>
+                                <div className="tags">
+                                    {course.tags.map((tag, index) => (
+                                        <span key={index} className="tag">{tag}</span>
                                     ))}
                                 </div>
-                            </p>
-                            <div className="course-meta">
-                                <p>
-                                    <FaUser size={13} color="black" /> Created by: {course.createdBy}
-                                </p>
-                                <p>
-                                    <FaClock size={13} color="black" /> Last updated: {course.updatedAt ? new Date(course.updatedAt).toLocaleDateString() : new Date(course.createdAt).toLocaleDateString()}
-                                </p>
                             </div>
-                            <div className='space-div-course-details'></div>
-                            <div className="what-youll-learn">
-                                <h2>What you'll learn</h2>
+
+                            <hr className='hr-breaker'></hr>
+
+                           {/* What You'll Learn */}
+<div className="what-youll-learn">
+  <h2>What you'll learn</h2>
+  <ul className='ul-list-coursee'>
+    {course.whatYouWillLearn.map((item, index) => (
+      <li className='list-what' key={index}>
+        <IoIosCheckmarkCircleOutline style={{ marginRight: '8px', color: '#000000' }} />
+        {item}
+      </li>
+    ))}
+  </ul>
+</div>
+<hr className='hr-breaker'></hr>
+  {/* Who This Course Is For */}
+  <div className="topics">
+                                <h2>Who this course is for</h2>
                                 <ul>
-                                    {course.whatYouWillLearn.split('. ').map((item, index) => (
-                                        <li key={index}>{item}</li>
+                                    {course.whoThisCourseIsFor.map((item, index) => (
+                                        <li className='list-what' key={index}>
+                                        <IoIosCheckmarkCircleOutline style={{ marginRight: '8px', color: '#000000' }} />
+                                        {item}
+                                      </li>
                                     ))}
                                 </ul>
                             </div>
-                            <div className='space-div-course-details'></div>
-                            <div className="topics">
-                                <h2>Explore related topics</h2>
-                                <div className="tags">
-                                    {course.tags.split(",").map((tag, index) => (
-                                        <span key={index} className="tag">
-                                            {tag.trim()}
-                                        </span>
-                                    ))}
-                                </div>
-                            </div>
-                            <div className='space-div-course-details'></div>
+<hr className='hr-breaker'></hr>
+
+
+                            {/* Course Content */}
                             <div className="course-content-details-1">
                                 <h2>Course Content</h2>
-                                {course.courseContent?.sections.map((section, sectionIndex) => (
+                                {course.courseContent.map((section, sectionIndex) => (
                                     <div key={sectionIndex} className="section">
                                         <h3 className='h3-course-details' onClick={() => toggleSection(sectionIndex)} style={{ cursor: 'pointer' }}>
-                                            {isSectionOpen(sectionIndex) ? <FaChevronUp size={16} /> : <FaChevronDown size={16} />}
+                                            {isSectionOpen(sectionIndex) ? <FaChevronUp className='favicon' size={16} /> : <FaChevronDown className='favicon' size={16} />}
                                             {section.title}
                                         </h3>
                                         {isSectionOpen(sectionIndex) && (
                                             <ul>
                                                 {section.lessons.map((lesson, lessonIndex) => (
-                                                    <li key={lessonIndex}>
-                                                        <span>{lesson.timestamp}</span> - {lesson.title}
+                                                    <li className='test-lesson' key={lessonIndex}>
+                                                        {lesson.title}
                                                     </li>
                                                 ))}
                                             </ul>
@@ -180,19 +231,14 @@ export default function CourseDetails() {
                                     </div>
                                 ))}
                             </div>
+
                             <div className='space-div-course-details'></div>
-                            <div className="topics">
-                                <h2>Who this course is for</h2>
-                                <ul>
-                                    {course.whoThisCourseIsFor.split('. ').map((item, index) => (
-                                        <li key={index}>{item}</li>
-                                    ))}
-                                </ul>
-                            </div>
+
+                          
                         </div>
 
                         {/* Conditionally render this div only if the course is not free */}
-                        {course.price > 0 && (
+                        {!course.isFree && (
                             <div className="course-image-details-price">
                                 <div className="course-nested">
                                     <div className="course-image-details">

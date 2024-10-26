@@ -5,7 +5,8 @@ const API_URL = 'https://localhost:7143/api/Account';
 export const login = async (email, password) => {
   try {
     const response = await axios.post(`${API_URL}/login`, { email, password });
-    return response.data;
+    console.log(response.data.token);
+    return response.data.token;
   } catch (error) {
     // Throw the error response for better handling in the LoginPage
     throw error.response.data; 

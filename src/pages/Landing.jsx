@@ -221,7 +221,7 @@ export default function Landing() {
               <span className="what-they-say">
                 What They Say
               </span>
-              <div className="group-12">
+              {/* <div className="group-12">
                 <div className="ellipse-1">
                 </div>
                 <div className="ellipse-2">
@@ -232,21 +232,22 @@ export default function Landing() {
                 </div>
                 <div className="ellipse-5">
                 </div>
-              </div>
+              </div> */}
 
             </div>
             <div className="supporting-text-3">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta
-            </div>
+    <em>"Eureka is a fantastic platform with a wide range of courses and expert instructors. I love the flexibility of learning at my own pace, and the community support has been invaluable. Thanks to Eureka, I've gained new skills and even secured a new job! Highly recommend for anyone wanting to grow their skills."</em>
+</div>
+
             <div className="container-4">
               <div className="container-9">
               </div>
-              <div className="group-18">
+              {/* <div className="group-18">
                 <PiLessThanLight size={24} color="black" />
               </div>
               <div className="group-18">
                 <PiGreaterThanLight size={24} color="black" />
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
@@ -255,9 +256,13 @@ export default function Landing() {
         <div className="footer">
           <div className="top-footer">
             <div className="explanation">
-              <span className="supporting-text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Egestas purus viverra accumsan in nisl nisi. Arcu cursus vitae congue mauris rhoncus aenean vel elit scelerisque. In egestas erat imperdiet sed euismod nisi porta lorem mollis. Morbi tristique senectus et netus. Mattis pellentesque id nibh tortor id aliquet lectus proin. Sapien faucibus et molestie ac feugiat sed lectus vestibulum. Ullamcorper velit sed ullamcorper morbi tincidunt ornare massa eget. Dictum varius duis at consectetur lorem. Nisi vitae suscipit tellus mauris a diam maecenas sed enim. Velit ut tortor pretium
-              </span>
+            <span className="supporting-text">
+              Eureka Inc.<br />
+              Empowering learners worldwide, Eureka is a leading online learning platform dedicated to providing quality, accessible education in a wide range of fields. Our mission is to inspire growth and support personal and professional development for students, professionals, and enthusiasts alike. With a diverse catalog of courses and expert instructors, Eureka offers flexibility and the tools needed to succeed.<br /><br />
+              Contact us: support@eureka.com | (123) 456-7890<br />
+              Follow us on social media for updates, tips, and inspiration!
+            </span>
+
             </div>
             <div className="eureka">
               Eureka...
